@@ -1,0 +1,2310 @@
+09:59:42 DEBUG	TuningOptions: {'executable': './a.out', 'verbose': True, 'write_csv': 'mg_all_64_kepler_kepler.csv', 'use_heuristic': False, 'compile_command': 'pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS={num_gangs} -DVECTOR_LENGTH={vector_length} {source} ', 'repetitions': 3, 'write_gnuplot': 'mg_all_64_kepler_expect.gp', 'vector_length_max': 1024, 'kernel_timing': False, 'vector_length_min': 2, 'source': 'MG_ALLREDUCE.F', 'num_gangs_max': 1024, 'time_regexp': <_sre.SRE_Pattern object at 0xa3f7c0>, 'write_spreadsheet': 'mg_all_64_kepler_expect.xml', 'search_method': 'exhaustive64', 'ignore_exit': False, 'num_gangs_min': 2}
+09:59:42 DEBUG	[num_gangs:  64, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+09:59:45 DEBUG	[num_gangs:  64, vector_length:  64] Running ./a.out
+09:59:45 DEBUG	[num_gangs:  64, vector_length:  64] Time: 0.000724
+09:59:45 DEBUG	[num_gangs:  64, vector_length:  64] Running ./a.out
+09:59:45 DEBUG	[num_gangs:  64, vector_length:  64] Time: 0.000667
+09:59:45 DEBUG	[num_gangs:  64, vector_length:  64] Running ./a.out
+09:59:46 DEBUG	[num_gangs:  64, vector_length:  64] Time: 0.000689
+09:59:46 INFO	[num_gangs:  64, vector_length:  64] Average: 0.000693, Standard Deviation: 0.000029
+09:59:46 DEBUG	[num_gangs:  64, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+09:59:48 DEBUG	[num_gangs:  64, vector_length: 128] Running ./a.out
+09:59:48 DEBUG	[num_gangs:  64, vector_length: 128] Time: 0.000754
+09:59:48 DEBUG	[num_gangs:  64, vector_length: 128] Running ./a.out
+09:59:49 DEBUG	[num_gangs:  64, vector_length: 128] Time: 0.000715
+09:59:49 DEBUG	[num_gangs:  64, vector_length: 128] Running ./a.out
+09:59:49 DEBUG	[num_gangs:  64, vector_length: 128] Time: 0.000721
+09:59:49 INFO	[num_gangs:  64, vector_length: 128] Average: 0.000730, Standard Deviation: 0.000021
+09:59:49 DEBUG	[num_gangs:  64, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+09:59:52 DEBUG	[num_gangs:  64, vector_length: 192] Running ./a.out
+09:59:52 DEBUG	[num_gangs:  64, vector_length: 192] Time: 0.000772
+09:59:52 DEBUG	[num_gangs:  64, vector_length: 192] Running ./a.out
+09:59:52 DEBUG	[num_gangs:  64, vector_length: 192] Time: 0.000715
+09:59:52 DEBUG	[num_gangs:  64, vector_length: 192] Running ./a.out
+09:59:52 DEBUG	[num_gangs:  64, vector_length: 192] Time: 0.000696
+09:59:52 INFO	[num_gangs:  64, vector_length: 192] Average: 0.000728, Standard Deviation: 0.000040
+09:59:52 DEBUG	[num_gangs:  64, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+09:59:55 DEBUG	[num_gangs:  64, vector_length: 256] Running ./a.out
+09:59:55 DEBUG	[num_gangs:  64, vector_length: 256] Time: 0.000759
+09:59:55 DEBUG	[num_gangs:  64, vector_length: 256] Running ./a.out
+09:59:56 DEBUG	[num_gangs:  64, vector_length: 256] Time: 0.000665
+09:59:56 DEBUG	[num_gangs:  64, vector_length: 256] Running ./a.out
+09:59:56 DEBUG	[num_gangs:  64, vector_length: 256] Time: 0.000664
+09:59:56 INFO	[num_gangs:  64, vector_length: 256] Average: 0.000696, Standard Deviation: 0.000055
+09:59:56 DEBUG	[num_gangs:  64, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+09:59:58 DEBUG	[num_gangs:  64, vector_length: 320] Running ./a.out
+09:59:59 DEBUG	[num_gangs:  64, vector_length: 320] Time: 0.000752
+09:59:59 DEBUG	[num_gangs:  64, vector_length: 320] Running ./a.out
+09:59:59 DEBUG	[num_gangs:  64, vector_length: 320] Time: 0.000660
+09:59:59 DEBUG	[num_gangs:  64, vector_length: 320] Running ./a.out
+09:59:59 DEBUG	[num_gangs:  64, vector_length: 320] Time: 0.000688
+09:59:59 INFO	[num_gangs:  64, vector_length: 320] Average: 0.000700, Standard Deviation: 0.000047
+09:59:59 DEBUG	[num_gangs:  64, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:00:02 DEBUG	[num_gangs:  64, vector_length: 384] Running ./a.out
+10:00:02 DEBUG	[num_gangs:  64, vector_length: 384] Time: 0.000732
+10:00:02 DEBUG	[num_gangs:  64, vector_length: 384] Running ./a.out
+10:00:02 DEBUG	[num_gangs:  64, vector_length: 384] Time: 0.000519
+10:00:02 DEBUG	[num_gangs:  64, vector_length: 384] Running ./a.out
+10:00:03 DEBUG	[num_gangs:  64, vector_length: 384] Time: 0.000821
+10:00:03 INFO	[num_gangs:  64, vector_length: 384] Average: 0.000691, Standard Deviation: 0.000155
+10:00:03 DEBUG	[num_gangs:  64, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:00:05 DEBUG	[num_gangs:  64, vector_length: 448] Running ./a.out
+10:00:06 DEBUG	[num_gangs:  64, vector_length: 448] Time: 0.000747
+10:00:06 DEBUG	[num_gangs:  64, vector_length: 448] Running ./a.out
+10:00:06 DEBUG	[num_gangs:  64, vector_length: 448] Time: 0.000687
+10:00:06 DEBUG	[num_gangs:  64, vector_length: 448] Running ./a.out
+10:00:06 DEBUG	[num_gangs:  64, vector_length: 448] Time: 0.000687
+10:00:06 INFO	[num_gangs:  64, vector_length: 448] Average: 0.000707, Standard Deviation: 0.000035
+10:00:06 DEBUG	[num_gangs:  64, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:00:09 DEBUG	[num_gangs:  64, vector_length: 512] Running ./a.out
+10:00:09 DEBUG	[num_gangs:  64, vector_length: 512] Time: 0.000754
+10:00:09 DEBUG	[num_gangs:  64, vector_length: 512] Running ./a.out
+10:00:09 DEBUG	[num_gangs:  64, vector_length: 512] Time: 0.000685
+10:00:09 DEBUG	[num_gangs:  64, vector_length: 512] Running ./a.out
+10:00:10 DEBUG	[num_gangs:  64, vector_length: 512] Time: 0.000694
+10:00:10 INFO	[num_gangs:  64, vector_length: 512] Average: 0.000711, Standard Deviation: 0.000038
+10:00:10 DEBUG	[num_gangs:  64, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:00:12 DEBUG	[num_gangs:  64, vector_length: 576] Running ./a.out
+10:00:12 DEBUG	[num_gangs:  64, vector_length: 576] Time: 0.000775
+10:00:12 DEBUG	[num_gangs:  64, vector_length: 576] Running ./a.out
+10:00:13 DEBUG	[num_gangs:  64, vector_length: 576] Time: 0.000707
+10:00:13 DEBUG	[num_gangs:  64, vector_length: 576] Running ./a.out
+10:00:13 DEBUG	[num_gangs:  64, vector_length: 576] Time: 0.000694
+10:00:13 INFO	[num_gangs:  64, vector_length: 576] Average: 0.000725, Standard Deviation: 0.000043
+10:00:13 DEBUG	[num_gangs:  64, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:00:15 DEBUG	[num_gangs:  64, vector_length: 640] Running ./a.out
+10:00:16 DEBUG	[num_gangs:  64, vector_length: 640] Time: 0.000770
+10:00:16 DEBUG	[num_gangs:  64, vector_length: 640] Running ./a.out
+10:00:16 DEBUG	[num_gangs:  64, vector_length: 640] Time: 0.000721
+10:00:16 DEBUG	[num_gangs:  64, vector_length: 640] Running ./a.out
+10:00:16 DEBUG	[num_gangs:  64, vector_length: 640] Time: 0.000695
+10:00:16 INFO	[num_gangs:  64, vector_length: 640] Average: 0.000729, Standard Deviation: 0.000038
+10:00:16 DEBUG	[num_gangs:  64, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:00:19 DEBUG	[num_gangs:  64, vector_length: 704] Running ./a.out
+10:00:19 DEBUG	[num_gangs:  64, vector_length: 704] Time: 0.000776
+10:00:19 DEBUG	[num_gangs:  64, vector_length: 704] Running ./a.out
+10:00:19 DEBUG	[num_gangs:  64, vector_length: 704] Time: 0.000701
+10:00:19 DEBUG	[num_gangs:  64, vector_length: 704] Running ./a.out
+10:00:20 DEBUG	[num_gangs:  64, vector_length: 704] Time: 0.000694
+10:00:20 INFO	[num_gangs:  64, vector_length: 704] Average: 0.000724, Standard Deviation: 0.000045
+10:00:20 DEBUG	[num_gangs:  64, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:00:22 DEBUG	[num_gangs:  64, vector_length: 768] Running ./a.out
+10:00:23 DEBUG	[num_gangs:  64, vector_length: 768] Time: 0.000735
+10:00:23 DEBUG	[num_gangs:  64, vector_length: 768] Running ./a.out
+10:00:23 DEBUG	[num_gangs:  64, vector_length: 768] Time: 0.000673
+10:00:23 DEBUG	[num_gangs:  64, vector_length: 768] Running ./a.out
+10:00:23 DEBUG	[num_gangs:  64, vector_length: 768] Time: 0.000690
+10:00:23 INFO	[num_gangs:  64, vector_length: 768] Average: 0.000699, Standard Deviation: 0.000032
+10:00:23 DEBUG	[num_gangs:  64, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:00:26 DEBUG	[num_gangs:  64, vector_length: 832] Running ./a.out
+10:00:26 DEBUG	[num_gangs:  64, vector_length: 832] Time: 0.000737
+10:00:26 DEBUG	[num_gangs:  64, vector_length: 832] Running ./a.out
+10:00:26 DEBUG	[num_gangs:  64, vector_length: 832] Time: 0.000777
+10:00:26 DEBUG	[num_gangs:  64, vector_length: 832] Running ./a.out
+10:00:27 DEBUG	[num_gangs:  64, vector_length: 832] Time: 0.000714
+10:00:27 INFO	[num_gangs:  64, vector_length: 832] Average: 0.000743, Standard Deviation: 0.000032
+10:00:27 DEBUG	[num_gangs:  64, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:00:29 DEBUG	[num_gangs:  64, vector_length: 896] Running ./a.out
+10:00:29 DEBUG	[num_gangs:  64, vector_length: 896] Time: 0.000760
+10:00:29 DEBUG	[num_gangs:  64, vector_length: 896] Running ./a.out
+10:00:30 DEBUG	[num_gangs:  64, vector_length: 896] Time: 0.000709
+10:00:30 DEBUG	[num_gangs:  64, vector_length: 896] Running ./a.out
+10:00:30 DEBUG	[num_gangs:  64, vector_length: 896] Time: 0.000723
+10:00:30 INFO	[num_gangs:  64, vector_length: 896] Average: 0.000731, Standard Deviation: 0.000026
+10:00:30 DEBUG	[num_gangs:  64, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:00:33 DEBUG	[num_gangs:  64, vector_length: 960] Running ./a.out
+10:00:33 DEBUG	[num_gangs:  64, vector_length: 960] Time: 0.000759
+10:00:33 DEBUG	[num_gangs:  64, vector_length: 960] Running ./a.out
+10:00:33 DEBUG	[num_gangs:  64, vector_length: 960] Time: 0.000699
+10:00:33 DEBUG	[num_gangs:  64, vector_length: 960] Running ./a.out
+10:00:33 DEBUG	[num_gangs:  64, vector_length: 960] Time: 0.000706
+10:00:33 INFO	[num_gangs:  64, vector_length: 960] Average: 0.000721, Standard Deviation: 0.000033
+10:00:33 DEBUG	[num_gangs:  64, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=64 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:00:36 DEBUG	[num_gangs:  64, vector_length:1024] Running ./a.out
+10:00:36 DEBUG	[num_gangs:  64, vector_length:1024] Time: 0.000774
+10:00:36 DEBUG	[num_gangs:  64, vector_length:1024] Running ./a.out
+10:00:37 DEBUG	[num_gangs:  64, vector_length:1024] Time: 0.000677
+10:00:37 DEBUG	[num_gangs:  64, vector_length:1024] Running ./a.out
+10:00:37 DEBUG	[num_gangs:  64, vector_length:1024] Time: 0.000697
+10:00:37 INFO	[num_gangs:  64, vector_length:1024] Average: 0.000716, Standard Deviation: 0.000051
+10:00:37 DEBUG	[num_gangs: 128, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:00:39 DEBUG	[num_gangs: 128, vector_length:  64] Running ./a.out
+10:00:40 DEBUG	[num_gangs: 128, vector_length:  64] Time: 0.000731
+10:00:40 DEBUG	[num_gangs: 128, vector_length:  64] Running ./a.out
+10:00:40 DEBUG	[num_gangs: 128, vector_length:  64] Time: 0.000668
+10:00:40 DEBUG	[num_gangs: 128, vector_length:  64] Running ./a.out
+10:00:40 DEBUG	[num_gangs: 128, vector_length:  64] Time: 0.000709
+10:00:40 INFO	[num_gangs: 128, vector_length:  64] Average: 0.000703, Standard Deviation: 0.000032
+10:00:40 DEBUG	[num_gangs: 128, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:00:43 DEBUG	[num_gangs: 128, vector_length: 128] Running ./a.out
+10:00:43 DEBUG	[num_gangs: 128, vector_length: 128] Time: 0.000725
+10:00:43 DEBUG	[num_gangs: 128, vector_length: 128] Running ./a.out
+10:00:43 DEBUG	[num_gangs: 128, vector_length: 128] Time: 0.000527
+10:00:43 DEBUG	[num_gangs: 128, vector_length: 128] Running ./a.out
+10:00:44 DEBUG	[num_gangs: 128, vector_length: 128] Time: 0.000697
+10:00:44 INFO	[num_gangs: 128, vector_length: 128] Average: 0.000650, Standard Deviation: 0.000107
+10:00:44 DEBUG	[num_gangs: 128, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:00:46 DEBUG	[num_gangs: 128, vector_length: 192] Running ./a.out
+10:00:47 DEBUG	[num_gangs: 128, vector_length: 192] Time: 0.000730
+10:00:47 DEBUG	[num_gangs: 128, vector_length: 192] Running ./a.out
+10:00:47 DEBUG	[num_gangs: 128, vector_length: 192] Time: 0.000662
+10:00:47 DEBUG	[num_gangs: 128, vector_length: 192] Running ./a.out
+10:00:47 DEBUG	[num_gangs: 128, vector_length: 192] Time: 0.000686
+10:00:47 INFO	[num_gangs: 128, vector_length: 192] Average: 0.000693, Standard Deviation: 0.000034
+10:00:47 DEBUG	[num_gangs: 128, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:00:50 DEBUG	[num_gangs: 128, vector_length: 256] Running ./a.out
+10:00:50 DEBUG	[num_gangs: 128, vector_length: 256] Time: 0.000725
+10:00:50 DEBUG	[num_gangs: 128, vector_length: 256] Running ./a.out
+10:00:50 DEBUG	[num_gangs: 128, vector_length: 256] Time: 0.000671
+10:00:50 DEBUG	[num_gangs: 128, vector_length: 256] Running ./a.out
+10:00:51 DEBUG	[num_gangs: 128, vector_length: 256] Time: 0.000719
+10:00:51 INFO	[num_gangs: 128, vector_length: 256] Average: 0.000705, Standard Deviation: 0.000030
+10:00:51 DEBUG	[num_gangs: 128, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:00:53 DEBUG	[num_gangs: 128, vector_length: 320] Running ./a.out
+10:00:53 DEBUG	[num_gangs: 128, vector_length: 320] Time: 0.000764
+10:00:53 DEBUG	[num_gangs: 128, vector_length: 320] Running ./a.out
+10:00:54 DEBUG	[num_gangs: 128, vector_length: 320] Time: 0.000689
+10:00:54 DEBUG	[num_gangs: 128, vector_length: 320] Running ./a.out
+10:00:54 DEBUG	[num_gangs: 128, vector_length: 320] Time: 0.000718
+10:00:54 INFO	[num_gangs: 128, vector_length: 320] Average: 0.000724, Standard Deviation: 0.000038
+10:00:54 DEBUG	[num_gangs: 128, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:00:57 DEBUG	[num_gangs: 128, vector_length: 384] Running ./a.out
+10:00:57 DEBUG	[num_gangs: 128, vector_length: 384] Time: 0.000769
+10:00:57 DEBUG	[num_gangs: 128, vector_length: 384] Running ./a.out
+10:00:57 DEBUG	[num_gangs: 128, vector_length: 384] Time: 0.000716
+10:00:57 DEBUG	[num_gangs: 128, vector_length: 384] Running ./a.out
+10:00:58 DEBUG	[num_gangs: 128, vector_length: 384] Time: 0.000701
+10:00:58 INFO	[num_gangs: 128, vector_length: 384] Average: 0.000729, Standard Deviation: 0.000036
+10:00:58 DEBUG	[num_gangs: 128, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:01:00 DEBUG	[num_gangs: 128, vector_length: 448] Running ./a.out
+10:01:00 DEBUG	[num_gangs: 128, vector_length: 448] Time: 0.000777
+10:01:00 DEBUG	[num_gangs: 128, vector_length: 448] Running ./a.out
+10:01:01 DEBUG	[num_gangs: 128, vector_length: 448] Time: 0.000715
+10:01:01 DEBUG	[num_gangs: 128, vector_length: 448] Running ./a.out
+10:01:01 DEBUG	[num_gangs: 128, vector_length: 448] Time: 0.000714
+10:01:01 INFO	[num_gangs: 128, vector_length: 448] Average: 0.000735, Standard Deviation: 0.000036
+10:01:01 DEBUG	[num_gangs: 128, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:01:03 DEBUG	[num_gangs: 128, vector_length: 512] Running ./a.out
+10:01:04 DEBUG	[num_gangs: 128, vector_length: 512] Time: 0.000801
+10:01:04 DEBUG	[num_gangs: 128, vector_length: 512] Running ./a.out
+10:01:04 DEBUG	[num_gangs: 128, vector_length: 512] Time: 0.000742
+10:01:04 DEBUG	[num_gangs: 128, vector_length: 512] Running ./a.out
+10:01:04 DEBUG	[num_gangs: 128, vector_length: 512] Time: 0.000694
+10:01:04 INFO	[num_gangs: 128, vector_length: 512] Average: 0.000746, Standard Deviation: 0.000054
+10:01:04 DEBUG	[num_gangs: 128, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:01:07 DEBUG	[num_gangs: 128, vector_length: 576] Running ./a.out
+10:01:07 DEBUG	[num_gangs: 128, vector_length: 576] Time: 0.000757
+10:01:07 DEBUG	[num_gangs: 128, vector_length: 576] Running ./a.out
+10:01:08 DEBUG	[num_gangs: 128, vector_length: 576] Time: 0.000673
+10:01:08 DEBUG	[num_gangs: 128, vector_length: 576] Running ./a.out
+10:01:08 DEBUG	[num_gangs: 128, vector_length: 576] Time: 0.000669
+10:01:08 INFO	[num_gangs: 128, vector_length: 576] Average: 0.000700, Standard Deviation: 0.000050
+10:01:08 DEBUG	[num_gangs: 128, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:01:10 DEBUG	[num_gangs: 128, vector_length: 640] Running ./a.out
+10:01:11 DEBUG	[num_gangs: 128, vector_length: 640] Time: 0.000758
+10:01:11 DEBUG	[num_gangs: 128, vector_length: 640] Running ./a.out
+10:01:11 DEBUG	[num_gangs: 128, vector_length: 640] Time: 0.000724
+10:01:11 DEBUG	[num_gangs: 128, vector_length: 640] Running ./a.out
+10:01:11 DEBUG	[num_gangs: 128, vector_length: 640] Time: 0.000674
+10:01:11 INFO	[num_gangs: 128, vector_length: 640] Average: 0.000719, Standard Deviation: 0.000042
+10:01:11 DEBUG	[num_gangs: 128, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:01:14 DEBUG	[num_gangs: 128, vector_length: 704] Running ./a.out
+10:01:14 DEBUG	[num_gangs: 128, vector_length: 704] Time: 0.000750
+10:01:14 DEBUG	[num_gangs: 128, vector_length: 704] Running ./a.out
+10:01:14 DEBUG	[num_gangs: 128, vector_length: 704] Time: 0.000701
+10:01:14 DEBUG	[num_gangs: 128, vector_length: 704] Running ./a.out
+10:01:15 DEBUG	[num_gangs: 128, vector_length: 704] Time: 0.000727
+10:01:15 INFO	[num_gangs: 128, vector_length: 704] Average: 0.000726, Standard Deviation: 0.000024
+10:01:15 DEBUG	[num_gangs: 128, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:01:17 DEBUG	[num_gangs: 128, vector_length: 768] Running ./a.out
+10:01:17 DEBUG	[num_gangs: 128, vector_length: 768] Time: 0.000763
+10:01:17 DEBUG	[num_gangs: 128, vector_length: 768] Running ./a.out
+10:01:18 DEBUG	[num_gangs: 128, vector_length: 768] Time: 0.000703
+10:01:18 DEBUG	[num_gangs: 128, vector_length: 768] Running ./a.out
+10:01:18 DEBUG	[num_gangs: 128, vector_length: 768] Time: 0.000733
+10:01:18 INFO	[num_gangs: 128, vector_length: 768] Average: 0.000733, Standard Deviation: 0.000030
+10:01:18 DEBUG	[num_gangs: 128, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:01:21 DEBUG	[num_gangs: 128, vector_length: 832] Running ./a.out
+10:01:21 DEBUG	[num_gangs: 128, vector_length: 832] Time: 0.000794
+10:01:21 DEBUG	[num_gangs: 128, vector_length: 832] Running ./a.out
+10:01:21 DEBUG	[num_gangs: 128, vector_length: 832] Time: 0.000710
+10:01:21 DEBUG	[num_gangs: 128, vector_length: 832] Running ./a.out
+10:01:22 DEBUG	[num_gangs: 128, vector_length: 832] Time: 0.000724
+10:01:22 INFO	[num_gangs: 128, vector_length: 832] Average: 0.000743, Standard Deviation: 0.000045
+10:01:22 DEBUG	[num_gangs: 128, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:01:24 DEBUG	[num_gangs: 128, vector_length: 896] Running ./a.out
+10:01:24 DEBUG	[num_gangs: 128, vector_length: 896] Time: 0.000773
+10:01:24 DEBUG	[num_gangs: 128, vector_length: 896] Running ./a.out
+10:01:25 DEBUG	[num_gangs: 128, vector_length: 896] Time: 0.000738
+10:01:25 DEBUG	[num_gangs: 128, vector_length: 896] Running ./a.out
+10:01:25 DEBUG	[num_gangs: 128, vector_length: 896] Time: 0.000743
+10:01:25 INFO	[num_gangs: 128, vector_length: 896] Average: 0.000751, Standard Deviation: 0.000019
+10:01:25 DEBUG	[num_gangs: 128, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:01:27 DEBUG	[num_gangs: 128, vector_length: 960] Running ./a.out
+10:01:28 DEBUG	[num_gangs: 128, vector_length: 960] Time: 0.000791
+10:01:28 DEBUG	[num_gangs: 128, vector_length: 960] Running ./a.out
+10:01:28 DEBUG	[num_gangs: 128, vector_length: 960] Time: 0.000726
+10:01:28 DEBUG	[num_gangs: 128, vector_length: 960] Running ./a.out
+10:01:28 DEBUG	[num_gangs: 128, vector_length: 960] Time: 0.000710
+10:01:28 INFO	[num_gangs: 128, vector_length: 960] Average: 0.000742, Standard Deviation: 0.000043
+10:01:28 DEBUG	[num_gangs: 128, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=128 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:01:31 DEBUG	[num_gangs: 128, vector_length:1024] Running ./a.out
+10:01:31 DEBUG	[num_gangs: 128, vector_length:1024] Time: 0.000790
+10:01:31 DEBUG	[num_gangs: 128, vector_length:1024] Running ./a.out
+10:01:32 DEBUG	[num_gangs: 128, vector_length:1024] Time: 0.000694
+10:01:32 DEBUG	[num_gangs: 128, vector_length:1024] Running ./a.out
+10:01:32 DEBUG	[num_gangs: 128, vector_length:1024] Time: 0.000702
+10:01:32 INFO	[num_gangs: 128, vector_length:1024] Average: 0.000729, Standard Deviation: 0.000053
+10:01:32 DEBUG	[num_gangs: 192, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:01:34 DEBUG	[num_gangs: 192, vector_length:  64] Running ./a.out
+10:01:35 DEBUG	[num_gangs: 192, vector_length:  64] Time: 0.000723
+10:01:35 DEBUG	[num_gangs: 192, vector_length:  64] Running ./a.out
+10:01:35 DEBUG	[num_gangs: 192, vector_length:  64] Time: 0.000666
+10:01:35 DEBUG	[num_gangs: 192, vector_length:  64] Running ./a.out
+10:01:35 DEBUG	[num_gangs: 192, vector_length:  64] Time: 0.000689
+10:01:35 INFO	[num_gangs: 192, vector_length:  64] Average: 0.000693, Standard Deviation: 0.000029
+10:01:35 DEBUG	[num_gangs: 192, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:01:38 DEBUG	[num_gangs: 192, vector_length: 128] Running ./a.out
+10:01:38 DEBUG	[num_gangs: 192, vector_length: 128] Time: 0.000749
+10:01:38 DEBUG	[num_gangs: 192, vector_length: 128] Running ./a.out
+10:01:38 DEBUG	[num_gangs: 192, vector_length: 128] Time: 0.000713
+10:01:38 DEBUG	[num_gangs: 192, vector_length: 128] Running ./a.out
+10:01:39 DEBUG	[num_gangs: 192, vector_length: 128] Time: 0.000727
+10:01:39 INFO	[num_gangs: 192, vector_length: 128] Average: 0.000730, Standard Deviation: 0.000018
+10:01:39 DEBUG	[num_gangs: 192, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:01:41 DEBUG	[num_gangs: 192, vector_length: 192] Running ./a.out
+10:01:41 DEBUG	[num_gangs: 192, vector_length: 192] Time: 0.000781
+10:01:41 DEBUG	[num_gangs: 192, vector_length: 192] Running ./a.out
+10:01:42 DEBUG	[num_gangs: 192, vector_length: 192] Time: 0.000696
+10:01:42 DEBUG	[num_gangs: 192, vector_length: 192] Running ./a.out
+10:01:42 DEBUG	[num_gangs: 192, vector_length: 192] Time: 0.000721
+10:01:42 INFO	[num_gangs: 192, vector_length: 192] Average: 0.000733, Standard Deviation: 0.000044
+10:01:42 DEBUG	[num_gangs: 192, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:01:45 DEBUG	[num_gangs: 192, vector_length: 256] Running ./a.out
+10:01:45 DEBUG	[num_gangs: 192, vector_length: 256] Time: 0.000777
+10:01:45 DEBUG	[num_gangs: 192, vector_length: 256] Running ./a.out
+10:01:45 DEBUG	[num_gangs: 192, vector_length: 256] Time: 0.000746
+10:01:45 DEBUG	[num_gangs: 192, vector_length: 256] Running ./a.out
+10:01:45 DEBUG	[num_gangs: 192, vector_length: 256] Time: 0.000722
+10:01:45 INFO	[num_gangs: 192, vector_length: 256] Average: 0.000748, Standard Deviation: 0.000028
+10:01:45 DEBUG	[num_gangs: 192, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:01:48 DEBUG	[num_gangs: 192, vector_length: 320] Running ./a.out
+10:01:48 DEBUG	[num_gangs: 192, vector_length: 320] Time: 0.000729
+10:01:48 DEBUG	[num_gangs: 192, vector_length: 320] Running ./a.out
+10:01:49 DEBUG	[num_gangs: 192, vector_length: 320] Time: 0.000690
+10:01:49 DEBUG	[num_gangs: 192, vector_length: 320] Running ./a.out
+10:01:49 DEBUG	[num_gangs: 192, vector_length: 320] Time: 0.000688
+10:01:49 INFO	[num_gangs: 192, vector_length: 320] Average: 0.000702, Standard Deviation: 0.000023
+10:01:49 DEBUG	[num_gangs: 192, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:01:51 DEBUG	[num_gangs: 192, vector_length: 384] Running ./a.out
+10:01:52 DEBUG	[num_gangs: 192, vector_length: 384] Time: 0.000750
+10:01:52 DEBUG	[num_gangs: 192, vector_length: 384] Running ./a.out
+10:01:52 DEBUG	[num_gangs: 192, vector_length: 384] Time: 0.000696
+10:01:52 DEBUG	[num_gangs: 192, vector_length: 384] Running ./a.out
+10:01:52 DEBUG	[num_gangs: 192, vector_length: 384] Time: 0.000669
+10:01:52 INFO	[num_gangs: 192, vector_length: 384] Average: 0.000705, Standard Deviation: 0.000041
+10:01:52 DEBUG	[num_gangs: 192, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:01:55 DEBUG	[num_gangs: 192, vector_length: 448] Running ./a.out
+10:01:55 DEBUG	[num_gangs: 192, vector_length: 448] Time: 0.000755
+10:01:55 DEBUG	[num_gangs: 192, vector_length: 448] Running ./a.out
+10:01:55 DEBUG	[num_gangs: 192, vector_length: 448] Time: 0.000424
+10:01:55 DEBUG	[num_gangs: 192, vector_length: 448] Running ./a.out
+10:01:56 DEBUG	[num_gangs: 192, vector_length: 448] Time: 0.000725
+10:01:56 INFO	[num_gangs: 192, vector_length: 448] Average: 0.000635, Standard Deviation: 0.000183
+10:01:56 DEBUG	[num_gangs: 192, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:01:58 DEBUG	[num_gangs: 192, vector_length: 512] Running ./a.out
+10:01:59 DEBUG	[num_gangs: 192, vector_length: 512] Time: 0.000760
+10:01:59 DEBUG	[num_gangs: 192, vector_length: 512] Running ./a.out
+10:01:59 DEBUG	[num_gangs: 192, vector_length: 512] Time: 0.000697
+10:01:59 DEBUG	[num_gangs: 192, vector_length: 512] Running ./a.out
+10:01:59 DEBUG	[num_gangs: 192, vector_length: 512] Time: 0.000717
+10:01:59 INFO	[num_gangs: 192, vector_length: 512] Average: 0.000725, Standard Deviation: 0.000032
+10:01:59 DEBUG	[num_gangs: 192, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:02:02 DEBUG	[num_gangs: 192, vector_length: 576] Running ./a.out
+10:02:02 DEBUG	[num_gangs: 192, vector_length: 576] Time: 0.000729
+10:02:02 DEBUG	[num_gangs: 192, vector_length: 576] Running ./a.out
+10:02:02 DEBUG	[num_gangs: 192, vector_length: 576] Time: 0.000707
+10:02:02 DEBUG	[num_gangs: 192, vector_length: 576] Running ./a.out
+10:02:03 DEBUG	[num_gangs: 192, vector_length: 576] Time: 0.000710
+10:02:03 INFO	[num_gangs: 192, vector_length: 576] Average: 0.000715, Standard Deviation: 0.000012
+10:02:03 DEBUG	[num_gangs: 192, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:02:05 DEBUG	[num_gangs: 192, vector_length: 640] Running ./a.out
+10:02:06 DEBUG	[num_gangs: 192, vector_length: 640] Time: 0.000739
+10:02:06 DEBUG	[num_gangs: 192, vector_length: 640] Running ./a.out
+10:02:06 DEBUG	[num_gangs: 192, vector_length: 640] Time: 0.000721
+10:02:06 DEBUG	[num_gangs: 192, vector_length: 640] Running ./a.out
+10:02:06 DEBUG	[num_gangs: 192, vector_length: 640] Time: 0.000705
+10:02:06 INFO	[num_gangs: 192, vector_length: 640] Average: 0.000722, Standard Deviation: 0.000017
+10:02:06 DEBUG	[num_gangs: 192, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:02:09 DEBUG	[num_gangs: 192, vector_length: 704] Running ./a.out
+10:02:09 DEBUG	[num_gangs: 192, vector_length: 704] Time: 0.000750
+10:02:09 DEBUG	[num_gangs: 192, vector_length: 704] Running ./a.out
+10:02:09 DEBUG	[num_gangs: 192, vector_length: 704] Time: 0.000707
+10:02:09 DEBUG	[num_gangs: 192, vector_length: 704] Running ./a.out
+10:02:10 DEBUG	[num_gangs: 192, vector_length: 704] Time: 0.000736
+10:02:10 INFO	[num_gangs: 192, vector_length: 704] Average: 0.000731, Standard Deviation: 0.000022
+10:02:10 DEBUG	[num_gangs: 192, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:02:12 DEBUG	[num_gangs: 192, vector_length: 768] Running ./a.out
+10:02:13 DEBUG	[num_gangs: 192, vector_length: 768] Time: 0.000796
+10:02:13 DEBUG	[num_gangs: 192, vector_length: 768] Running ./a.out
+10:02:13 DEBUG	[num_gangs: 192, vector_length: 768] Time: 0.000717
+10:02:13 DEBUG	[num_gangs: 192, vector_length: 768] Running ./a.out
+10:02:13 DEBUG	[num_gangs: 192, vector_length: 768] Time: 0.000732
+10:02:13 INFO	[num_gangs: 192, vector_length: 768] Average: 0.000748, Standard Deviation: 0.000042
+10:02:13 DEBUG	[num_gangs: 192, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:02:16 DEBUG	[num_gangs: 192, vector_length: 832] Running ./a.out
+10:02:16 DEBUG	[num_gangs: 192, vector_length: 832] Time: 0.000777
+10:02:16 DEBUG	[num_gangs: 192, vector_length: 832] Running ./a.out
+10:02:16 DEBUG	[num_gangs: 192, vector_length: 832] Time: 0.000740
+10:02:16 DEBUG	[num_gangs: 192, vector_length: 832] Running ./a.out
+10:02:17 DEBUG	[num_gangs: 192, vector_length: 832] Time: 0.000740
+10:02:17 INFO	[num_gangs: 192, vector_length: 832] Average: 0.000752, Standard Deviation: 0.000021
+10:02:17 DEBUG	[num_gangs: 192, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:02:19 DEBUG	[num_gangs: 192, vector_length: 896] Running ./a.out
+10:02:19 DEBUG	[num_gangs: 192, vector_length: 896] Time: 0.000794
+10:02:19 DEBUG	[num_gangs: 192, vector_length: 896] Running ./a.out
+10:02:20 DEBUG	[num_gangs: 192, vector_length: 896] Time: 0.000721
+10:02:20 DEBUG	[num_gangs: 192, vector_length: 896] Running ./a.out
+10:02:20 DEBUG	[num_gangs: 192, vector_length: 896] Time: 0.000712
+10:02:20 INFO	[num_gangs: 192, vector_length: 896] Average: 0.000742, Standard Deviation: 0.000045
+10:02:20 DEBUG	[num_gangs: 192, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:02:22 DEBUG	[num_gangs: 192, vector_length: 960] Running ./a.out
+10:02:23 DEBUG	[num_gangs: 192, vector_length: 960] Time: 0.000777
+10:02:23 DEBUG	[num_gangs: 192, vector_length: 960] Running ./a.out
+10:02:23 DEBUG	[num_gangs: 192, vector_length: 960] Time: 0.000746
+10:02:23 DEBUG	[num_gangs: 192, vector_length: 960] Running ./a.out
+10:02:23 DEBUG	[num_gangs: 192, vector_length: 960] Time: 0.000759
+10:02:23 INFO	[num_gangs: 192, vector_length: 960] Average: 0.000761, Standard Deviation: 0.000016
+10:02:23 DEBUG	[num_gangs: 192, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=192 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:02:26 DEBUG	[num_gangs: 192, vector_length:1024] Running ./a.out
+10:02:26 DEBUG	[num_gangs: 192, vector_length:1024] Time: 0.000802
+10:02:26 DEBUG	[num_gangs: 192, vector_length:1024] Running ./a.out
+10:02:27 DEBUG	[num_gangs: 192, vector_length:1024] Time: 0.000724
+10:02:27 DEBUG	[num_gangs: 192, vector_length:1024] Running ./a.out
+10:02:27 DEBUG	[num_gangs: 192, vector_length:1024] Time: 0.000692
+10:02:27 INFO	[num_gangs: 192, vector_length:1024] Average: 0.000739, Standard Deviation: 0.000057
+10:02:27 DEBUG	[num_gangs: 256, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:02:29 DEBUG	[num_gangs: 256, vector_length:  64] Running ./a.out
+10:02:30 DEBUG	[num_gangs: 256, vector_length:  64] Time: 0.000751
+10:02:30 DEBUG	[num_gangs: 256, vector_length:  64] Running ./a.out
+10:02:30 DEBUG	[num_gangs: 256, vector_length:  64] Time: 0.000688
+10:02:30 DEBUG	[num_gangs: 256, vector_length:  64] Running ./a.out
+10:02:30 DEBUG	[num_gangs: 256, vector_length:  64] Time: 0.000685
+10:02:30 INFO	[num_gangs: 256, vector_length:  64] Average: 0.000708, Standard Deviation: 0.000037
+10:02:30 DEBUG	[num_gangs: 256, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:02:33 DEBUG	[num_gangs: 256, vector_length: 128] Running ./a.out
+10:02:33 DEBUG	[num_gangs: 256, vector_length: 128] Time: 0.000763
+10:02:33 DEBUG	[num_gangs: 256, vector_length: 128] Running ./a.out
+10:02:33 DEBUG	[num_gangs: 256, vector_length: 128] Time: 0.000660
+10:02:33 DEBUG	[num_gangs: 256, vector_length: 128] Running ./a.out
+10:02:34 DEBUG	[num_gangs: 256, vector_length: 128] Time: 0.000715
+10:02:34 INFO	[num_gangs: 256, vector_length: 128] Average: 0.000713, Standard Deviation: 0.000052
+10:02:34 DEBUG	[num_gangs: 256, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:02:36 DEBUG	[num_gangs: 256, vector_length: 192] Running ./a.out
+10:02:37 DEBUG	[num_gangs: 256, vector_length: 192] Time: 0.000783
+10:02:37 DEBUG	[num_gangs: 256, vector_length: 192] Running ./a.out
+10:02:37 DEBUG	[num_gangs: 256, vector_length: 192] Time: 0.000689
+10:02:37 DEBUG	[num_gangs: 256, vector_length: 192] Running ./a.out
+10:02:37 DEBUG	[num_gangs: 256, vector_length: 192] Time: 0.000715
+10:02:37 INFO	[num_gangs: 256, vector_length: 192] Average: 0.000729, Standard Deviation: 0.000049
+10:02:37 DEBUG	[num_gangs: 256, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:02:40 DEBUG	[num_gangs: 256, vector_length: 256] Running ./a.out
+10:02:40 DEBUG	[num_gangs: 256, vector_length: 256] Time: 0.000776
+10:02:40 DEBUG	[num_gangs: 256, vector_length: 256] Running ./a.out
+10:02:40 DEBUG	[num_gangs: 256, vector_length: 256] Time: 0.000695
+10:02:40 DEBUG	[num_gangs: 256, vector_length: 256] Running ./a.out
+10:02:41 DEBUG	[num_gangs: 256, vector_length: 256] Time: 0.000690
+10:02:41 INFO	[num_gangs: 256, vector_length: 256] Average: 0.000720, Standard Deviation: 0.000048
+10:02:41 DEBUG	[num_gangs: 256, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:02:43 DEBUG	[num_gangs: 256, vector_length: 320] Running ./a.out
+10:02:43 DEBUG	[num_gangs: 256, vector_length: 320] Time: 0.000786
+10:02:43 DEBUG	[num_gangs: 256, vector_length: 320] Running ./a.out
+10:02:44 DEBUG	[num_gangs: 256, vector_length: 320] Time: 0.000697
+10:02:44 DEBUG	[num_gangs: 256, vector_length: 320] Running ./a.out
+10:02:44 DEBUG	[num_gangs: 256, vector_length: 320] Time: 0.000698
+10:02:44 INFO	[num_gangs: 256, vector_length: 320] Average: 0.000727, Standard Deviation: 0.000051
+10:02:44 DEBUG	[num_gangs: 256, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:02:47 DEBUG	[num_gangs: 256, vector_length: 384] Running ./a.out
+10:02:47 DEBUG	[num_gangs: 256, vector_length: 384] Time: 0.000777
+10:02:47 DEBUG	[num_gangs: 256, vector_length: 384] Running ./a.out
+10:02:47 DEBUG	[num_gangs: 256, vector_length: 384] Time: 0.000736
+10:02:47 DEBUG	[num_gangs: 256, vector_length: 384] Running ./a.out
+10:02:47 DEBUG	[num_gangs: 256, vector_length: 384] Time: 0.000727
+10:02:47 INFO	[num_gangs: 256, vector_length: 384] Average: 0.000747, Standard Deviation: 0.000027
+10:02:47 DEBUG	[num_gangs: 256, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:02:50 DEBUG	[num_gangs: 256, vector_length: 448] Running ./a.out
+10:02:50 DEBUG	[num_gangs: 256, vector_length: 448] Time: 0.000783
+10:02:50 DEBUG	[num_gangs: 256, vector_length: 448] Running ./a.out
+10:02:51 DEBUG	[num_gangs: 256, vector_length: 448] Time: 0.000698
+10:02:51 DEBUG	[num_gangs: 256, vector_length: 448] Running ./a.out
+10:02:51 DEBUG	[num_gangs: 256, vector_length: 448] Time: 0.000672
+10:02:51 INFO	[num_gangs: 256, vector_length: 448] Average: 0.000718, Standard Deviation: 0.000058
+10:02:51 DEBUG	[num_gangs: 256, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:02:53 DEBUG	[num_gangs: 256, vector_length: 512] Running ./a.out
+10:02:54 DEBUG	[num_gangs: 256, vector_length: 512] Time: 0.000762
+10:02:54 DEBUG	[num_gangs: 256, vector_length: 512] Running ./a.out
+10:02:54 DEBUG	[num_gangs: 256, vector_length: 512] Time: 0.000681
+10:02:54 DEBUG	[num_gangs: 256, vector_length: 512] Running ./a.out
+10:02:54 DEBUG	[num_gangs: 256, vector_length: 512] Time: 0.000698
+10:02:54 INFO	[num_gangs: 256, vector_length: 512] Average: 0.000714, Standard Deviation: 0.000043
+10:02:54 DEBUG	[num_gangs: 256, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:02:57 DEBUG	[num_gangs: 256, vector_length: 576] Running ./a.out
+10:02:57 DEBUG	[num_gangs: 256, vector_length: 576] Time: 0.000747
+10:02:57 DEBUG	[num_gangs: 256, vector_length: 576] Running ./a.out
+10:02:57 DEBUG	[num_gangs: 256, vector_length: 576] Time: 0.000730
+10:02:57 DEBUG	[num_gangs: 256, vector_length: 576] Running ./a.out
+10:02:58 DEBUG	[num_gangs: 256, vector_length: 576] Time: 0.000728
+10:02:58 INFO	[num_gangs: 256, vector_length: 576] Average: 0.000735, Standard Deviation: 0.000010
+10:02:58 DEBUG	[num_gangs: 256, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:03:00 DEBUG	[num_gangs: 256, vector_length: 640] Running ./a.out
+10:03:01 DEBUG	[num_gangs: 256, vector_length: 640] Time: 0.000743
+10:03:01 DEBUG	[num_gangs: 256, vector_length: 640] Running ./a.out
+10:03:01 DEBUG	[num_gangs: 256, vector_length: 640] Time: 0.000700
+10:03:01 DEBUG	[num_gangs: 256, vector_length: 640] Running ./a.out
+10:03:01 DEBUG	[num_gangs: 256, vector_length: 640] Time: 0.000704
+10:03:01 INFO	[num_gangs: 256, vector_length: 640] Average: 0.000716, Standard Deviation: 0.000024
+10:03:01 DEBUG	[num_gangs: 256, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:03:04 DEBUG	[num_gangs: 256, vector_length: 704] Running ./a.out
+10:03:04 DEBUG	[num_gangs: 256, vector_length: 704] Time: 0.000784
+10:03:04 DEBUG	[num_gangs: 256, vector_length: 704] Running ./a.out
+10:03:04 DEBUG	[num_gangs: 256, vector_length: 704] Time: 0.000718
+10:03:04 DEBUG	[num_gangs: 256, vector_length: 704] Running ./a.out
+10:03:05 DEBUG	[num_gangs: 256, vector_length: 704] Time: 0.000720
+10:03:05 INFO	[num_gangs: 256, vector_length: 704] Average: 0.000741, Standard Deviation: 0.000038
+10:03:05 DEBUG	[num_gangs: 256, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:03:07 DEBUG	[num_gangs: 256, vector_length: 768] Running ./a.out
+10:03:07 DEBUG	[num_gangs: 256, vector_length: 768] Time: 0.000805
+10:03:07 DEBUG	[num_gangs: 256, vector_length: 768] Running ./a.out
+10:03:08 DEBUG	[num_gangs: 256, vector_length: 768] Time: 0.000721
+10:03:08 DEBUG	[num_gangs: 256, vector_length: 768] Running ./a.out
+10:03:08 DEBUG	[num_gangs: 256, vector_length: 768] Time: 0.000720
+10:03:08 INFO	[num_gangs: 256, vector_length: 768] Average: 0.000749, Standard Deviation: 0.000049
+10:03:08 DEBUG	[num_gangs: 256, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:03:11 DEBUG	[num_gangs: 256, vector_length: 832] Running ./a.out
+10:03:11 DEBUG	[num_gangs: 256, vector_length: 832] Time: 0.000761
+10:03:11 DEBUG	[num_gangs: 256, vector_length: 832] Running ./a.out
+10:03:11 DEBUG	[num_gangs: 256, vector_length: 832] Time: 0.000828
+10:03:11 DEBUG	[num_gangs: 256, vector_length: 832] Running ./a.out
+10:03:12 DEBUG	[num_gangs: 256, vector_length: 832] Time: 0.000779
+10:03:12 INFO	[num_gangs: 256, vector_length: 832] Average: 0.000789, Standard Deviation: 0.000035
+10:03:12 DEBUG	[num_gangs: 256, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:03:14 DEBUG	[num_gangs: 256, vector_length: 896] Running ./a.out
+10:03:15 DEBUG	[num_gangs: 256, vector_length: 896] Time: 0.000756
+10:03:15 DEBUG	[num_gangs: 256, vector_length: 896] Running ./a.out
+10:03:15 DEBUG	[num_gangs: 256, vector_length: 896] Time: 0.000734
+10:03:15 DEBUG	[num_gangs: 256, vector_length: 896] Running ./a.out
+10:03:15 DEBUG	[num_gangs: 256, vector_length: 896] Time: 0.000719
+10:03:15 INFO	[num_gangs: 256, vector_length: 896] Average: 0.000736, Standard Deviation: 0.000019
+10:03:15 DEBUG	[num_gangs: 256, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:03:18 DEBUG	[num_gangs: 256, vector_length: 960] Running ./a.out
+10:03:18 DEBUG	[num_gangs: 256, vector_length: 960] Time: 0.000774
+10:03:18 DEBUG	[num_gangs: 256, vector_length: 960] Running ./a.out
+10:03:18 DEBUG	[num_gangs: 256, vector_length: 960] Time: 0.000694
+10:03:18 DEBUG	[num_gangs: 256, vector_length: 960] Running ./a.out
+10:03:19 DEBUG	[num_gangs: 256, vector_length: 960] Time: 0.000726
+10:03:19 INFO	[num_gangs: 256, vector_length: 960] Average: 0.000731, Standard Deviation: 0.000040
+10:03:19 DEBUG	[num_gangs: 256, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=256 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:03:21 DEBUG	[num_gangs: 256, vector_length:1024] Running ./a.out
+10:03:21 DEBUG	[num_gangs: 256, vector_length:1024] Time: 0.000808
+10:03:21 DEBUG	[num_gangs: 256, vector_length:1024] Running ./a.out
+10:03:22 DEBUG	[num_gangs: 256, vector_length:1024] Time: 0.000746
+10:03:22 DEBUG	[num_gangs: 256, vector_length:1024] Running ./a.out
+10:03:22 DEBUG	[num_gangs: 256, vector_length:1024] Time: 0.000722
+10:03:22 INFO	[num_gangs: 256, vector_length:1024] Average: 0.000759, Standard Deviation: 0.000044
+10:03:22 DEBUG	[num_gangs: 320, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:03:25 DEBUG	[num_gangs: 320, vector_length:  64] Running ./a.out
+10:03:25 DEBUG	[num_gangs: 320, vector_length:  64] Time: 0.000748
+10:03:25 DEBUG	[num_gangs: 320, vector_length:  64] Running ./a.out
+10:03:25 DEBUG	[num_gangs: 320, vector_length:  64] Time: 0.000700
+10:03:25 DEBUG	[num_gangs: 320, vector_length:  64] Running ./a.out
+10:03:26 DEBUG	[num_gangs: 320, vector_length:  64] Time: 0.000697
+10:03:26 INFO	[num_gangs: 320, vector_length:  64] Average: 0.000715, Standard Deviation: 0.000029
+10:03:26 DEBUG	[num_gangs: 320, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:03:28 DEBUG	[num_gangs: 320, vector_length: 128] Running ./a.out
+10:03:28 DEBUG	[num_gangs: 320, vector_length: 128] Time: 0.000774
+10:03:28 DEBUG	[num_gangs: 320, vector_length: 128] Running ./a.out
+10:03:29 DEBUG	[num_gangs: 320, vector_length: 128] Time: 0.000686
+10:03:29 DEBUG	[num_gangs: 320, vector_length: 128] Running ./a.out
+10:03:29 DEBUG	[num_gangs: 320, vector_length: 128] Time: 0.000688
+10:03:29 INFO	[num_gangs: 320, vector_length: 128] Average: 0.000716, Standard Deviation: 0.000050
+10:03:29 DEBUG	[num_gangs: 320, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:03:31 DEBUG	[num_gangs: 320, vector_length: 192] Running ./a.out
+10:03:32 DEBUG	[num_gangs: 320, vector_length: 192] Time: 0.000729
+10:03:32 DEBUG	[num_gangs: 320, vector_length: 192] Running ./a.out
+10:03:32 DEBUG	[num_gangs: 320, vector_length: 192] Time: 0.000712
+10:03:32 DEBUG	[num_gangs: 320, vector_length: 192] Running ./a.out
+10:03:32 DEBUG	[num_gangs: 320, vector_length: 192] Time: 0.000667
+10:03:32 INFO	[num_gangs: 320, vector_length: 192] Average: 0.000703, Standard Deviation: 0.000032
+10:03:32 DEBUG	[num_gangs: 320, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:03:35 DEBUG	[num_gangs: 320, vector_length: 256] Running ./a.out
+10:03:35 DEBUG	[num_gangs: 320, vector_length: 256] Time: 0.000750
+10:03:35 DEBUG	[num_gangs: 320, vector_length: 256] Running ./a.out
+10:03:36 DEBUG	[num_gangs: 320, vector_length: 256] Time: 0.000722
+10:03:36 DEBUG	[num_gangs: 320, vector_length: 256] Running ./a.out
+10:03:36 DEBUG	[num_gangs: 320, vector_length: 256] Time: 0.000704
+10:03:36 INFO	[num_gangs: 320, vector_length: 256] Average: 0.000725, Standard Deviation: 0.000023
+10:03:36 DEBUG	[num_gangs: 320, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:03:38 DEBUG	[num_gangs: 320, vector_length: 320] Running ./a.out
+10:03:39 DEBUG	[num_gangs: 320, vector_length: 320] Time: 0.000745
+10:03:39 DEBUG	[num_gangs: 320, vector_length: 320] Running ./a.out
+10:03:39 DEBUG	[num_gangs: 320, vector_length: 320] Time: 0.000693
+10:03:39 DEBUG	[num_gangs: 320, vector_length: 320] Running ./a.out
+10:03:39 DEBUG	[num_gangs: 320, vector_length: 320] Time: 0.000699
+10:03:39 INFO	[num_gangs: 320, vector_length: 320] Average: 0.000712, Standard Deviation: 0.000028
+10:03:39 DEBUG	[num_gangs: 320, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:03:42 DEBUG	[num_gangs: 320, vector_length: 384] Running ./a.out
+10:03:42 DEBUG	[num_gangs: 320, vector_length: 384] Time: 0.000736
+10:03:42 DEBUG	[num_gangs: 320, vector_length: 384] Running ./a.out
+10:03:42 DEBUG	[num_gangs: 320, vector_length: 384] Time: 0.000706
+10:03:42 DEBUG	[num_gangs: 320, vector_length: 384] Running ./a.out
+10:03:43 DEBUG	[num_gangs: 320, vector_length: 384] Time: 0.000719
+10:03:43 INFO	[num_gangs: 320, vector_length: 384] Average: 0.000720, Standard Deviation: 0.000015
+10:03:43 DEBUG	[num_gangs: 320, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:03:45 DEBUG	[num_gangs: 320, vector_length: 448] Running ./a.out
+10:03:46 DEBUG	[num_gangs: 320, vector_length: 448] Time: 0.000742
+10:03:46 DEBUG	[num_gangs: 320, vector_length: 448] Running ./a.out
+10:03:46 DEBUG	[num_gangs: 320, vector_length: 448] Time: 0.000682
+10:03:46 DEBUG	[num_gangs: 320, vector_length: 448] Running ./a.out
+10:03:46 DEBUG	[num_gangs: 320, vector_length: 448] Time: 0.000707
+10:03:46 INFO	[num_gangs: 320, vector_length: 448] Average: 0.000710, Standard Deviation: 0.000030
+10:03:46 DEBUG	[num_gangs: 320, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:03:49 DEBUG	[num_gangs: 320, vector_length: 512] Running ./a.out
+10:03:49 DEBUG	[num_gangs: 320, vector_length: 512] Time: 0.000771
+10:03:49 DEBUG	[num_gangs: 320, vector_length: 512] Running ./a.out
+10:03:49 DEBUG	[num_gangs: 320, vector_length: 512] Time: 0.000697
+10:03:49 DEBUG	[num_gangs: 320, vector_length: 512] Running ./a.out
+10:03:50 DEBUG	[num_gangs: 320, vector_length: 512] Time: 0.000733
+10:03:50 INFO	[num_gangs: 320, vector_length: 512] Average: 0.000734, Standard Deviation: 0.000037
+10:03:50 DEBUG	[num_gangs: 320, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:03:52 DEBUG	[num_gangs: 320, vector_length: 576] Running ./a.out
+10:03:53 DEBUG	[num_gangs: 320, vector_length: 576] Time: 0.000794
+10:03:53 DEBUG	[num_gangs: 320, vector_length: 576] Running ./a.out
+10:03:53 DEBUG	[num_gangs: 320, vector_length: 576] Time: 0.000718
+10:03:53 DEBUG	[num_gangs: 320, vector_length: 576] Running ./a.out
+10:03:53 DEBUG	[num_gangs: 320, vector_length: 576] Time: 0.000735
+10:03:53 INFO	[num_gangs: 320, vector_length: 576] Average: 0.000749, Standard Deviation: 0.000040
+10:03:53 DEBUG	[num_gangs: 320, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:03:56 DEBUG	[num_gangs: 320, vector_length: 640] Running ./a.out
+10:03:56 DEBUG	[num_gangs: 320, vector_length: 640] Time: 0.000795
+10:03:56 DEBUG	[num_gangs: 320, vector_length: 640] Running ./a.out
+10:03:56 DEBUG	[num_gangs: 320, vector_length: 640] Time: 0.000715
+10:03:56 DEBUG	[num_gangs: 320, vector_length: 640] Running ./a.out
+10:03:57 DEBUG	[num_gangs: 320, vector_length: 640] Time: 0.000720
+10:03:57 INFO	[num_gangs: 320, vector_length: 640] Average: 0.000743, Standard Deviation: 0.000045
+10:03:57 DEBUG	[num_gangs: 320, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:03:59 DEBUG	[num_gangs: 320, vector_length: 704] Running ./a.out
+10:03:59 DEBUG	[num_gangs: 320, vector_length: 704] Time: 0.000779
+10:03:59 DEBUG	[num_gangs: 320, vector_length: 704] Running ./a.out
+10:04:00 DEBUG	[num_gangs: 320, vector_length: 704] Time: 0.000697
+10:04:00 DEBUG	[num_gangs: 320, vector_length: 704] Running ./a.out
+10:04:00 DEBUG	[num_gangs: 320, vector_length: 704] Time: 0.000701
+10:04:00 INFO	[num_gangs: 320, vector_length: 704] Average: 0.000726, Standard Deviation: 0.000046
+10:04:00 DEBUG	[num_gangs: 320, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:04:03 DEBUG	[num_gangs: 320, vector_length: 768] Running ./a.out
+10:04:03 DEBUG	[num_gangs: 320, vector_length: 768] Time: 0.000790
+10:04:03 DEBUG	[num_gangs: 320, vector_length: 768] Running ./a.out
+10:04:03 DEBUG	[num_gangs: 320, vector_length: 768] Time: 0.000737
+10:04:03 DEBUG	[num_gangs: 320, vector_length: 768] Running ./a.out
+10:04:04 DEBUG	[num_gangs: 320, vector_length: 768] Time: 0.000757
+10:04:04 INFO	[num_gangs: 320, vector_length: 768] Average: 0.000761, Standard Deviation: 0.000027
+10:04:04 DEBUG	[num_gangs: 320, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:04:06 DEBUG	[num_gangs: 320, vector_length: 832] Running ./a.out
+10:04:06 DEBUG	[num_gangs: 320, vector_length: 832] Time: 0.000783
+10:04:06 DEBUG	[num_gangs: 320, vector_length: 832] Running ./a.out
+10:04:07 DEBUG	[num_gangs: 320, vector_length: 832] Time: 0.000702
+10:04:07 DEBUG	[num_gangs: 320, vector_length: 832] Running ./a.out
+10:04:07 DEBUG	[num_gangs: 320, vector_length: 832] Time: 0.000708
+10:04:07 INFO	[num_gangs: 320, vector_length: 832] Average: 0.000731, Standard Deviation: 0.000045
+10:04:07 DEBUG	[num_gangs: 320, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:04:09 DEBUG	[num_gangs: 320, vector_length: 896] Running ./a.out
+10:04:10 DEBUG	[num_gangs: 320, vector_length: 896] Time: 0.000766
+10:04:10 DEBUG	[num_gangs: 320, vector_length: 896] Running ./a.out
+10:04:10 DEBUG	[num_gangs: 320, vector_length: 896] Time: 0.000706
+10:04:10 DEBUG	[num_gangs: 320, vector_length: 896] Running ./a.out
+10:04:10 DEBUG	[num_gangs: 320, vector_length: 896] Time: 0.000726
+10:04:10 INFO	[num_gangs: 320, vector_length: 896] Average: 0.000733, Standard Deviation: 0.000031
+10:04:10 DEBUG	[num_gangs: 320, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:04:13 DEBUG	[num_gangs: 320, vector_length: 960] Running ./a.out
+10:04:13 DEBUG	[num_gangs: 320, vector_length: 960] Time: 0.000796
+10:04:13 DEBUG	[num_gangs: 320, vector_length: 960] Running ./a.out
+10:04:14 DEBUG	[num_gangs: 320, vector_length: 960] Time: 0.000738
+10:04:14 DEBUG	[num_gangs: 320, vector_length: 960] Running ./a.out
+10:04:14 DEBUG	[num_gangs: 320, vector_length: 960] Time: 0.000735
+10:04:14 INFO	[num_gangs: 320, vector_length: 960] Average: 0.000756, Standard Deviation: 0.000035
+10:04:14 DEBUG	[num_gangs: 320, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=320 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:04:16 DEBUG	[num_gangs: 320, vector_length:1024] Running ./a.out
+10:04:17 DEBUG	[num_gangs: 320, vector_length:1024] Time: 0.000792
+10:04:17 DEBUG	[num_gangs: 320, vector_length:1024] Running ./a.out
+10:04:17 DEBUG	[num_gangs: 320, vector_length:1024] Time: 0.000712
+10:04:17 DEBUG	[num_gangs: 320, vector_length:1024] Running ./a.out
+10:04:17 DEBUG	[num_gangs: 320, vector_length:1024] Time: 0.000710
+10:04:17 INFO	[num_gangs: 320, vector_length:1024] Average: 0.000738, Standard Deviation: 0.000047
+10:04:17 DEBUG	[num_gangs: 384, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:04:20 DEBUG	[num_gangs: 384, vector_length:  64] Running ./a.out
+10:04:20 DEBUG	[num_gangs: 384, vector_length:  64] Time: 0.000736
+10:04:20 DEBUG	[num_gangs: 384, vector_length:  64] Running ./a.out
+10:04:20 DEBUG	[num_gangs: 384, vector_length:  64] Time: 0.000690
+10:04:20 DEBUG	[num_gangs: 384, vector_length:  64] Running ./a.out
+10:04:21 DEBUG	[num_gangs: 384, vector_length:  64] Time: 0.000720
+10:04:21 INFO	[num_gangs: 384, vector_length:  64] Average: 0.000715, Standard Deviation: 0.000023
+10:04:21 DEBUG	[num_gangs: 384, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:04:23 DEBUG	[num_gangs: 384, vector_length: 128] Running ./a.out
+10:04:23 DEBUG	[num_gangs: 384, vector_length: 128] Time: 0.000751
+10:04:23 DEBUG	[num_gangs: 384, vector_length: 128] Running ./a.out
+10:04:24 DEBUG	[num_gangs: 384, vector_length: 128] Time: 0.000690
+10:04:24 DEBUG	[num_gangs: 384, vector_length: 128] Running ./a.out
+10:04:24 DEBUG	[num_gangs: 384, vector_length: 128] Time: 0.000714
+10:04:24 INFO	[num_gangs: 384, vector_length: 128] Average: 0.000718, Standard Deviation: 0.000031
+10:04:24 DEBUG	[num_gangs: 384, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:04:27 DEBUG	[num_gangs: 384, vector_length: 192] Running ./a.out
+10:04:27 DEBUG	[num_gangs: 384, vector_length: 192] Time: 0.000777
+10:04:27 DEBUG	[num_gangs: 384, vector_length: 192] Running ./a.out
+10:04:27 DEBUG	[num_gangs: 384, vector_length: 192] Time: 0.000742
+10:04:27 DEBUG	[num_gangs: 384, vector_length: 192] Running ./a.out
+10:04:28 DEBUG	[num_gangs: 384, vector_length: 192] Time: 0.000695
+10:04:28 INFO	[num_gangs: 384, vector_length: 192] Average: 0.000738, Standard Deviation: 0.000041
+10:04:28 DEBUG	[num_gangs: 384, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:04:30 DEBUG	[num_gangs: 384, vector_length: 256] Running ./a.out
+10:04:30 DEBUG	[num_gangs: 384, vector_length: 256] Time: 0.000778
+10:04:30 DEBUG	[num_gangs: 384, vector_length: 256] Running ./a.out
+10:04:31 DEBUG	[num_gangs: 384, vector_length: 256] Time: 0.000706
+10:04:31 DEBUG	[num_gangs: 384, vector_length: 256] Running ./a.out
+10:04:31 DEBUG	[num_gangs: 384, vector_length: 256] Time: 0.000671
+10:04:31 INFO	[num_gangs: 384, vector_length: 256] Average: 0.000718, Standard Deviation: 0.000055
+10:04:31 DEBUG	[num_gangs: 384, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:04:34 DEBUG	[num_gangs: 384, vector_length: 320] Running ./a.out
+10:04:34 DEBUG	[num_gangs: 384, vector_length: 320] Time: 0.000735
+10:04:34 DEBUG	[num_gangs: 384, vector_length: 320] Running ./a.out
+10:04:34 DEBUG	[num_gangs: 384, vector_length: 320] Time: 0.000713
+10:04:34 DEBUG	[num_gangs: 384, vector_length: 320] Running ./a.out
+10:04:34 DEBUG	[num_gangs: 384, vector_length: 320] Time: 0.000673
+10:04:34 INFO	[num_gangs: 384, vector_length: 320] Average: 0.000707, Standard Deviation: 0.000032
+10:04:34 DEBUG	[num_gangs: 384, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:04:37 DEBUG	[num_gangs: 384, vector_length: 384] Running ./a.out
+10:04:37 DEBUG	[num_gangs: 384, vector_length: 384] Time: 0.000743
+10:04:37 DEBUG	[num_gangs: 384, vector_length: 384] Running ./a.out
+10:04:38 DEBUG	[num_gangs: 384, vector_length: 384] Time: 0.000535
+10:04:38 DEBUG	[num_gangs: 384, vector_length: 384] Running ./a.out
+10:04:38 DEBUG	[num_gangs: 384, vector_length: 384] Time: 0.000722
+10:04:38 INFO	[num_gangs: 384, vector_length: 384] Average: 0.000667, Standard Deviation: 0.000115
+10:04:38 DEBUG	[num_gangs: 384, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:04:40 DEBUG	[num_gangs: 384, vector_length: 448] Running ./a.out
+10:04:41 DEBUG	[num_gangs: 384, vector_length: 448] Time: 0.000744
+10:04:41 DEBUG	[num_gangs: 384, vector_length: 448] Running ./a.out
+10:04:41 DEBUG	[num_gangs: 384, vector_length: 448] Time: 0.000697
+10:04:41 DEBUG	[num_gangs: 384, vector_length: 448] Running ./a.out
+10:04:41 DEBUG	[num_gangs: 384, vector_length: 448] Time: 0.000690
+10:04:41 INFO	[num_gangs: 384, vector_length: 448] Average: 0.000710, Standard Deviation: 0.000029
+10:04:41 DEBUG	[num_gangs: 384, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:04:44 DEBUG	[num_gangs: 384, vector_length: 512] Running ./a.out
+10:04:44 DEBUG	[num_gangs: 384, vector_length: 512] Time: 0.000760
+10:04:44 DEBUG	[num_gangs: 384, vector_length: 512] Running ./a.out
+10:04:45 DEBUG	[num_gangs: 384, vector_length: 512] Time: 0.000737
+10:04:45 DEBUG	[num_gangs: 384, vector_length: 512] Running ./a.out
+10:04:45 DEBUG	[num_gangs: 384, vector_length: 512] Time: 0.000729
+10:04:45 INFO	[num_gangs: 384, vector_length: 512] Average: 0.000742, Standard Deviation: 0.000016
+10:04:45 DEBUG	[num_gangs: 384, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:04:47 DEBUG	[num_gangs: 384, vector_length: 576] Running ./a.out
+10:04:48 DEBUG	[num_gangs: 384, vector_length: 576] Time: 0.000777
+10:04:48 DEBUG	[num_gangs: 384, vector_length: 576] Running ./a.out
+10:04:48 DEBUG	[num_gangs: 384, vector_length: 576] Time: 0.000716
+10:04:48 DEBUG	[num_gangs: 384, vector_length: 576] Running ./a.out
+10:04:48 DEBUG	[num_gangs: 384, vector_length: 576] Time: 0.000722
+10:04:48 INFO	[num_gangs: 384, vector_length: 576] Average: 0.000738, Standard Deviation: 0.000034
+10:04:48 DEBUG	[num_gangs: 384, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:04:51 DEBUG	[num_gangs: 384, vector_length: 640] Running ./a.out
+10:04:51 DEBUG	[num_gangs: 384, vector_length: 640] Time: 0.000788
+10:04:51 DEBUG	[num_gangs: 384, vector_length: 640] Running ./a.out
+10:04:51 DEBUG	[num_gangs: 384, vector_length: 640] Time: 0.000711
+10:04:51 DEBUG	[num_gangs: 384, vector_length: 640] Running ./a.out
+10:04:52 DEBUG	[num_gangs: 384, vector_length: 640] Time: 0.000725
+10:04:52 INFO	[num_gangs: 384, vector_length: 640] Average: 0.000741, Standard Deviation: 0.000041
+10:04:52 DEBUG	[num_gangs: 384, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:04:54 DEBUG	[num_gangs: 384, vector_length: 704] Running ./a.out
+10:04:55 DEBUG	[num_gangs: 384, vector_length: 704] Time: 0.000824
+10:04:55 DEBUG	[num_gangs: 384, vector_length: 704] Running ./a.out
+10:04:55 DEBUG	[num_gangs: 384, vector_length: 704] Time: 0.000737
+10:04:55 DEBUG	[num_gangs: 384, vector_length: 704] Running ./a.out
+10:04:55 DEBUG	[num_gangs: 384, vector_length: 704] Time: 0.000754
+10:04:55 INFO	[num_gangs: 384, vector_length: 704] Average: 0.000772, Standard Deviation: 0.000046
+10:04:55 DEBUG	[num_gangs: 384, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:04:58 DEBUG	[num_gangs: 384, vector_length: 768] Running ./a.out
+10:04:58 DEBUG	[num_gangs: 384, vector_length: 768] Time: 0.000825
+10:04:58 DEBUG	[num_gangs: 384, vector_length: 768] Running ./a.out
+10:04:58 DEBUG	[num_gangs: 384, vector_length: 768] Time: 0.000759
+10:04:58 DEBUG	[num_gangs: 384, vector_length: 768] Running ./a.out
+10:04:59 DEBUG	[num_gangs: 384, vector_length: 768] Time: 0.000757
+10:04:59 INFO	[num_gangs: 384, vector_length: 768] Average: 0.000780, Standard Deviation: 0.000039
+10:04:59 DEBUG	[num_gangs: 384, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:05:01 DEBUG	[num_gangs: 384, vector_length: 832] Running ./a.out
+10:05:01 DEBUG	[num_gangs: 384, vector_length: 832] Time: 0.000773
+10:05:01 DEBUG	[num_gangs: 384, vector_length: 832] Running ./a.out
+10:05:02 DEBUG	[num_gangs: 384, vector_length: 832] Time: 0.000738
+10:05:02 DEBUG	[num_gangs: 384, vector_length: 832] Running ./a.out
+10:05:02 DEBUG	[num_gangs: 384, vector_length: 832] Time: 0.000712
+10:05:02 INFO	[num_gangs: 384, vector_length: 832] Average: 0.000741, Standard Deviation: 0.000031
+10:05:02 DEBUG	[num_gangs: 384, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:05:05 DEBUG	[num_gangs: 384, vector_length: 896] Running ./a.out
+10:05:05 DEBUG	[num_gangs: 384, vector_length: 896] Time: 0.000773
+10:05:05 DEBUG	[num_gangs: 384, vector_length: 896] Running ./a.out
+10:05:05 DEBUG	[num_gangs: 384, vector_length: 896] Time: 0.000744
+10:05:05 DEBUG	[num_gangs: 384, vector_length: 896] Running ./a.out
+10:05:06 DEBUG	[num_gangs: 384, vector_length: 896] Time: 0.000739
+10:05:06 INFO	[num_gangs: 384, vector_length: 896] Average: 0.000752, Standard Deviation: 0.000018
+10:05:06 DEBUG	[num_gangs: 384, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:05:08 DEBUG	[num_gangs: 384, vector_length: 960] Running ./a.out
+10:05:08 DEBUG	[num_gangs: 384, vector_length: 960] Time: 0.000800
+10:05:08 DEBUG	[num_gangs: 384, vector_length: 960] Running ./a.out
+10:05:09 DEBUG	[num_gangs: 384, vector_length: 960] Time: 0.000737
+10:05:09 DEBUG	[num_gangs: 384, vector_length: 960] Running ./a.out
+10:05:09 DEBUG	[num_gangs: 384, vector_length: 960] Time: 0.000742
+10:05:09 INFO	[num_gangs: 384, vector_length: 960] Average: 0.000760, Standard Deviation: 0.000035
+10:05:09 DEBUG	[num_gangs: 384, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=384 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:05:11 DEBUG	[num_gangs: 384, vector_length:1024] Running ./a.out
+10:05:12 DEBUG	[num_gangs: 384, vector_length:1024] Time: 0.000800
+10:05:12 DEBUG	[num_gangs: 384, vector_length:1024] Running ./a.out
+10:05:12 DEBUG	[num_gangs: 384, vector_length:1024] Time: 0.000715
+10:05:12 DEBUG	[num_gangs: 384, vector_length:1024] Running ./a.out
+10:05:12 DEBUG	[num_gangs: 384, vector_length:1024] Time: 0.000736
+10:05:12 INFO	[num_gangs: 384, vector_length:1024] Average: 0.000750, Standard Deviation: 0.000044
+10:05:12 DEBUG	[num_gangs: 448, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:05:15 DEBUG	[num_gangs: 448, vector_length:  64] Running ./a.out
+10:05:15 DEBUG	[num_gangs: 448, vector_length:  64] Time: 0.000579
+10:05:15 DEBUG	[num_gangs: 448, vector_length:  64] Running ./a.out
+10:05:16 DEBUG	[num_gangs: 448, vector_length:  64] Time: 0.000551
+10:05:16 DEBUG	[num_gangs: 448, vector_length:  64] Running ./a.out
+10:05:16 DEBUG	[num_gangs: 448, vector_length:  64] Time: 0.000555
+10:05:16 INFO	[num_gangs: 448, vector_length:  64] Average: 0.000562, Standard Deviation: 0.000015
+10:05:16 DEBUG	[num_gangs: 448, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:05:18 DEBUG	[num_gangs: 448, vector_length: 128] Running ./a.out
+10:05:19 DEBUG	[num_gangs: 448, vector_length: 128] Time: 0.000627
+10:05:19 DEBUG	[num_gangs: 448, vector_length: 128] Running ./a.out
+10:05:19 DEBUG	[num_gangs: 448, vector_length: 128] Time: 0.000575
+10:05:19 DEBUG	[num_gangs: 448, vector_length: 128] Running ./a.out
+10:05:19 DEBUG	[num_gangs: 448, vector_length: 128] Time: 0.000582
+10:05:19 INFO	[num_gangs: 448, vector_length: 128] Average: 0.000595, Standard Deviation: 0.000028
+10:05:19 DEBUG	[num_gangs: 448, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:05:22 DEBUG	[num_gangs: 448, vector_length: 192] Running ./a.out
+10:05:22 DEBUG	[num_gangs: 448, vector_length: 192] Time: 0.000639
+10:05:22 DEBUG	[num_gangs: 448, vector_length: 192] Running ./a.out
+10:05:22 DEBUG	[num_gangs: 448, vector_length: 192] Time: 0.000565
+10:05:22 DEBUG	[num_gangs: 448, vector_length: 192] Running ./a.out
+10:05:23 DEBUG	[num_gangs: 448, vector_length: 192] Time: 0.000571
+10:05:23 INFO	[num_gangs: 448, vector_length: 192] Average: 0.000592, Standard Deviation: 0.000041
+10:05:23 DEBUG	[num_gangs: 448, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:05:25 DEBUG	[num_gangs: 448, vector_length: 256] Running ./a.out
+10:05:25 DEBUG	[num_gangs: 448, vector_length: 256] Time: 0.000630
+10:05:25 DEBUG	[num_gangs: 448, vector_length: 256] Running ./a.out
+10:05:26 DEBUG	[num_gangs: 448, vector_length: 256] Time: 0.000528
+10:05:26 DEBUG	[num_gangs: 448, vector_length: 256] Running ./a.out
+10:05:26 DEBUG	[num_gangs: 448, vector_length: 256] Time: 0.000532
+10:05:26 INFO	[num_gangs: 448, vector_length: 256] Average: 0.000563, Standard Deviation: 0.000058
+10:05:26 DEBUG	[num_gangs: 448, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:05:29 DEBUG	[num_gangs: 448, vector_length: 320] Running ./a.out
+10:05:29 DEBUG	[num_gangs: 448, vector_length: 320] Time: 0.000556
+10:05:29 DEBUG	[num_gangs: 448, vector_length: 320] Running ./a.out
+10:05:29 DEBUG	[num_gangs: 448, vector_length: 320] Time: 0.000533
+10:05:29 DEBUG	[num_gangs: 448, vector_length: 320] Running ./a.out
+10:05:30 DEBUG	[num_gangs: 448, vector_length: 320] Time: 0.000646
+10:05:30 INFO	[num_gangs: 448, vector_length: 320] Average: 0.000578, Standard Deviation: 0.000060
+10:05:30 DEBUG	[num_gangs: 448, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:05:32 DEBUG	[num_gangs: 448, vector_length: 384] Running ./a.out
+10:05:32 DEBUG	[num_gangs: 448, vector_length: 384] Time: 0.000637
+10:05:32 DEBUG	[num_gangs: 448, vector_length: 384] Running ./a.out
+10:05:33 DEBUG	[num_gangs: 448, vector_length: 384] Time: 0.000558
+10:05:33 DEBUG	[num_gangs: 448, vector_length: 384] Running ./a.out
+10:05:33 DEBUG	[num_gangs: 448, vector_length: 384] Time: 0.000541
+10:05:33 INFO	[num_gangs: 448, vector_length: 384] Average: 0.000579, Standard Deviation: 0.000051
+10:05:33 DEBUG	[num_gangs: 448, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:05:36 DEBUG	[num_gangs: 448, vector_length: 448] Running ./a.out
+10:05:36 DEBUG	[num_gangs: 448, vector_length: 448] Time: 0.000607
+10:05:36 DEBUG	[num_gangs: 448, vector_length: 448] Running ./a.out
+10:05:36 DEBUG	[num_gangs: 448, vector_length: 448] Time: 0.000563
+10:05:36 DEBUG	[num_gangs: 448, vector_length: 448] Running ./a.out
+10:05:37 DEBUG	[num_gangs: 448, vector_length: 448] Time: 0.000592
+10:05:37 INFO	[num_gangs: 448, vector_length: 448] Average: 0.000587, Standard Deviation: 0.000022
+10:05:37 DEBUG	[num_gangs: 448, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:05:39 DEBUG	[num_gangs: 448, vector_length: 512] Running ./a.out
+10:05:39 DEBUG	[num_gangs: 448, vector_length: 512] Time: 0.000624
+10:05:39 DEBUG	[num_gangs: 448, vector_length: 512] Running ./a.out
+10:05:40 DEBUG	[num_gangs: 448, vector_length: 512] Time: 0.000566
+10:05:40 DEBUG	[num_gangs: 448, vector_length: 512] Running ./a.out
+10:05:40 DEBUG	[num_gangs: 448, vector_length: 512] Time: 0.000547
+10:05:40 INFO	[num_gangs: 448, vector_length: 512] Average: 0.000579, Standard Deviation: 0.000040
+10:05:40 DEBUG	[num_gangs: 448, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:05:42 DEBUG	[num_gangs: 448, vector_length: 576] Running ./a.out
+10:05:43 DEBUG	[num_gangs: 448, vector_length: 576] Time: 0.000619
+10:05:43 DEBUG	[num_gangs: 448, vector_length: 576] Running ./a.out
+10:05:43 DEBUG	[num_gangs: 448, vector_length: 576] Time: 0.000560
+10:05:43 DEBUG	[num_gangs: 448, vector_length: 576] Running ./a.out
+10:05:43 DEBUG	[num_gangs: 448, vector_length: 576] Time: 0.000614
+10:05:43 INFO	[num_gangs: 448, vector_length: 576] Average: 0.000598, Standard Deviation: 0.000033
+10:05:43 DEBUG	[num_gangs: 448, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:05:46 DEBUG	[num_gangs: 448, vector_length: 640] Running ./a.out
+10:05:46 DEBUG	[num_gangs: 448, vector_length: 640] Time: 0.000634
+10:05:46 DEBUG	[num_gangs: 448, vector_length: 640] Running ./a.out
+10:05:47 DEBUG	[num_gangs: 448, vector_length: 640] Time: 0.000612
+10:05:47 DEBUG	[num_gangs: 448, vector_length: 640] Running ./a.out
+10:05:47 DEBUG	[num_gangs: 448, vector_length: 640] Time: 0.000599
+10:05:47 INFO	[num_gangs: 448, vector_length: 640] Average: 0.000615, Standard Deviation: 0.000018
+10:05:47 DEBUG	[num_gangs: 448, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:05:49 DEBUG	[num_gangs: 448, vector_length: 704] Running ./a.out
+10:05:50 DEBUG	[num_gangs: 448, vector_length: 704] Time: 0.000658
+10:05:50 DEBUG	[num_gangs: 448, vector_length: 704] Running ./a.out
+10:05:50 DEBUG	[num_gangs: 448, vector_length: 704] Time: 0.000581
+10:05:50 DEBUG	[num_gangs: 448, vector_length: 704] Running ./a.out
+10:05:50 DEBUG	[num_gangs: 448, vector_length: 704] Time: 0.000576
+10:05:50 INFO	[num_gangs: 448, vector_length: 704] Average: 0.000605, Standard Deviation: 0.000046
+10:05:50 DEBUG	[num_gangs: 448, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:05:53 DEBUG	[num_gangs: 448, vector_length: 768] Running ./a.out
+10:05:53 DEBUG	[num_gangs: 448, vector_length: 768] Time: 0.000656
+10:05:53 DEBUG	[num_gangs: 448, vector_length: 768] Running ./a.out
+10:05:53 DEBUG	[num_gangs: 448, vector_length: 768] Time: 0.000600
+10:05:53 DEBUG	[num_gangs: 448, vector_length: 768] Running ./a.out
+10:05:54 DEBUG	[num_gangs: 448, vector_length: 768] Time: 0.000629
+10:05:54 INFO	[num_gangs: 448, vector_length: 768] Average: 0.000628, Standard Deviation: 0.000028
+10:05:54 DEBUG	[num_gangs: 448, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:05:56 DEBUG	[num_gangs: 448, vector_length: 832] Running ./a.out
+10:05:57 DEBUG	[num_gangs: 448, vector_length: 832] Time: 0.000661
+10:05:57 DEBUG	[num_gangs: 448, vector_length: 832] Running ./a.out
+10:05:57 DEBUG	[num_gangs: 448, vector_length: 832] Time: 0.000610
+10:05:57 DEBUG	[num_gangs: 448, vector_length: 832] Running ./a.out
+10:05:57 DEBUG	[num_gangs: 448, vector_length: 832] Time: 0.000643
+10:05:57 INFO	[num_gangs: 448, vector_length: 832] Average: 0.000638, Standard Deviation: 0.000026
+10:05:57 DEBUG	[num_gangs: 448, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:06:00 DEBUG	[num_gangs: 448, vector_length: 896] Running ./a.out
+10:06:00 DEBUG	[num_gangs: 448, vector_length: 896] Time: 0.000658
+10:06:00 DEBUG	[num_gangs: 448, vector_length: 896] Running ./a.out
+10:06:00 DEBUG	[num_gangs: 448, vector_length: 896] Time: 0.000649
+10:06:00 DEBUG	[num_gangs: 448, vector_length: 896] Running ./a.out
+10:06:01 DEBUG	[num_gangs: 448, vector_length: 896] Time: 0.000599
+10:06:01 INFO	[num_gangs: 448, vector_length: 896] Average: 0.000635, Standard Deviation: 0.000032
+10:06:01 DEBUG	[num_gangs: 448, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:06:03 DEBUG	[num_gangs: 448, vector_length: 960] Running ./a.out
+10:06:03 DEBUG	[num_gangs: 448, vector_length: 960] Time: 0.000677
+10:06:03 DEBUG	[num_gangs: 448, vector_length: 960] Running ./a.out
+10:06:04 DEBUG	[num_gangs: 448, vector_length: 960] Time: 0.000606
+10:06:04 DEBUG	[num_gangs: 448, vector_length: 960] Running ./a.out
+10:06:04 DEBUG	[num_gangs: 448, vector_length: 960] Time: 0.000629
+10:06:04 INFO	[num_gangs: 448, vector_length: 960] Average: 0.000637, Standard Deviation: 0.000036
+10:06:04 DEBUG	[num_gangs: 448, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=448 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:06:06 DEBUG	[num_gangs: 448, vector_length:1024] Running ./a.out
+10:06:07 DEBUG	[num_gangs: 448, vector_length:1024] Time: 0.000653
+10:06:07 DEBUG	[num_gangs: 448, vector_length:1024] Running ./a.out
+10:06:07 DEBUG	[num_gangs: 448, vector_length:1024] Time: 0.000583
+10:06:07 DEBUG	[num_gangs: 448, vector_length:1024] Running ./a.out
+10:06:07 DEBUG	[num_gangs: 448, vector_length:1024] Time: 0.000580
+10:06:07 INFO	[num_gangs: 448, vector_length:1024] Average: 0.000605, Standard Deviation: 0.000041
+10:06:07 DEBUG	[num_gangs: 512, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:06:10 DEBUG	[num_gangs: 512, vector_length:  64] Running ./a.out
+10:06:10 DEBUG	[num_gangs: 512, vector_length:  64] Time: 0.000572
+10:06:10 DEBUG	[num_gangs: 512, vector_length:  64] Running ./a.out
+10:06:10 DEBUG	[num_gangs: 512, vector_length:  64] Time: 0.000547
+10:06:10 DEBUG	[num_gangs: 512, vector_length:  64] Running ./a.out
+10:06:11 DEBUG	[num_gangs: 512, vector_length:  64] Time: 0.000576
+10:06:11 INFO	[num_gangs: 512, vector_length:  64] Average: 0.000565, Standard Deviation: 0.000016
+10:06:11 DEBUG	[num_gangs: 512, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:06:13 DEBUG	[num_gangs: 512, vector_length: 128] Running ./a.out
+10:06:14 DEBUG	[num_gangs: 512, vector_length: 128] Time: 0.000639
+10:06:14 DEBUG	[num_gangs: 512, vector_length: 128] Running ./a.out
+10:06:14 DEBUG	[num_gangs: 512, vector_length: 128] Time: 0.000576
+10:06:14 DEBUG	[num_gangs: 512, vector_length: 128] Running ./a.out
+10:06:14 DEBUG	[num_gangs: 512, vector_length: 128] Time: 0.000554
+10:06:14 INFO	[num_gangs: 512, vector_length: 128] Average: 0.000590, Standard Deviation: 0.000044
+10:06:14 DEBUG	[num_gangs: 512, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:06:17 DEBUG	[num_gangs: 512, vector_length: 192] Running ./a.out
+10:06:17 DEBUG	[num_gangs: 512, vector_length: 192] Time: 0.000611
+10:06:17 DEBUG	[num_gangs: 512, vector_length: 192] Running ./a.out
+10:06:17 DEBUG	[num_gangs: 512, vector_length: 192] Time: 0.000578
+10:06:17 DEBUG	[num_gangs: 512, vector_length: 192] Running ./a.out
+10:06:18 DEBUG	[num_gangs: 512, vector_length: 192] Time: 0.000580
+10:06:18 INFO	[num_gangs: 512, vector_length: 192] Average: 0.000590, Standard Deviation: 0.000019
+10:06:18 DEBUG	[num_gangs: 512, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:06:20 DEBUG	[num_gangs: 512, vector_length: 256] Running ./a.out
+10:06:20 DEBUG	[num_gangs: 512, vector_length: 256] Time: 0.000611
+10:06:20 DEBUG	[num_gangs: 512, vector_length: 256] Running ./a.out
+10:06:21 DEBUG	[num_gangs: 512, vector_length: 256] Time: 0.000554
+10:06:21 DEBUG	[num_gangs: 512, vector_length: 256] Running ./a.out
+10:06:21 DEBUG	[num_gangs: 512, vector_length: 256] Time: 0.000549
+10:06:21 INFO	[num_gangs: 512, vector_length: 256] Average: 0.000571, Standard Deviation: 0.000034
+10:06:21 DEBUG	[num_gangs: 512, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:06:24 DEBUG	[num_gangs: 512, vector_length: 320] Running ./a.out
+10:06:25 DEBUG	[num_gangs: 512, vector_length: 320] Time: 0.000592
+10:06:25 DEBUG	[num_gangs: 512, vector_length: 320] Running ./a.out
+10:06:25 DEBUG	[num_gangs: 512, vector_length: 320] Time: 0.000584
+10:06:25 DEBUG	[num_gangs: 512, vector_length: 320] Running ./a.out
+10:06:25 DEBUG	[num_gangs: 512, vector_length: 320] Time: 0.000580
+10:06:25 INFO	[num_gangs: 512, vector_length: 320] Average: 0.000585, Standard Deviation: 0.000006
+10:06:25 DEBUG	[num_gangs: 512, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:06:28 DEBUG	[num_gangs: 512, vector_length: 384] Running ./a.out
+10:06:28 DEBUG	[num_gangs: 512, vector_length: 384] Time: 0.000635
+10:06:28 DEBUG	[num_gangs: 512, vector_length: 384] Running ./a.out
+10:06:28 DEBUG	[num_gangs: 512, vector_length: 384] Time: 0.000586
+10:06:28 DEBUG	[num_gangs: 512, vector_length: 384] Running ./a.out
+10:06:29 DEBUG	[num_gangs: 512, vector_length: 384] Time: 0.000562
+10:06:29 INFO	[num_gangs: 512, vector_length: 384] Average: 0.000594, Standard Deviation: 0.000037
+10:06:29 DEBUG	[num_gangs: 512, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:06:31 DEBUG	[num_gangs: 512, vector_length: 448] Running ./a.out
+10:06:31 DEBUG	[num_gangs: 512, vector_length: 448] Time: 0.000622
+10:06:31 DEBUG	[num_gangs: 512, vector_length: 448] Running ./a.out
+10:06:32 DEBUG	[num_gangs: 512, vector_length: 448] Time: 0.000567
+10:06:32 DEBUG	[num_gangs: 512, vector_length: 448] Running ./a.out
+10:06:32 DEBUG	[num_gangs: 512, vector_length: 448] Time: 0.000588
+10:06:32 INFO	[num_gangs: 512, vector_length: 448] Average: 0.000592, Standard Deviation: 0.000028
+10:06:32 DEBUG	[num_gangs: 512, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:06:35 DEBUG	[num_gangs: 512, vector_length: 512] Running ./a.out
+10:06:35 DEBUG	[num_gangs: 512, vector_length: 512] Time: 0.000608
+10:06:35 DEBUG	[num_gangs: 512, vector_length: 512] Running ./a.out
+10:06:35 DEBUG	[num_gangs: 512, vector_length: 512] Time: 0.000549
+10:06:35 DEBUG	[num_gangs: 512, vector_length: 512] Running ./a.out
+10:06:35 DEBUG	[num_gangs: 512, vector_length: 512] Time: 0.000565
+10:06:35 INFO	[num_gangs: 512, vector_length: 512] Average: 0.000574, Standard Deviation: 0.000030
+10:06:35 DEBUG	[num_gangs: 512, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:06:38 DEBUG	[num_gangs: 512, vector_length: 576] Running ./a.out
+10:06:38 DEBUG	[num_gangs: 512, vector_length: 576] Time: 0.000618
+10:06:38 DEBUG	[num_gangs: 512, vector_length: 576] Running ./a.out
+10:06:39 DEBUG	[num_gangs: 512, vector_length: 576] Time: 0.000612
+10:06:39 DEBUG	[num_gangs: 512, vector_length: 576] Running ./a.out
+10:06:39 DEBUG	[num_gangs: 512, vector_length: 576] Time: 0.000612
+10:06:39 INFO	[num_gangs: 512, vector_length: 576] Average: 0.000614, Standard Deviation: 0.000003
+10:06:39 DEBUG	[num_gangs: 512, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:06:41 DEBUG	[num_gangs: 512, vector_length: 640] Running ./a.out
+10:06:42 DEBUG	[num_gangs: 512, vector_length: 640] Time: 0.000622
+10:06:42 DEBUG	[num_gangs: 512, vector_length: 640] Running ./a.out
+10:06:42 DEBUG	[num_gangs: 512, vector_length: 640] Time: 0.000575
+10:06:42 DEBUG	[num_gangs: 512, vector_length: 640] Running ./a.out
+10:06:42 DEBUG	[num_gangs: 512, vector_length: 640] Time: 0.000564
+10:06:42 INFO	[num_gangs: 512, vector_length: 640] Average: 0.000587, Standard Deviation: 0.000031
+10:06:42 DEBUG	[num_gangs: 512, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:06:45 DEBUG	[num_gangs: 512, vector_length: 704] Running ./a.out
+10:06:45 DEBUG	[num_gangs: 512, vector_length: 704] Time: 0.000638
+10:06:45 DEBUG	[num_gangs: 512, vector_length: 704] Running ./a.out
+10:06:45 DEBUG	[num_gangs: 512, vector_length: 704] Time: 0.000585
+10:06:45 DEBUG	[num_gangs: 512, vector_length: 704] Running ./a.out
+10:06:46 DEBUG	[num_gangs: 512, vector_length: 704] Time: 0.000612
+10:06:46 INFO	[num_gangs: 512, vector_length: 704] Average: 0.000612, Standard Deviation: 0.000026
+10:06:46 DEBUG	[num_gangs: 512, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:06:48 DEBUG	[num_gangs: 512, vector_length: 768] Running ./a.out
+10:06:49 DEBUG	[num_gangs: 512, vector_length: 768] Time: 0.000665
+10:06:49 DEBUG	[num_gangs: 512, vector_length: 768] Running ./a.out
+10:06:49 DEBUG	[num_gangs: 512, vector_length: 768] Time: 0.000606
+10:06:49 DEBUG	[num_gangs: 512, vector_length: 768] Running ./a.out
+10:06:49 DEBUG	[num_gangs: 512, vector_length: 768] Time: 0.000645
+10:06:49 INFO	[num_gangs: 512, vector_length: 768] Average: 0.000639, Standard Deviation: 0.000030
+10:06:49 DEBUG	[num_gangs: 512, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:06:52 DEBUG	[num_gangs: 512, vector_length: 832] Running ./a.out
+10:06:52 DEBUG	[num_gangs: 512, vector_length: 832] Time: 0.000693
+10:06:52 DEBUG	[num_gangs: 512, vector_length: 832] Running ./a.out
+10:06:52 DEBUG	[num_gangs: 512, vector_length: 832] Time: 0.000626
+10:06:52 DEBUG	[num_gangs: 512, vector_length: 832] Running ./a.out
+10:06:53 DEBUG	[num_gangs: 512, vector_length: 832] Time: 0.000629
+10:06:53 INFO	[num_gangs: 512, vector_length: 832] Average: 0.000649, Standard Deviation: 0.000038
+10:06:53 DEBUG	[num_gangs: 512, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:06:55 DEBUG	[num_gangs: 512, vector_length: 896] Running ./a.out
+10:06:55 DEBUG	[num_gangs: 512, vector_length: 896] Time: 0.000722
+10:06:55 DEBUG	[num_gangs: 512, vector_length: 896] Running ./a.out
+10:06:56 DEBUG	[num_gangs: 512, vector_length: 896] Time: 0.000606
+10:06:56 DEBUG	[num_gangs: 512, vector_length: 896] Running ./a.out
+10:06:56 DEBUG	[num_gangs: 512, vector_length: 896] Time: 0.000607
+10:06:56 INFO	[num_gangs: 512, vector_length: 896] Average: 0.000645, Standard Deviation: 0.000067
+10:06:56 DEBUG	[num_gangs: 512, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:06:59 DEBUG	[num_gangs: 512, vector_length: 960] Running ./a.out
+10:06:59 DEBUG	[num_gangs: 512, vector_length: 960] Time: 0.000666
+10:06:59 DEBUG	[num_gangs: 512, vector_length: 960] Running ./a.out
+10:06:59 DEBUG	[num_gangs: 512, vector_length: 960] Time: 0.000624
+10:06:59 DEBUG	[num_gangs: 512, vector_length: 960] Running ./a.out
+10:06:59 DEBUG	[num_gangs: 512, vector_length: 960] Time: 0.000612
+10:06:59 INFO	[num_gangs: 512, vector_length: 960] Average: 0.000634, Standard Deviation: 0.000028
+10:06:59 DEBUG	[num_gangs: 512, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=512 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:07:02 DEBUG	[num_gangs: 512, vector_length:1024] Running ./a.out
+10:07:02 DEBUG	[num_gangs: 512, vector_length:1024] Time: 0.000670
+10:07:02 DEBUG	[num_gangs: 512, vector_length:1024] Running ./a.out
+10:07:03 DEBUG	[num_gangs: 512, vector_length:1024] Time: 0.000652
+10:07:03 DEBUG	[num_gangs: 512, vector_length:1024] Running ./a.out
+10:07:03 DEBUG	[num_gangs: 512, vector_length:1024] Time: 0.000637
+10:07:03 INFO	[num_gangs: 512, vector_length:1024] Average: 0.000653, Standard Deviation: 0.000016
+10:07:03 DEBUG	[num_gangs: 576, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:07:05 DEBUG	[num_gangs: 576, vector_length:  64] Running ./a.out
+10:07:06 DEBUG	[num_gangs: 576, vector_length:  64] Time: 0.000601
+10:07:06 DEBUG	[num_gangs: 576, vector_length:  64] Running ./a.out
+10:07:06 DEBUG	[num_gangs: 576, vector_length:  64] Time: 0.000559
+10:07:06 DEBUG	[num_gangs: 576, vector_length:  64] Running ./a.out
+10:07:06 DEBUG	[num_gangs: 576, vector_length:  64] Time: 0.000548
+10:07:06 INFO	[num_gangs: 576, vector_length:  64] Average: 0.000569, Standard Deviation: 0.000028
+10:07:06 DEBUG	[num_gangs: 576, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:07:09 DEBUG	[num_gangs: 576, vector_length: 128] Running ./a.out
+10:07:09 DEBUG	[num_gangs: 576, vector_length: 128] Time: 0.000608
+10:07:09 DEBUG	[num_gangs: 576, vector_length: 128] Running ./a.out
+10:07:09 DEBUG	[num_gangs: 576, vector_length: 128] Time: 0.000572
+10:07:09 DEBUG	[num_gangs: 576, vector_length: 128] Running ./a.out
+10:07:10 DEBUG	[num_gangs: 576, vector_length: 128] Time: 0.000582
+10:07:10 INFO	[num_gangs: 576, vector_length: 128] Average: 0.000587, Standard Deviation: 0.000018
+10:07:10 DEBUG	[num_gangs: 576, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:07:12 DEBUG	[num_gangs: 576, vector_length: 192] Running ./a.out
+10:07:13 DEBUG	[num_gangs: 576, vector_length: 192] Time: 0.000612
+10:07:13 DEBUG	[num_gangs: 576, vector_length: 192] Running ./a.out
+10:07:13 DEBUG	[num_gangs: 576, vector_length: 192] Time: 0.000579
+10:07:13 DEBUG	[num_gangs: 576, vector_length: 192] Running ./a.out
+10:07:13 DEBUG	[num_gangs: 576, vector_length: 192] Time: 0.000559
+10:07:13 INFO	[num_gangs: 576, vector_length: 192] Average: 0.000583, Standard Deviation: 0.000027
+10:07:13 DEBUG	[num_gangs: 576, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:07:16 DEBUG	[num_gangs: 576, vector_length: 256] Running ./a.out
+10:07:16 DEBUG	[num_gangs: 576, vector_length: 256] Time: 0.000630
+10:07:16 DEBUG	[num_gangs: 576, vector_length: 256] Running ./a.out
+10:07:16 DEBUG	[num_gangs: 576, vector_length: 256] Time: 0.000609
+10:07:16 DEBUG	[num_gangs: 576, vector_length: 256] Running ./a.out
+10:07:17 DEBUG	[num_gangs: 576, vector_length: 256] Time: 0.000561
+10:07:17 INFO	[num_gangs: 576, vector_length: 256] Average: 0.000600, Standard Deviation: 0.000035
+10:07:17 DEBUG	[num_gangs: 576, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:07:19 DEBUG	[num_gangs: 576, vector_length: 320] Running ./a.out
+10:07:19 DEBUG	[num_gangs: 576, vector_length: 320] Time: 0.000641
+10:07:19 DEBUG	[num_gangs: 576, vector_length: 320] Running ./a.out
+10:07:20 DEBUG	[num_gangs: 576, vector_length: 320] Time: 0.000537
+10:07:20 DEBUG	[num_gangs: 576, vector_length: 320] Running ./a.out
+10:07:20 DEBUG	[num_gangs: 576, vector_length: 320] Time: 0.000569
+10:07:20 INFO	[num_gangs: 576, vector_length: 320] Average: 0.000582, Standard Deviation: 0.000053
+10:07:20 DEBUG	[num_gangs: 576, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:07:23 DEBUG	[num_gangs: 576, vector_length: 384] Running ./a.out
+10:07:23 DEBUG	[num_gangs: 576, vector_length: 384] Time: 0.000601
+10:07:23 DEBUG	[num_gangs: 576, vector_length: 384] Running ./a.out
+10:07:23 DEBUG	[num_gangs: 576, vector_length: 384] Time: 0.000577
+10:07:23 DEBUG	[num_gangs: 576, vector_length: 384] Running ./a.out
+10:07:23 DEBUG	[num_gangs: 576, vector_length: 384] Time: 0.000601
+10:07:23 INFO	[num_gangs: 576, vector_length: 384] Average: 0.000593, Standard Deviation: 0.000014
+10:07:23 DEBUG	[num_gangs: 576, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:07:26 DEBUG	[num_gangs: 576, vector_length: 448] Running ./a.out
+10:07:26 DEBUG	[num_gangs: 576, vector_length: 448] Time: 0.000621
+10:07:26 DEBUG	[num_gangs: 576, vector_length: 448] Running ./a.out
+10:07:27 DEBUG	[num_gangs: 576, vector_length: 448] Time: 0.000572
+10:07:27 DEBUG	[num_gangs: 576, vector_length: 448] Running ./a.out
+10:07:27 DEBUG	[num_gangs: 576, vector_length: 448] Time: 0.000579
+10:07:27 INFO	[num_gangs: 576, vector_length: 448] Average: 0.000591, Standard Deviation: 0.000027
+10:07:27 DEBUG	[num_gangs: 576, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:07:29 DEBUG	[num_gangs: 576, vector_length: 512] Running ./a.out
+10:07:30 DEBUG	[num_gangs: 576, vector_length: 512] Time: 0.000653
+10:07:30 DEBUG	[num_gangs: 576, vector_length: 512] Running ./a.out
+10:07:30 DEBUG	[num_gangs: 576, vector_length: 512] Time: 0.000623
+10:07:30 DEBUG	[num_gangs: 576, vector_length: 512] Running ./a.out
+10:07:30 DEBUG	[num_gangs: 576, vector_length: 512] Time: 0.000586
+10:07:30 INFO	[num_gangs: 576, vector_length: 512] Average: 0.000621, Standard Deviation: 0.000034
+10:07:30 DEBUG	[num_gangs: 576, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:07:33 DEBUG	[num_gangs: 576, vector_length: 576] Running ./a.out
+10:07:33 DEBUG	[num_gangs: 576, vector_length: 576] Time: 0.000645
+10:07:33 DEBUG	[num_gangs: 576, vector_length: 576] Running ./a.out
+10:07:33 DEBUG	[num_gangs: 576, vector_length: 576] Time: 0.000588
+10:07:33 DEBUG	[num_gangs: 576, vector_length: 576] Running ./a.out
+10:07:34 DEBUG	[num_gangs: 576, vector_length: 576] Time: 0.000588
+10:07:34 INFO	[num_gangs: 576, vector_length: 576] Average: 0.000607, Standard Deviation: 0.000033
+10:07:34 DEBUG	[num_gangs: 576, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:07:36 DEBUG	[num_gangs: 576, vector_length: 640] Running ./a.out
+10:07:37 DEBUG	[num_gangs: 576, vector_length: 640] Time: 0.000646
+10:07:37 DEBUG	[num_gangs: 576, vector_length: 640] Running ./a.out
+10:07:37 DEBUG	[num_gangs: 576, vector_length: 640] Time: 0.000584
+10:07:37 DEBUG	[num_gangs: 576, vector_length: 640] Running ./a.out
+10:07:37 DEBUG	[num_gangs: 576, vector_length: 640] Time: 0.000570
+10:07:37 INFO	[num_gangs: 576, vector_length: 640] Average: 0.000600, Standard Deviation: 0.000040
+10:07:37 DEBUG	[num_gangs: 576, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:07:40 DEBUG	[num_gangs: 576, vector_length: 704] Running ./a.out
+10:07:40 DEBUG	[num_gangs: 576, vector_length: 704] Time: 0.000647
+10:07:40 DEBUG	[num_gangs: 576, vector_length: 704] Running ./a.out
+10:07:40 DEBUG	[num_gangs: 576, vector_length: 704] Time: 0.000608
+10:07:40 DEBUG	[num_gangs: 576, vector_length: 704] Running ./a.out
+10:07:41 DEBUG	[num_gangs: 576, vector_length: 704] Time: 0.000605
+10:07:41 INFO	[num_gangs: 576, vector_length: 704] Average: 0.000620, Standard Deviation: 0.000024
+10:07:41 DEBUG	[num_gangs: 576, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:07:43 DEBUG	[num_gangs: 576, vector_length: 768] Running ./a.out
+10:07:43 DEBUG	[num_gangs: 576, vector_length: 768] Time: 0.000646
+10:07:43 DEBUG	[num_gangs: 576, vector_length: 768] Running ./a.out
+10:07:44 DEBUG	[num_gangs: 576, vector_length: 768] Time: 0.000620
+10:07:44 DEBUG	[num_gangs: 576, vector_length: 768] Running ./a.out
+10:07:44 DEBUG	[num_gangs: 576, vector_length: 768] Time: 0.000638
+10:07:44 INFO	[num_gangs: 576, vector_length: 768] Average: 0.000635, Standard Deviation: 0.000013
+10:07:44 DEBUG	[num_gangs: 576, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:07:46 DEBUG	[num_gangs: 576, vector_length: 832] Running ./a.out
+10:07:47 DEBUG	[num_gangs: 576, vector_length: 832] Time: 0.000671
+10:07:47 DEBUG	[num_gangs: 576, vector_length: 832] Running ./a.out
+10:07:47 DEBUG	[num_gangs: 576, vector_length: 832] Time: 0.000605
+10:07:47 DEBUG	[num_gangs: 576, vector_length: 832] Running ./a.out
+10:07:47 DEBUG	[num_gangs: 576, vector_length: 832] Time: 0.000633
+10:07:47 INFO	[num_gangs: 576, vector_length: 832] Average: 0.000636, Standard Deviation: 0.000033
+10:07:47 DEBUG	[num_gangs: 576, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:07:50 DEBUG	[num_gangs: 576, vector_length: 896] Running ./a.out
+10:07:50 DEBUG	[num_gangs: 576, vector_length: 896] Time: 0.000641
+10:07:50 DEBUG	[num_gangs: 576, vector_length: 896] Running ./a.out
+10:07:51 DEBUG	[num_gangs: 576, vector_length: 896] Time: 0.000598
+10:07:51 DEBUG	[num_gangs: 576, vector_length: 896] Running ./a.out
+10:07:51 DEBUG	[num_gangs: 576, vector_length: 896] Time: 0.000623
+10:07:51 INFO	[num_gangs: 576, vector_length: 896] Average: 0.000621, Standard Deviation: 0.000022
+10:07:51 DEBUG	[num_gangs: 576, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:07:53 DEBUG	[num_gangs: 576, vector_length: 960] Running ./a.out
+10:07:54 DEBUG	[num_gangs: 576, vector_length: 960] Time: 0.000703
+10:07:54 DEBUG	[num_gangs: 576, vector_length: 960] Running ./a.out
+10:07:54 DEBUG	[num_gangs: 576, vector_length: 960] Time: 0.000620
+10:07:54 DEBUG	[num_gangs: 576, vector_length: 960] Running ./a.out
+10:07:54 DEBUG	[num_gangs: 576, vector_length: 960] Time: 0.000670
+10:07:54 INFO	[num_gangs: 576, vector_length: 960] Average: 0.000664, Standard Deviation: 0.000042
+10:07:54 DEBUG	[num_gangs: 576, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=576 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:07:57 DEBUG	[num_gangs: 576, vector_length:1024] Running ./a.out
+10:07:57 DEBUG	[num_gangs: 576, vector_length:1024] Time: 0.000708
+10:07:57 DEBUG	[num_gangs: 576, vector_length:1024] Running ./a.out
+10:07:57 DEBUG	[num_gangs: 576, vector_length:1024] Time: 0.000646
+10:07:57 DEBUG	[num_gangs: 576, vector_length:1024] Running ./a.out
+10:07:58 DEBUG	[num_gangs: 576, vector_length:1024] Time: 0.000629
+10:07:58 INFO	[num_gangs: 576, vector_length:1024] Average: 0.000661, Standard Deviation: 0.000042
+10:07:58 DEBUG	[num_gangs: 640, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:08:00 DEBUG	[num_gangs: 640, vector_length:  64] Running ./a.out
+10:08:00 DEBUG	[num_gangs: 640, vector_length:  64] Time: 0.000607
+10:08:00 DEBUG	[num_gangs: 640, vector_length:  64] Running ./a.out
+10:08:01 DEBUG	[num_gangs: 640, vector_length:  64] Time: 0.000523
+10:08:01 DEBUG	[num_gangs: 640, vector_length:  64] Running ./a.out
+10:08:01 DEBUG	[num_gangs: 640, vector_length:  64] Time: 0.000556
+10:08:01 INFO	[num_gangs: 640, vector_length:  64] Average: 0.000562, Standard Deviation: 0.000042
+10:08:01 DEBUG	[num_gangs: 640, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:08:04 DEBUG	[num_gangs: 640, vector_length: 128] Running ./a.out
+10:08:04 DEBUG	[num_gangs: 640, vector_length: 128] Time: 0.000585
+10:08:04 DEBUG	[num_gangs: 640, vector_length: 128] Running ./a.out
+10:08:04 DEBUG	[num_gangs: 640, vector_length: 128] Time: 0.000534
+10:08:04 DEBUG	[num_gangs: 640, vector_length: 128] Running ./a.out
+10:08:04 DEBUG	[num_gangs: 640, vector_length: 128] Time: 0.000576
+10:08:04 INFO	[num_gangs: 640, vector_length: 128] Average: 0.000565, Standard Deviation: 0.000027
+10:08:04 DEBUG	[num_gangs: 640, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:08:07 DEBUG	[num_gangs: 640, vector_length: 192] Running ./a.out
+10:08:07 DEBUG	[num_gangs: 640, vector_length: 192] Time: 0.000589
+10:08:07 DEBUG	[num_gangs: 640, vector_length: 192] Running ./a.out
+10:08:08 DEBUG	[num_gangs: 640, vector_length: 192] Time: 0.000542
+10:08:08 DEBUG	[num_gangs: 640, vector_length: 192] Running ./a.out
+10:08:08 DEBUG	[num_gangs: 640, vector_length: 192] Time: 0.000598
+10:08:08 INFO	[num_gangs: 640, vector_length: 192] Average: 0.000576, Standard Deviation: 0.000030
+10:08:08 DEBUG	[num_gangs: 640, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:08:10 DEBUG	[num_gangs: 640, vector_length: 256] Running ./a.out
+10:08:11 DEBUG	[num_gangs: 640, vector_length: 256] Time: 0.000610
+10:08:11 DEBUG	[num_gangs: 640, vector_length: 256] Running ./a.out
+10:08:11 DEBUG	[num_gangs: 640, vector_length: 256] Time: 0.000576
+10:08:11 DEBUG	[num_gangs: 640, vector_length: 256] Running ./a.out
+10:08:11 DEBUG	[num_gangs: 640, vector_length: 256] Time: 0.000581
+10:08:11 INFO	[num_gangs: 640, vector_length: 256] Average: 0.000589, Standard Deviation: 0.000018
+10:08:11 DEBUG	[num_gangs: 640, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:08:14 DEBUG	[num_gangs: 640, vector_length: 320] Running ./a.out
+10:08:14 DEBUG	[num_gangs: 640, vector_length: 320] Time: 0.000617
+10:08:14 DEBUG	[num_gangs: 640, vector_length: 320] Running ./a.out
+10:08:14 DEBUG	[num_gangs: 640, vector_length: 320] Time: 0.000587
+10:08:14 DEBUG	[num_gangs: 640, vector_length: 320] Running ./a.out
+10:08:15 DEBUG	[num_gangs: 640, vector_length: 320] Time: 0.000586
+10:08:15 INFO	[num_gangs: 640, vector_length: 320] Average: 0.000597, Standard Deviation: 0.000018
+10:08:15 DEBUG	[num_gangs: 640, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:08:17 DEBUG	[num_gangs: 640, vector_length: 384] Running ./a.out
+10:08:18 DEBUG	[num_gangs: 640, vector_length: 384] Time: 0.000647
+10:08:18 DEBUG	[num_gangs: 640, vector_length: 384] Running ./a.out
+10:08:18 DEBUG	[num_gangs: 640, vector_length: 384] Time: 0.000546
+10:08:18 DEBUG	[num_gangs: 640, vector_length: 384] Running ./a.out
+10:08:18 DEBUG	[num_gangs: 640, vector_length: 384] Time: 0.000577
+10:08:18 INFO	[num_gangs: 640, vector_length: 384] Average: 0.000590, Standard Deviation: 0.000052
+10:08:18 DEBUG	[num_gangs: 640, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:08:21 DEBUG	[num_gangs: 640, vector_length: 448] Running ./a.out
+10:08:21 DEBUG	[num_gangs: 640, vector_length: 448] Time: 0.000607
+10:08:21 DEBUG	[num_gangs: 640, vector_length: 448] Running ./a.out
+10:08:21 DEBUG	[num_gangs: 640, vector_length: 448] Time: 0.000567
+10:08:21 DEBUG	[num_gangs: 640, vector_length: 448] Running ./a.out
+10:08:22 DEBUG	[num_gangs: 640, vector_length: 448] Time: 0.000593
+10:08:22 INFO	[num_gangs: 640, vector_length: 448] Average: 0.000589, Standard Deviation: 0.000020
+10:08:22 DEBUG	[num_gangs: 640, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:08:24 DEBUG	[num_gangs: 640, vector_length: 512] Running ./a.out
+10:08:24 DEBUG	[num_gangs: 640, vector_length: 512] Time: 0.000628
+10:08:24 DEBUG	[num_gangs: 640, vector_length: 512] Running ./a.out
+10:08:25 DEBUG	[num_gangs: 640, vector_length: 512] Time: 0.000549
+10:08:25 DEBUG	[num_gangs: 640, vector_length: 512] Running ./a.out
+10:08:25 DEBUG	[num_gangs: 640, vector_length: 512] Time: 0.000600
+10:08:25 INFO	[num_gangs: 640, vector_length: 512] Average: 0.000592, Standard Deviation: 0.000040
+10:08:25 DEBUG	[num_gangs: 640, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:08:28 DEBUG	[num_gangs: 640, vector_length: 576] Running ./a.out
+10:08:28 DEBUG	[num_gangs: 640, vector_length: 576] Time: 0.000627
+10:08:28 DEBUG	[num_gangs: 640, vector_length: 576] Running ./a.out
+10:08:28 DEBUG	[num_gangs: 640, vector_length: 576] Time: 0.000607
+10:08:28 DEBUG	[num_gangs: 640, vector_length: 576] Running ./a.out
+10:08:29 DEBUG	[num_gangs: 640, vector_length: 576] Time: 0.000595
+10:08:29 INFO	[num_gangs: 640, vector_length: 576] Average: 0.000610, Standard Deviation: 0.000016
+10:08:29 DEBUG	[num_gangs: 640, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:08:31 DEBUG	[num_gangs: 640, vector_length: 640] Running ./a.out
+10:08:31 DEBUG	[num_gangs: 640, vector_length: 640] Time: 0.000648
+10:08:31 DEBUG	[num_gangs: 640, vector_length: 640] Running ./a.out
+10:08:32 DEBUG	[num_gangs: 640, vector_length: 640] Time: 0.000571
+10:08:32 DEBUG	[num_gangs: 640, vector_length: 640] Running ./a.out
+10:08:32 DEBUG	[num_gangs: 640, vector_length: 640] Time: 0.000598
+10:08:32 INFO	[num_gangs: 640, vector_length: 640] Average: 0.000606, Standard Deviation: 0.000039
+10:08:32 DEBUG	[num_gangs: 640, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:08:34 DEBUG	[num_gangs: 640, vector_length: 704] Running ./a.out
+10:08:35 DEBUG	[num_gangs: 640, vector_length: 704] Time: 0.000698
+10:08:35 DEBUG	[num_gangs: 640, vector_length: 704] Running ./a.out
+10:08:35 DEBUG	[num_gangs: 640, vector_length: 704] Time: 0.000645
+10:08:35 DEBUG	[num_gangs: 640, vector_length: 704] Running ./a.out
+10:08:35 DEBUG	[num_gangs: 640, vector_length: 704] Time: 0.000620
+10:08:35 INFO	[num_gangs: 640, vector_length: 704] Average: 0.000654, Standard Deviation: 0.000040
+10:08:35 DEBUG	[num_gangs: 640, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:08:38 DEBUG	[num_gangs: 640, vector_length: 768] Running ./a.out
+10:08:38 DEBUG	[num_gangs: 640, vector_length: 768] Time: 0.000699
+10:08:38 DEBUG	[num_gangs: 640, vector_length: 768] Running ./a.out
+10:08:38 DEBUG	[num_gangs: 640, vector_length: 768] Time: 0.000627
+10:08:38 DEBUG	[num_gangs: 640, vector_length: 768] Running ./a.out
+10:08:39 DEBUG	[num_gangs: 640, vector_length: 768] Time: 0.000627
+10:08:39 INFO	[num_gangs: 640, vector_length: 768] Average: 0.000651, Standard Deviation: 0.000042
+10:08:39 DEBUG	[num_gangs: 640, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:08:41 DEBUG	[num_gangs: 640, vector_length: 832] Running ./a.out
+10:08:42 DEBUG	[num_gangs: 640, vector_length: 832] Time: 0.000682
+10:08:42 DEBUG	[num_gangs: 640, vector_length: 832] Running ./a.out
+10:08:42 DEBUG	[num_gangs: 640, vector_length: 832] Time: 0.000599
+10:08:42 DEBUG	[num_gangs: 640, vector_length: 832] Running ./a.out
+10:08:42 DEBUG	[num_gangs: 640, vector_length: 832] Time: 0.000635
+10:08:42 INFO	[num_gangs: 640, vector_length: 832] Average: 0.000639, Standard Deviation: 0.000042
+10:08:42 DEBUG	[num_gangs: 640, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:08:45 DEBUG	[num_gangs: 640, vector_length: 896] Running ./a.out
+10:08:45 DEBUG	[num_gangs: 640, vector_length: 896] Time: 0.000675
+10:08:45 DEBUG	[num_gangs: 640, vector_length: 896] Running ./a.out
+10:08:45 DEBUG	[num_gangs: 640, vector_length: 896] Time: 0.000621
+10:08:45 DEBUG	[num_gangs: 640, vector_length: 896] Running ./a.out
+10:08:46 DEBUG	[num_gangs: 640, vector_length: 896] Time: 0.000629
+10:08:46 INFO	[num_gangs: 640, vector_length: 896] Average: 0.000642, Standard Deviation: 0.000029
+10:08:46 DEBUG	[num_gangs: 640, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:08:48 DEBUG	[num_gangs: 640, vector_length: 960] Running ./a.out
+10:08:48 DEBUG	[num_gangs: 640, vector_length: 960] Time: 0.000683
+10:08:48 DEBUG	[num_gangs: 640, vector_length: 960] Running ./a.out
+10:08:49 DEBUG	[num_gangs: 640, vector_length: 960] Time: 0.000605
+10:08:49 DEBUG	[num_gangs: 640, vector_length: 960] Running ./a.out
+10:08:49 DEBUG	[num_gangs: 640, vector_length: 960] Time: 0.000647
+10:08:49 INFO	[num_gangs: 640, vector_length: 960] Average: 0.000645, Standard Deviation: 0.000039
+10:08:49 DEBUG	[num_gangs: 640, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=640 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:08:52 DEBUG	[num_gangs: 640, vector_length:1024] Running ./a.out
+10:08:52 DEBUG	[num_gangs: 640, vector_length:1024] Time: 0.000685
+10:08:52 DEBUG	[num_gangs: 640, vector_length:1024] Running ./a.out
+10:08:52 DEBUG	[num_gangs: 640, vector_length:1024] Time: 0.000601
+10:08:52 DEBUG	[num_gangs: 640, vector_length:1024] Running ./a.out
+10:08:52 DEBUG	[num_gangs: 640, vector_length:1024] Time: 0.000603
+10:08:52 INFO	[num_gangs: 640, vector_length:1024] Average: 0.000630, Standard Deviation: 0.000048
+10:08:52 DEBUG	[num_gangs: 704, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:08:55 DEBUG	[num_gangs: 704, vector_length:  64] Running ./a.out
+10:08:55 DEBUG	[num_gangs: 704, vector_length:  64] Time: 0.000583
+10:08:55 DEBUG	[num_gangs: 704, vector_length:  64] Running ./a.out
+10:08:56 DEBUG	[num_gangs: 704, vector_length:  64] Time: 0.000534
+10:08:56 DEBUG	[num_gangs: 704, vector_length:  64] Running ./a.out
+10:08:56 DEBUG	[num_gangs: 704, vector_length:  64] Time: 0.000580
+10:08:56 INFO	[num_gangs: 704, vector_length:  64] Average: 0.000566, Standard Deviation: 0.000028
+10:08:56 DEBUG	[num_gangs: 704, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:08:58 DEBUG	[num_gangs: 704, vector_length: 128] Running ./a.out
+10:08:59 DEBUG	[num_gangs: 704, vector_length: 128] Time: 0.000631
+10:08:59 DEBUG	[num_gangs: 704, vector_length: 128] Running ./a.out
+10:08:59 DEBUG	[num_gangs: 704, vector_length: 128] Time: 0.000559
+10:08:59 DEBUG	[num_gangs: 704, vector_length: 128] Running ./a.out
+10:08:59 DEBUG	[num_gangs: 704, vector_length: 128] Time: 0.000577
+10:08:59 INFO	[num_gangs: 704, vector_length: 128] Average: 0.000589, Standard Deviation: 0.000037
+10:08:59 DEBUG	[num_gangs: 704, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:09:02 DEBUG	[num_gangs: 704, vector_length: 192] Running ./a.out
+10:09:02 DEBUG	[num_gangs: 704, vector_length: 192] Time: 0.000613
+10:09:02 DEBUG	[num_gangs: 704, vector_length: 192] Running ./a.out
+10:09:02 DEBUG	[num_gangs: 704, vector_length: 192] Time: 0.000594
+10:09:02 DEBUG	[num_gangs: 704, vector_length: 192] Running ./a.out
+10:09:03 DEBUG	[num_gangs: 704, vector_length: 192] Time: 0.000563
+10:09:03 INFO	[num_gangs: 704, vector_length: 192] Average: 0.000590, Standard Deviation: 0.000025
+10:09:03 DEBUG	[num_gangs: 704, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:09:05 DEBUG	[num_gangs: 704, vector_length: 256] Running ./a.out
+10:09:06 DEBUG	[num_gangs: 704, vector_length: 256] Time: 0.000634
+10:09:06 DEBUG	[num_gangs: 704, vector_length: 256] Running ./a.out
+10:09:06 DEBUG	[num_gangs: 704, vector_length: 256] Time: 0.000551
+10:09:06 DEBUG	[num_gangs: 704, vector_length: 256] Running ./a.out
+10:09:06 DEBUG	[num_gangs: 704, vector_length: 256] Time: 0.000553
+10:09:06 INFO	[num_gangs: 704, vector_length: 256] Average: 0.000579, Standard Deviation: 0.000047
+10:09:06 DEBUG	[num_gangs: 704, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:09:09 DEBUG	[num_gangs: 704, vector_length: 320] Running ./a.out
+10:09:09 DEBUG	[num_gangs: 704, vector_length: 320] Time: 0.000616
+10:09:09 DEBUG	[num_gangs: 704, vector_length: 320] Running ./a.out
+10:09:09 DEBUG	[num_gangs: 704, vector_length: 320] Time: 0.000558
+10:09:09 DEBUG	[num_gangs: 704, vector_length: 320] Running ./a.out
+10:09:10 DEBUG	[num_gangs: 704, vector_length: 320] Time: 0.000549
+10:09:10 INFO	[num_gangs: 704, vector_length: 320] Average: 0.000574, Standard Deviation: 0.000036
+10:09:10 DEBUG	[num_gangs: 704, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:09:12 DEBUG	[num_gangs: 704, vector_length: 384] Running ./a.out
+10:09:12 DEBUG	[num_gangs: 704, vector_length: 384] Time: 0.000607
+10:09:12 DEBUG	[num_gangs: 704, vector_length: 384] Running ./a.out
+10:09:13 DEBUG	[num_gangs: 704, vector_length: 384] Time: 0.000566
+10:09:13 DEBUG	[num_gangs: 704, vector_length: 384] Running ./a.out
+10:09:13 DEBUG	[num_gangs: 704, vector_length: 384] Time: 0.000615
+10:09:13 INFO	[num_gangs: 704, vector_length: 384] Average: 0.000596, Standard Deviation: 0.000026
+10:09:13 DEBUG	[num_gangs: 704, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:09:16 DEBUG	[num_gangs: 704, vector_length: 448] Running ./a.out
+10:09:16 DEBUG	[num_gangs: 704, vector_length: 448] Time: 0.000630
+10:09:16 DEBUG	[num_gangs: 704, vector_length: 448] Running ./a.out
+10:09:16 DEBUG	[num_gangs: 704, vector_length: 448] Time: 0.000557
+10:09:16 DEBUG	[num_gangs: 704, vector_length: 448] Running ./a.out
+10:09:16 DEBUG	[num_gangs: 704, vector_length: 448] Time: 0.000559
+10:09:16 INFO	[num_gangs: 704, vector_length: 448] Average: 0.000582, Standard Deviation: 0.000042
+10:09:16 DEBUG	[num_gangs: 704, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:09:19 DEBUG	[num_gangs: 704, vector_length: 512] Running ./a.out
+10:09:19 DEBUG	[num_gangs: 704, vector_length: 512] Time: 0.000639
+10:09:19 DEBUG	[num_gangs: 704, vector_length: 512] Running ./a.out
+10:09:20 DEBUG	[num_gangs: 704, vector_length: 512] Time: 0.000596
+10:09:20 DEBUG	[num_gangs: 704, vector_length: 512] Running ./a.out
+10:09:20 DEBUG	[num_gangs: 704, vector_length: 512] Time: 0.000576
+10:09:20 INFO	[num_gangs: 704, vector_length: 512] Average: 0.000604, Standard Deviation: 0.000032
+10:09:20 DEBUG	[num_gangs: 704, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:09:22 DEBUG	[num_gangs: 704, vector_length: 576] Running ./a.out
+10:09:23 DEBUG	[num_gangs: 704, vector_length: 576] Time: 0.000653
+10:09:23 DEBUG	[num_gangs: 704, vector_length: 576] Running ./a.out
+10:09:23 DEBUG	[num_gangs: 704, vector_length: 576] Time: 0.000597
+10:09:23 DEBUG	[num_gangs: 704, vector_length: 576] Running ./a.out
+10:09:23 DEBUG	[num_gangs: 704, vector_length: 576] Time: 0.000603
+10:09:23 INFO	[num_gangs: 704, vector_length: 576] Average: 0.000618, Standard Deviation: 0.000031
+10:09:23 DEBUG	[num_gangs: 704, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:09:26 DEBUG	[num_gangs: 704, vector_length: 640] Running ./a.out
+10:09:26 DEBUG	[num_gangs: 704, vector_length: 640] Time: 0.000673
+10:09:26 DEBUG	[num_gangs: 704, vector_length: 640] Running ./a.out
+10:09:26 DEBUG	[num_gangs: 704, vector_length: 640] Time: 0.000616
+10:09:26 DEBUG	[num_gangs: 704, vector_length: 640] Running ./a.out
+10:09:27 DEBUG	[num_gangs: 704, vector_length: 640] Time: 0.000655
+10:09:27 INFO	[num_gangs: 704, vector_length: 640] Average: 0.000648, Standard Deviation: 0.000029
+10:09:27 DEBUG	[num_gangs: 704, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:09:29 DEBUG	[num_gangs: 704, vector_length: 704] Running ./a.out
+10:09:30 DEBUG	[num_gangs: 704, vector_length: 704] Time: 0.000711
+10:09:30 DEBUG	[num_gangs: 704, vector_length: 704] Running ./a.out
+10:09:30 DEBUG	[num_gangs: 704, vector_length: 704] Time: 0.000602
+10:09:30 DEBUG	[num_gangs: 704, vector_length: 704] Running ./a.out
+10:09:30 DEBUG	[num_gangs: 704, vector_length: 704] Time: 0.000601
+10:09:30 INFO	[num_gangs: 704, vector_length: 704] Average: 0.000638, Standard Deviation: 0.000063
+10:09:30 DEBUG	[num_gangs: 704, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:09:33 DEBUG	[num_gangs: 704, vector_length: 768] Running ./a.out
+10:09:33 DEBUG	[num_gangs: 704, vector_length: 768] Time: 0.000663
+10:09:33 DEBUG	[num_gangs: 704, vector_length: 768] Running ./a.out
+10:09:33 DEBUG	[num_gangs: 704, vector_length: 768] Time: 0.000607
+10:09:33 DEBUG	[num_gangs: 704, vector_length: 768] Running ./a.out
+10:09:34 DEBUG	[num_gangs: 704, vector_length: 768] Time: 0.000665
+10:09:34 INFO	[num_gangs: 704, vector_length: 768] Average: 0.000645, Standard Deviation: 0.000033
+10:09:34 DEBUG	[num_gangs: 704, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:09:36 DEBUG	[num_gangs: 704, vector_length: 832] Running ./a.out
+10:09:36 DEBUG	[num_gangs: 704, vector_length: 832] Time: 0.000666
+10:09:36 DEBUG	[num_gangs: 704, vector_length: 832] Running ./a.out
+10:09:37 DEBUG	[num_gangs: 704, vector_length: 832] Time: 0.000459
+10:09:37 DEBUG	[num_gangs: 704, vector_length: 832] Running ./a.out
+10:09:37 DEBUG	[num_gangs: 704, vector_length: 832] Time: 0.000643
+10:09:37 INFO	[num_gangs: 704, vector_length: 832] Average: 0.000589, Standard Deviation: 0.000113
+10:09:37 DEBUG	[num_gangs: 704, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:09:40 DEBUG	[num_gangs: 704, vector_length: 896] Running ./a.out
+10:09:40 DEBUG	[num_gangs: 704, vector_length: 896] Time: 0.000669
+10:09:40 DEBUG	[num_gangs: 704, vector_length: 896] Running ./a.out
+10:09:40 DEBUG	[num_gangs: 704, vector_length: 896] Time: 0.000614
+10:09:40 DEBUG	[num_gangs: 704, vector_length: 896] Running ./a.out
+10:09:41 DEBUG	[num_gangs: 704, vector_length: 896] Time: 0.000607
+10:09:41 INFO	[num_gangs: 704, vector_length: 896] Average: 0.000630, Standard Deviation: 0.000034
+10:09:41 DEBUG	[num_gangs: 704, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:09:43 DEBUG	[num_gangs: 704, vector_length: 960] Running ./a.out
+10:09:43 DEBUG	[num_gangs: 704, vector_length: 960] Time: 0.000688
+10:09:43 DEBUG	[num_gangs: 704, vector_length: 960] Running ./a.out
+10:09:44 DEBUG	[num_gangs: 704, vector_length: 960] Time: 0.000665
+10:09:44 DEBUG	[num_gangs: 704, vector_length: 960] Running ./a.out
+10:09:44 DEBUG	[num_gangs: 704, vector_length: 960] Time: 0.000685
+10:09:44 INFO	[num_gangs: 704, vector_length: 960] Average: 0.000679, Standard Deviation: 0.000013
+10:09:44 DEBUG	[num_gangs: 704, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=704 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:09:46 DEBUG	[num_gangs: 704, vector_length:1024] Running ./a.out
+10:09:47 DEBUG	[num_gangs: 704, vector_length:1024] Time: 0.000715
+10:09:47 DEBUG	[num_gangs: 704, vector_length:1024] Running ./a.out
+10:09:47 DEBUG	[num_gangs: 704, vector_length:1024] Time: 0.000689
+10:09:47 DEBUG	[num_gangs: 704, vector_length:1024] Running ./a.out
+10:09:47 DEBUG	[num_gangs: 704, vector_length:1024] Time: 0.000728
+10:09:47 INFO	[num_gangs: 704, vector_length:1024] Average: 0.000711, Standard Deviation: 0.000020
+10:09:47 DEBUG	[num_gangs: 768, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:09:50 DEBUG	[num_gangs: 768, vector_length:  64] Running ./a.out
+10:09:50 DEBUG	[num_gangs: 768, vector_length:  64] Time: 0.000607
+10:09:50 DEBUG	[num_gangs: 768, vector_length:  64] Running ./a.out
+10:09:51 DEBUG	[num_gangs: 768, vector_length:  64] Time: 0.000558
+10:09:51 DEBUG	[num_gangs: 768, vector_length:  64] Running ./a.out
+10:09:51 DEBUG	[num_gangs: 768, vector_length:  64] Time: 0.000581
+10:09:51 INFO	[num_gangs: 768, vector_length:  64] Average: 0.000582, Standard Deviation: 0.000025
+10:09:51 DEBUG	[num_gangs: 768, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:09:53 DEBUG	[num_gangs: 768, vector_length: 128] Running ./a.out
+10:09:54 DEBUG	[num_gangs: 768, vector_length: 128] Time: 0.000626
+10:09:54 DEBUG	[num_gangs: 768, vector_length: 128] Running ./a.out
+10:09:54 DEBUG	[num_gangs: 768, vector_length: 128] Time: 0.000614
+10:09:54 DEBUG	[num_gangs: 768, vector_length: 128] Running ./a.out
+10:09:54 DEBUG	[num_gangs: 768, vector_length: 128] Time: 0.000572
+10:09:54 INFO	[num_gangs: 768, vector_length: 128] Average: 0.000604, Standard Deviation: 0.000028
+10:09:54 DEBUG	[num_gangs: 768, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:09:57 DEBUG	[num_gangs: 768, vector_length: 192] Running ./a.out
+10:09:57 DEBUG	[num_gangs: 768, vector_length: 192] Time: 0.000613
+10:09:57 DEBUG	[num_gangs: 768, vector_length: 192] Running ./a.out
+10:09:57 DEBUG	[num_gangs: 768, vector_length: 192] Time: 0.000582
+10:09:57 DEBUG	[num_gangs: 768, vector_length: 192] Running ./a.out
+10:09:58 DEBUG	[num_gangs: 768, vector_length: 192] Time: 0.000563
+10:09:58 INFO	[num_gangs: 768, vector_length: 192] Average: 0.000586, Standard Deviation: 0.000025
+10:09:58 DEBUG	[num_gangs: 768, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:10:00 DEBUG	[num_gangs: 768, vector_length: 256] Running ./a.out
+10:10:01 DEBUG	[num_gangs: 768, vector_length: 256] Time: 0.000623
+10:10:01 DEBUG	[num_gangs: 768, vector_length: 256] Running ./a.out
+10:10:01 DEBUG	[num_gangs: 768, vector_length: 256] Time: 0.000565
+10:10:01 DEBUG	[num_gangs: 768, vector_length: 256] Running ./a.out
+10:10:01 DEBUG	[num_gangs: 768, vector_length: 256] Time: 0.000559
+10:10:01 INFO	[num_gangs: 768, vector_length: 256] Average: 0.000582, Standard Deviation: 0.000035
+10:10:01 DEBUG	[num_gangs: 768, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:10:04 DEBUG	[num_gangs: 768, vector_length: 320] Running ./a.out
+10:10:04 DEBUG	[num_gangs: 768, vector_length: 320] Time: 0.000604
+10:10:04 DEBUG	[num_gangs: 768, vector_length: 320] Running ./a.out
+10:10:04 DEBUG	[num_gangs: 768, vector_length: 320] Time: 0.000542
+10:10:04 DEBUG	[num_gangs: 768, vector_length: 320] Running ./a.out
+10:10:05 DEBUG	[num_gangs: 768, vector_length: 320] Time: 0.000548
+10:10:05 INFO	[num_gangs: 768, vector_length: 320] Average: 0.000565, Standard Deviation: 0.000034
+10:10:05 DEBUG	[num_gangs: 768, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:10:07 DEBUG	[num_gangs: 768, vector_length: 384] Running ./a.out
+10:10:07 DEBUG	[num_gangs: 768, vector_length: 384] Time: 0.000627
+10:10:07 DEBUG	[num_gangs: 768, vector_length: 384] Running ./a.out
+10:10:08 DEBUG	[num_gangs: 768, vector_length: 384] Time: 0.000575
+10:10:08 DEBUG	[num_gangs: 768, vector_length: 384] Running ./a.out
+10:10:08 DEBUG	[num_gangs: 768, vector_length: 384] Time: 0.000579
+10:10:08 INFO	[num_gangs: 768, vector_length: 384] Average: 0.000594, Standard Deviation: 0.000029
+10:10:08 DEBUG	[num_gangs: 768, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:10:11 DEBUG	[num_gangs: 768, vector_length: 448] Running ./a.out
+10:10:11 DEBUG	[num_gangs: 768, vector_length: 448] Time: 0.000619
+10:10:11 DEBUG	[num_gangs: 768, vector_length: 448] Running ./a.out
+10:10:11 DEBUG	[num_gangs: 768, vector_length: 448] Time: 0.000572
+10:10:11 DEBUG	[num_gangs: 768, vector_length: 448] Running ./a.out
+10:10:12 DEBUG	[num_gangs: 768, vector_length: 448] Time: 0.000554
+10:10:12 INFO	[num_gangs: 768, vector_length: 448] Average: 0.000582, Standard Deviation: 0.000033
+10:10:12 DEBUG	[num_gangs: 768, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:10:14 DEBUG	[num_gangs: 768, vector_length: 512] Running ./a.out
+10:10:14 DEBUG	[num_gangs: 768, vector_length: 512] Time: 0.000617
+10:10:14 DEBUG	[num_gangs: 768, vector_length: 512] Running ./a.out
+10:10:15 DEBUG	[num_gangs: 768, vector_length: 512] Time: 0.000604
+10:10:15 DEBUG	[num_gangs: 768, vector_length: 512] Running ./a.out
+10:10:15 DEBUG	[num_gangs: 768, vector_length: 512] Time: 0.000591
+10:10:15 INFO	[num_gangs: 768, vector_length: 512] Average: 0.000604, Standard Deviation: 0.000013
+10:10:15 DEBUG	[num_gangs: 768, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:10:17 DEBUG	[num_gangs: 768, vector_length: 576] Running ./a.out
+10:10:18 DEBUG	[num_gangs: 768, vector_length: 576] Time: 0.000682
+10:10:18 DEBUG	[num_gangs: 768, vector_length: 576] Running ./a.out
+10:10:18 DEBUG	[num_gangs: 768, vector_length: 576] Time: 0.000608
+10:10:18 DEBUG	[num_gangs: 768, vector_length: 576] Running ./a.out
+10:10:18 DEBUG	[num_gangs: 768, vector_length: 576] Time: 0.000636
+10:10:18 INFO	[num_gangs: 768, vector_length: 576] Average: 0.000642, Standard Deviation: 0.000037
+10:10:18 DEBUG	[num_gangs: 768, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:10:21 DEBUG	[num_gangs: 768, vector_length: 640] Running ./a.out
+10:10:21 DEBUG	[num_gangs: 768, vector_length: 640] Time: 0.000659
+10:10:21 DEBUG	[num_gangs: 768, vector_length: 640] Running ./a.out
+10:10:22 DEBUG	[num_gangs: 768, vector_length: 640] Time: 0.000618
+10:10:22 DEBUG	[num_gangs: 768, vector_length: 640] Running ./a.out
+10:10:22 DEBUG	[num_gangs: 768, vector_length: 640] Time: 0.000628
+10:10:22 INFO	[num_gangs: 768, vector_length: 640] Average: 0.000635, Standard Deviation: 0.000021
+10:10:22 DEBUG	[num_gangs: 768, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:10:24 DEBUG	[num_gangs: 768, vector_length: 704] Running ./a.out
+10:10:25 DEBUG	[num_gangs: 768, vector_length: 704] Time: 0.000692
+10:10:25 DEBUG	[num_gangs: 768, vector_length: 704] Running ./a.out
+10:10:25 DEBUG	[num_gangs: 768, vector_length: 704] Time: 0.000640
+10:10:25 DEBUG	[num_gangs: 768, vector_length: 704] Running ./a.out
+10:10:25 DEBUG	[num_gangs: 768, vector_length: 704] Time: 0.000627
+10:10:25 INFO	[num_gangs: 768, vector_length: 704] Average: 0.000653, Standard Deviation: 0.000034
+10:10:25 DEBUG	[num_gangs: 768, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:10:28 DEBUG	[num_gangs: 768, vector_length: 768] Running ./a.out
+10:10:28 DEBUG	[num_gangs: 768, vector_length: 768] Time: 0.000690
+10:10:28 DEBUG	[num_gangs: 768, vector_length: 768] Running ./a.out
+10:10:28 DEBUG	[num_gangs: 768, vector_length: 768] Time: 0.000614
+10:10:28 DEBUG	[num_gangs: 768, vector_length: 768] Running ./a.out
+10:10:29 DEBUG	[num_gangs: 768, vector_length: 768] Time: 0.000616
+10:10:29 INFO	[num_gangs: 768, vector_length: 768] Average: 0.000640, Standard Deviation: 0.000043
+10:10:29 DEBUG	[num_gangs: 768, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:10:31 DEBUG	[num_gangs: 768, vector_length: 832] Running ./a.out
+10:10:32 DEBUG	[num_gangs: 768, vector_length: 832] Time: 0.000674
+10:10:32 DEBUG	[num_gangs: 768, vector_length: 832] Running ./a.out
+10:10:32 DEBUG	[num_gangs: 768, vector_length: 832] Time: 0.000625
+10:10:32 DEBUG	[num_gangs: 768, vector_length: 832] Running ./a.out
+10:10:32 DEBUG	[num_gangs: 768, vector_length: 832] Time: 0.000729
+10:10:32 INFO	[num_gangs: 768, vector_length: 832] Average: 0.000676, Standard Deviation: 0.000052
+10:10:32 DEBUG	[num_gangs: 768, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:10:35 DEBUG	[num_gangs: 768, vector_length: 896] Running ./a.out
+10:10:35 DEBUG	[num_gangs: 768, vector_length: 896] Time: 0.000676
+10:10:35 DEBUG	[num_gangs: 768, vector_length: 896] Running ./a.out
+10:10:35 DEBUG	[num_gangs: 768, vector_length: 896] Time: 0.000666
+10:10:35 DEBUG	[num_gangs: 768, vector_length: 896] Running ./a.out
+10:10:36 DEBUG	[num_gangs: 768, vector_length: 896] Time: 0.000638
+10:10:36 INFO	[num_gangs: 768, vector_length: 896] Average: 0.000660, Standard Deviation: 0.000020
+10:10:36 DEBUG	[num_gangs: 768, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:10:38 DEBUG	[num_gangs: 768, vector_length: 960] Running ./a.out
+10:10:39 DEBUG	[num_gangs: 768, vector_length: 960] Time: 0.000696
+10:10:39 DEBUG	[num_gangs: 768, vector_length: 960] Running ./a.out
+10:10:39 DEBUG	[num_gangs: 768, vector_length: 960] Time: 0.000484
+10:10:39 DEBUG	[num_gangs: 768, vector_length: 960] Running ./a.out
+10:10:39 DEBUG	[num_gangs: 768, vector_length: 960] Time: 0.000668
+10:10:39 INFO	[num_gangs: 768, vector_length: 960] Average: 0.000616, Standard Deviation: 0.000115
+10:10:39 DEBUG	[num_gangs: 768, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=768 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:10:42 DEBUG	[num_gangs: 768, vector_length:1024] Running ./a.out
+10:10:42 DEBUG	[num_gangs: 768, vector_length:1024] Time: 0.000697
+10:10:42 DEBUG	[num_gangs: 768, vector_length:1024] Running ./a.out
+10:10:42 DEBUG	[num_gangs: 768, vector_length:1024] Time: 0.000619
+10:10:42 DEBUG	[num_gangs: 768, vector_length:1024] Running ./a.out
+10:10:43 DEBUG	[num_gangs: 768, vector_length:1024] Time: 0.000668
+10:10:43 INFO	[num_gangs: 768, vector_length:1024] Average: 0.000661, Standard Deviation: 0.000039
+10:10:43 DEBUG	[num_gangs: 832, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:10:45 DEBUG	[num_gangs: 832, vector_length:  64] Running ./a.out
+10:10:45 DEBUG	[num_gangs: 832, vector_length:  64] Time: 0.000583
+10:10:45 DEBUG	[num_gangs: 832, vector_length:  64] Running ./a.out
+10:10:46 DEBUG	[num_gangs: 832, vector_length:  64] Time: 0.000534
+10:10:46 DEBUG	[num_gangs: 832, vector_length:  64] Running ./a.out
+10:10:46 DEBUG	[num_gangs: 832, vector_length:  64] Time: 0.000559
+10:10:46 INFO	[num_gangs: 832, vector_length:  64] Average: 0.000559, Standard Deviation: 0.000024
+10:10:46 DEBUG	[num_gangs: 832, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:10:49 DEBUG	[num_gangs: 832, vector_length: 128] Running ./a.out
+10:10:49 DEBUG	[num_gangs: 832, vector_length: 128] Time: 0.000632
+10:10:49 DEBUG	[num_gangs: 832, vector_length: 128] Running ./a.out
+10:10:49 DEBUG	[num_gangs: 832, vector_length: 128] Time: 0.000590
+10:10:49 DEBUG	[num_gangs: 832, vector_length: 128] Running ./a.out
+10:10:50 DEBUG	[num_gangs: 832, vector_length: 128] Time: 0.000579
+10:10:50 INFO	[num_gangs: 832, vector_length: 128] Average: 0.000600, Standard Deviation: 0.000028
+10:10:50 DEBUG	[num_gangs: 832, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:10:52 DEBUG	[num_gangs: 832, vector_length: 192] Running ./a.out
+10:10:52 DEBUG	[num_gangs: 832, vector_length: 192] Time: 0.000643
+10:10:52 DEBUG	[num_gangs: 832, vector_length: 192] Running ./a.out
+10:10:53 DEBUG	[num_gangs: 832, vector_length: 192] Time: 0.000582
+10:10:53 DEBUG	[num_gangs: 832, vector_length: 192] Running ./a.out
+10:10:53 DEBUG	[num_gangs: 832, vector_length: 192] Time: 0.000560
+10:10:53 INFO	[num_gangs: 832, vector_length: 192] Average: 0.000595, Standard Deviation: 0.000043
+10:10:53 DEBUG	[num_gangs: 832, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:10:55 DEBUG	[num_gangs: 832, vector_length: 256] Running ./a.out
+10:10:56 DEBUG	[num_gangs: 832, vector_length: 256] Time: 0.000620
+10:10:56 DEBUG	[num_gangs: 832, vector_length: 256] Running ./a.out
+10:10:56 DEBUG	[num_gangs: 832, vector_length: 256] Time: 0.000560
+10:10:56 DEBUG	[num_gangs: 832, vector_length: 256] Running ./a.out
+10:10:56 DEBUG	[num_gangs: 832, vector_length: 256] Time: 0.000537
+10:10:56 INFO	[num_gangs: 832, vector_length: 256] Average: 0.000572, Standard Deviation: 0.000043
+10:10:56 DEBUG	[num_gangs: 832, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:10:59 DEBUG	[num_gangs: 832, vector_length: 320] Running ./a.out
+10:10:59 DEBUG	[num_gangs: 832, vector_length: 320] Time: 0.000603
+10:10:59 DEBUG	[num_gangs: 832, vector_length: 320] Running ./a.out
+10:11:00 DEBUG	[num_gangs: 832, vector_length: 320] Time: 0.000603
+10:11:00 DEBUG	[num_gangs: 832, vector_length: 320] Running ./a.out
+10:11:00 DEBUG	[num_gangs: 832, vector_length: 320] Time: 0.000592
+10:11:00 INFO	[num_gangs: 832, vector_length: 320] Average: 0.000599, Standard Deviation: 0.000006
+10:11:00 DEBUG	[num_gangs: 832, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:11:02 DEBUG	[num_gangs: 832, vector_length: 384] Running ./a.out
+10:11:03 DEBUG	[num_gangs: 832, vector_length: 384] Time: 0.000651
+10:11:03 DEBUG	[num_gangs: 832, vector_length: 384] Running ./a.out
+10:11:03 DEBUG	[num_gangs: 832, vector_length: 384] Time: 0.000581
+10:11:03 DEBUG	[num_gangs: 832, vector_length: 384] Running ./a.out
+10:11:03 DEBUG	[num_gangs: 832, vector_length: 384] Time: 0.000565
+10:11:03 INFO	[num_gangs: 832, vector_length: 384] Average: 0.000599, Standard Deviation: 0.000046
+10:11:03 DEBUG	[num_gangs: 832, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:11:06 DEBUG	[num_gangs: 832, vector_length: 448] Running ./a.out
+10:11:06 DEBUG	[num_gangs: 832, vector_length: 448] Time: 0.000641
+10:11:06 DEBUG	[num_gangs: 832, vector_length: 448] Running ./a.out
+10:11:06 DEBUG	[num_gangs: 832, vector_length: 448] Time: 0.000564
+10:11:06 DEBUG	[num_gangs: 832, vector_length: 448] Running ./a.out
+10:11:07 DEBUG	[num_gangs: 832, vector_length: 448] Time: 0.000570
+10:11:07 INFO	[num_gangs: 832, vector_length: 448] Average: 0.000592, Standard Deviation: 0.000043
+10:11:07 DEBUG	[num_gangs: 832, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:11:09 DEBUG	[num_gangs: 832, vector_length: 512] Running ./a.out
+10:11:10 DEBUG	[num_gangs: 832, vector_length: 512] Time: 0.000623
+10:11:10 DEBUG	[num_gangs: 832, vector_length: 512] Running ./a.out
+10:11:10 DEBUG	[num_gangs: 832, vector_length: 512] Time: 0.000588
+10:11:10 DEBUG	[num_gangs: 832, vector_length: 512] Running ./a.out
+10:11:10 DEBUG	[num_gangs: 832, vector_length: 512] Time: 0.000565
+10:11:10 INFO	[num_gangs: 832, vector_length: 512] Average: 0.000592, Standard Deviation: 0.000029
+10:11:10 DEBUG	[num_gangs: 832, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:11:13 DEBUG	[num_gangs: 832, vector_length: 576] Running ./a.out
+10:11:13 DEBUG	[num_gangs: 832, vector_length: 576] Time: 0.000663
+10:11:13 DEBUG	[num_gangs: 832, vector_length: 576] Running ./a.out
+10:11:13 DEBUG	[num_gangs: 832, vector_length: 576] Time: 0.000583
+10:11:13 DEBUG	[num_gangs: 832, vector_length: 576] Running ./a.out
+10:11:14 DEBUG	[num_gangs: 832, vector_length: 576] Time: 0.000619
+10:11:14 INFO	[num_gangs: 832, vector_length: 576] Average: 0.000622, Standard Deviation: 0.000040
+10:11:14 DEBUG	[num_gangs: 832, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:11:16 DEBUG	[num_gangs: 832, vector_length: 640] Running ./a.out
+10:11:17 DEBUG	[num_gangs: 832, vector_length: 640] Time: 0.000637
+10:11:17 DEBUG	[num_gangs: 832, vector_length: 640] Running ./a.out
+10:11:17 DEBUG	[num_gangs: 832, vector_length: 640] Time: 0.000659
+10:11:17 DEBUG	[num_gangs: 832, vector_length: 640] Running ./a.out
+10:11:17 DEBUG	[num_gangs: 832, vector_length: 640] Time: 0.000670
+10:11:17 INFO	[num_gangs: 832, vector_length: 640] Average: 0.000655, Standard Deviation: 0.000017
+10:11:17 DEBUG	[num_gangs: 832, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:11:20 DEBUG	[num_gangs: 832, vector_length: 704] Running ./a.out
+10:11:20 DEBUG	[num_gangs: 832, vector_length: 704] Time: 0.000699
+10:11:20 DEBUG	[num_gangs: 832, vector_length: 704] Running ./a.out
+10:11:20 DEBUG	[num_gangs: 832, vector_length: 704] Time: 0.000616
+10:11:20 DEBUG	[num_gangs: 832, vector_length: 704] Running ./a.out
+10:11:21 DEBUG	[num_gangs: 832, vector_length: 704] Time: 0.000645
+10:11:21 INFO	[num_gangs: 832, vector_length: 704] Average: 0.000653, Standard Deviation: 0.000042
+10:11:21 DEBUG	[num_gangs: 832, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:11:23 DEBUG	[num_gangs: 832, vector_length: 768] Running ./a.out
+10:11:23 DEBUG	[num_gangs: 832, vector_length: 768] Time: 0.000696
+10:11:23 DEBUG	[num_gangs: 832, vector_length: 768] Running ./a.out
+10:11:24 DEBUG	[num_gangs: 832, vector_length: 768] Time: 0.000624
+10:11:24 DEBUG	[num_gangs: 832, vector_length: 768] Running ./a.out
+10:11:24 DEBUG	[num_gangs: 832, vector_length: 768] Time: 0.000815
+10:11:24 INFO	[num_gangs: 832, vector_length: 768] Average: 0.000712, Standard Deviation: 0.000096
+10:11:24 DEBUG	[num_gangs: 832, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:11:27 DEBUG	[num_gangs: 832, vector_length: 832] Running ./a.out
+10:11:27 DEBUG	[num_gangs: 832, vector_length: 832] Time: 0.000498
+10:11:27 DEBUG	[num_gangs: 832, vector_length: 832] Running ./a.out
+10:11:27 DEBUG	[num_gangs: 832, vector_length: 832] Time: 0.000652
+10:11:27 DEBUG	[num_gangs: 832, vector_length: 832] Running ./a.out
+10:11:28 DEBUG	[num_gangs: 832, vector_length: 832] Time: 0.000686
+10:11:28 INFO	[num_gangs: 832, vector_length: 832] Average: 0.000612, Standard Deviation: 0.000100
+10:11:28 DEBUG	[num_gangs: 832, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:11:30 DEBUG	[num_gangs: 832, vector_length: 896] Running ./a.out
+10:11:30 DEBUG	[num_gangs: 832, vector_length: 896] Time: 0.000735
+10:11:30 DEBUG	[num_gangs: 832, vector_length: 896] Running ./a.out
+10:11:31 DEBUG	[num_gangs: 832, vector_length: 896] Time: 0.000688
+10:11:31 DEBUG	[num_gangs: 832, vector_length: 896] Running ./a.out
+10:11:31 DEBUG	[num_gangs: 832, vector_length: 896] Time: 0.000653
+10:11:31 INFO	[num_gangs: 832, vector_length: 896] Average: 0.000692, Standard Deviation: 0.000041
+10:11:31 DEBUG	[num_gangs: 832, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:11:34 DEBUG	[num_gangs: 832, vector_length: 960] Running ./a.out
+10:11:34 DEBUG	[num_gangs: 832, vector_length: 960] Time: 0.000735
+10:11:34 DEBUG	[num_gangs: 832, vector_length: 960] Running ./a.out
+10:11:34 DEBUG	[num_gangs: 832, vector_length: 960] Time: 0.000679
+10:11:34 DEBUG	[num_gangs: 832, vector_length: 960] Running ./a.out
+10:11:34 DEBUG	[num_gangs: 832, vector_length: 960] Time: 0.000660
+10:11:34 INFO	[num_gangs: 832, vector_length: 960] Average: 0.000691, Standard Deviation: 0.000039
+10:11:34 DEBUG	[num_gangs: 832, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=832 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:11:37 DEBUG	[num_gangs: 832, vector_length:1024] Running ./a.out
+10:11:37 DEBUG	[num_gangs: 832, vector_length:1024] Time: 0.000713
+10:11:37 DEBUG	[num_gangs: 832, vector_length:1024] Running ./a.out
+10:11:38 DEBUG	[num_gangs: 832, vector_length:1024] Time: 0.000680
+10:11:38 DEBUG	[num_gangs: 832, vector_length:1024] Running ./a.out
+10:11:38 DEBUG	[num_gangs: 832, vector_length:1024] Time: 0.000676
+10:11:38 INFO	[num_gangs: 832, vector_length:1024] Average: 0.000690, Standard Deviation: 0.000020
+10:11:38 DEBUG	[num_gangs: 896, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:11:40 DEBUG	[num_gangs: 896, vector_length:  64] Running ./a.out
+10:11:41 DEBUG	[num_gangs: 896, vector_length:  64] Time: 0.000608
+10:11:41 DEBUG	[num_gangs: 896, vector_length:  64] Running ./a.out
+10:11:41 DEBUG	[num_gangs: 896, vector_length:  64] Time: 0.000533
+10:11:41 DEBUG	[num_gangs: 896, vector_length:  64] Running ./a.out
+10:11:41 DEBUG	[num_gangs: 896, vector_length:  64] Time: 0.000524
+10:11:41 INFO	[num_gangs: 896, vector_length:  64] Average: 0.000555, Standard Deviation: 0.000046
+10:11:41 DEBUG	[num_gangs: 896, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:11:44 DEBUG	[num_gangs: 896, vector_length: 128] Running ./a.out
+10:11:44 DEBUG	[num_gangs: 896, vector_length: 128] Time: 0.000583
+10:11:44 DEBUG	[num_gangs: 896, vector_length: 128] Running ./a.out
+10:11:44 DEBUG	[num_gangs: 896, vector_length: 128] Time: 0.000560
+10:11:44 DEBUG	[num_gangs: 896, vector_length: 128] Running ./a.out
+10:11:45 DEBUG	[num_gangs: 896, vector_length: 128] Time: 0.000549
+10:11:45 INFO	[num_gangs: 896, vector_length: 128] Average: 0.000564, Standard Deviation: 0.000017
+10:11:45 DEBUG	[num_gangs: 896, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:11:47 DEBUG	[num_gangs: 896, vector_length: 192] Running ./a.out
+10:11:48 DEBUG	[num_gangs: 896, vector_length: 192] Time: 0.000611
+10:11:48 DEBUG	[num_gangs: 896, vector_length: 192] Running ./a.out
+10:11:48 DEBUG	[num_gangs: 896, vector_length: 192] Time: 0.000408
+10:11:48 DEBUG	[num_gangs: 896, vector_length: 192] Running ./a.out
+10:11:48 DEBUG	[num_gangs: 896, vector_length: 192] Time: 0.000610
+10:11:48 INFO	[num_gangs: 896, vector_length: 192] Average: 0.000543, Standard Deviation: 0.000117
+10:11:48 DEBUG	[num_gangs: 896, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:11:51 DEBUG	[num_gangs: 896, vector_length: 256] Running ./a.out
+10:11:51 DEBUG	[num_gangs: 896, vector_length: 256] Time: 0.000625
+10:11:51 DEBUG	[num_gangs: 896, vector_length: 256] Running ./a.out
+10:11:51 DEBUG	[num_gangs: 896, vector_length: 256] Time: 0.000540
+10:11:51 DEBUG	[num_gangs: 896, vector_length: 256] Running ./a.out
+10:11:52 DEBUG	[num_gangs: 896, vector_length: 256] Time: 0.000547
+10:11:52 INFO	[num_gangs: 896, vector_length: 256] Average: 0.000571, Standard Deviation: 0.000047
+10:11:52 DEBUG	[num_gangs: 896, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:11:54 DEBUG	[num_gangs: 896, vector_length: 320] Running ./a.out
+10:11:54 DEBUG	[num_gangs: 896, vector_length: 320] Time: 0.000602
+10:11:54 DEBUG	[num_gangs: 896, vector_length: 320] Running ./a.out
+10:11:55 DEBUG	[num_gangs: 896, vector_length: 320] Time: 0.000570
+10:11:55 DEBUG	[num_gangs: 896, vector_length: 320] Running ./a.out
+10:11:55 DEBUG	[num_gangs: 896, vector_length: 320] Time: 0.000600
+10:11:55 INFO	[num_gangs: 896, vector_length: 320] Average: 0.000591, Standard Deviation: 0.000018
+10:11:55 DEBUG	[num_gangs: 896, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:11:58 DEBUG	[num_gangs: 896, vector_length: 384] Running ./a.out
+10:11:58 DEBUG	[num_gangs: 896, vector_length: 384] Time: 0.000631
+10:11:58 DEBUG	[num_gangs: 896, vector_length: 384] Running ./a.out
+10:11:58 DEBUG	[num_gangs: 896, vector_length: 384] Time: 0.000594
+10:11:58 DEBUG	[num_gangs: 896, vector_length: 384] Running ./a.out
+10:11:59 DEBUG	[num_gangs: 896, vector_length: 384] Time: 0.000576
+10:11:59 INFO	[num_gangs: 896, vector_length: 384] Average: 0.000600, Standard Deviation: 0.000028
+10:11:59 DEBUG	[num_gangs: 896, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:12:01 DEBUG	[num_gangs: 896, vector_length: 448] Running ./a.out
+10:12:01 DEBUG	[num_gangs: 896, vector_length: 448] Time: 0.000667
+10:12:01 DEBUG	[num_gangs: 896, vector_length: 448] Running ./a.out
+10:12:02 DEBUG	[num_gangs: 896, vector_length: 448] Time: 0.000593
+10:12:02 DEBUG	[num_gangs: 896, vector_length: 448] Running ./a.out
+10:12:02 DEBUG	[num_gangs: 896, vector_length: 448] Time: 0.000720
+10:12:02 INFO	[num_gangs: 896, vector_length: 448] Average: 0.000660, Standard Deviation: 0.000064
+10:12:02 DEBUG	[num_gangs: 896, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:12:05 DEBUG	[num_gangs: 896, vector_length: 512] Running ./a.out
+10:12:05 DEBUG	[num_gangs: 896, vector_length: 512] Time: 0.000645
+10:12:05 DEBUG	[num_gangs: 896, vector_length: 512] Running ./a.out
+10:12:05 DEBUG	[num_gangs: 896, vector_length: 512] Time: 0.000616
+10:12:05 DEBUG	[num_gangs: 896, vector_length: 512] Running ./a.out
+10:12:05 DEBUG	[num_gangs: 896, vector_length: 512] Time: 0.000628
+10:12:05 INFO	[num_gangs: 896, vector_length: 512] Average: 0.000630, Standard Deviation: 0.000015
+10:12:05 DEBUG	[num_gangs: 896, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:12:08 DEBUG	[num_gangs: 896, vector_length: 576] Running ./a.out
+10:12:08 DEBUG	[num_gangs: 896, vector_length: 576] Time: 0.000708
+10:12:08 DEBUG	[num_gangs: 896, vector_length: 576] Running ./a.out
+10:12:09 DEBUG	[num_gangs: 896, vector_length: 576] Time: 0.000609
+10:12:09 DEBUG	[num_gangs: 896, vector_length: 576] Running ./a.out
+10:12:09 DEBUG	[num_gangs: 896, vector_length: 576] Time: 0.000630
+10:12:09 INFO	[num_gangs: 896, vector_length: 576] Average: 0.000649, Standard Deviation: 0.000052
+10:12:09 DEBUG	[num_gangs: 896, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:12:11 DEBUG	[num_gangs: 896, vector_length: 640] Running ./a.out
+10:12:12 DEBUG	[num_gangs: 896, vector_length: 640] Time: 0.000642
+10:12:12 DEBUG	[num_gangs: 896, vector_length: 640] Running ./a.out
+10:12:12 DEBUG	[num_gangs: 896, vector_length: 640] Time: 0.000592
+10:12:12 DEBUG	[num_gangs: 896, vector_length: 640] Running ./a.out
+10:12:12 DEBUG	[num_gangs: 896, vector_length: 640] Time: 0.000583
+10:12:12 INFO	[num_gangs: 896, vector_length: 640] Average: 0.000606, Standard Deviation: 0.000032
+10:12:12 DEBUG	[num_gangs: 896, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:12:15 DEBUG	[num_gangs: 896, vector_length: 704] Running ./a.out
+10:12:15 DEBUG	[num_gangs: 896, vector_length: 704] Time: 0.000705
+10:12:15 DEBUG	[num_gangs: 896, vector_length: 704] Running ./a.out
+10:12:16 DEBUG	[num_gangs: 896, vector_length: 704] Time: 0.000640
+10:12:16 DEBUG	[num_gangs: 896, vector_length: 704] Running ./a.out
+10:12:16 DEBUG	[num_gangs: 896, vector_length: 704] Time: 0.000655
+10:12:16 INFO	[num_gangs: 896, vector_length: 704] Average: 0.000667, Standard Deviation: 0.000034
+10:12:16 DEBUG	[num_gangs: 896, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:12:18 DEBUG	[num_gangs: 896, vector_length: 768] Running ./a.out
+10:12:19 DEBUG	[num_gangs: 896, vector_length: 768] Time: 0.000704
+10:12:19 DEBUG	[num_gangs: 896, vector_length: 768] Running ./a.out
+10:12:19 DEBUG	[num_gangs: 896, vector_length: 768] Time: 0.000486
+10:12:19 DEBUG	[num_gangs: 896, vector_length: 768] Running ./a.out
+10:12:19 DEBUG	[num_gangs: 896, vector_length: 768] Time: 0.000675
+10:12:19 INFO	[num_gangs: 896, vector_length: 768] Average: 0.000622, Standard Deviation: 0.000118
+10:12:19 DEBUG	[num_gangs: 896, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:12:22 DEBUG	[num_gangs: 896, vector_length: 832] Running ./a.out
+10:12:22 DEBUG	[num_gangs: 896, vector_length: 832] Time: 0.000707
+10:12:22 DEBUG	[num_gangs: 896, vector_length: 832] Running ./a.out
+10:12:22 DEBUG	[num_gangs: 896, vector_length: 832] Time: 0.000631
+10:12:22 DEBUG	[num_gangs: 896, vector_length: 832] Running ./a.out
+10:12:23 DEBUG	[num_gangs: 896, vector_length: 832] Time: 0.000638
+10:12:23 INFO	[num_gangs: 896, vector_length: 832] Average: 0.000659, Standard Deviation: 0.000042
+10:12:23 DEBUG	[num_gangs: 896, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:12:25 DEBUG	[num_gangs: 896, vector_length: 896] Running ./a.out
+10:12:26 DEBUG	[num_gangs: 896, vector_length: 896] Time: 0.000688
+10:12:26 DEBUG	[num_gangs: 896, vector_length: 896] Running ./a.out
+10:12:26 DEBUG	[num_gangs: 896, vector_length: 896] Time: 0.000651
+10:12:26 DEBUG	[num_gangs: 896, vector_length: 896] Running ./a.out
+10:12:26 DEBUG	[num_gangs: 896, vector_length: 896] Time: 0.000683
+10:12:26 INFO	[num_gangs: 896, vector_length: 896] Average: 0.000674, Standard Deviation: 0.000020
+10:12:26 DEBUG	[num_gangs: 896, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:12:29 DEBUG	[num_gangs: 896, vector_length: 960] Running ./a.out
+10:12:29 DEBUG	[num_gangs: 896, vector_length: 960] Time: 0.000719
+10:12:29 DEBUG	[num_gangs: 896, vector_length: 960] Running ./a.out
+10:12:29 DEBUG	[num_gangs: 896, vector_length: 960] Time: 0.000641
+10:12:29 DEBUG	[num_gangs: 896, vector_length: 960] Running ./a.out
+10:12:30 DEBUG	[num_gangs: 896, vector_length: 960] Time: 0.000651
+10:12:30 INFO	[num_gangs: 896, vector_length: 960] Average: 0.000670, Standard Deviation: 0.000043
+10:12:30 DEBUG	[num_gangs: 896, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=896 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:12:32 DEBUG	[num_gangs: 896, vector_length:1024] Running ./a.out
+10:12:32 DEBUG	[num_gangs: 896, vector_length:1024] Time: 0.000698
+10:12:32 DEBUG	[num_gangs: 896, vector_length:1024] Running ./a.out
+10:12:33 DEBUG	[num_gangs: 896, vector_length:1024] Time: 0.000640
+10:12:33 DEBUG	[num_gangs: 896, vector_length:1024] Running ./a.out
+10:12:33 DEBUG	[num_gangs: 896, vector_length:1024] Time: 0.000669
+10:12:33 INFO	[num_gangs: 896, vector_length:1024] Average: 0.000669, Standard Deviation: 0.000029
+10:12:33 DEBUG	[num_gangs: 960, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:12:36 DEBUG	[num_gangs: 960, vector_length:  64] Running ./a.out
+10:12:36 DEBUG	[num_gangs: 960, vector_length:  64] Time: 0.000611
+10:12:36 DEBUG	[num_gangs: 960, vector_length:  64] Running ./a.out
+10:12:36 DEBUG	[num_gangs: 960, vector_length:  64] Time: 0.000582
+10:12:36 DEBUG	[num_gangs: 960, vector_length:  64] Running ./a.out
+10:12:37 DEBUG	[num_gangs: 960, vector_length:  64] Time: 0.000592
+10:12:37 INFO	[num_gangs: 960, vector_length:  64] Average: 0.000595, Standard Deviation: 0.000015
+10:12:37 DEBUG	[num_gangs: 960, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:12:39 DEBUG	[num_gangs: 960, vector_length: 128] Running ./a.out
+10:12:39 DEBUG	[num_gangs: 960, vector_length: 128] Time: 0.000614
+10:12:39 DEBUG	[num_gangs: 960, vector_length: 128] Running ./a.out
+10:12:40 DEBUG	[num_gangs: 960, vector_length: 128] Time: 0.000586
+10:12:40 DEBUG	[num_gangs: 960, vector_length: 128] Running ./a.out
+10:12:40 DEBUG	[num_gangs: 960, vector_length: 128] Time: 0.000561
+10:12:40 INFO	[num_gangs: 960, vector_length: 128] Average: 0.000587, Standard Deviation: 0.000027
+10:12:40 DEBUG	[num_gangs: 960, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:12:42 DEBUG	[num_gangs: 960, vector_length: 192] Running ./a.out
+10:12:43 DEBUG	[num_gangs: 960, vector_length: 192] Time: 0.000609
+10:12:43 DEBUG	[num_gangs: 960, vector_length: 192] Running ./a.out
+10:12:43 DEBUG	[num_gangs: 960, vector_length: 192] Time: 0.000536
+10:12:43 DEBUG	[num_gangs: 960, vector_length: 192] Running ./a.out
+10:12:43 DEBUG	[num_gangs: 960, vector_length: 192] Time: 0.000556
+10:12:43 INFO	[num_gangs: 960, vector_length: 192] Average: 0.000567, Standard Deviation: 0.000038
+10:12:43 DEBUG	[num_gangs: 960, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:12:46 DEBUG	[num_gangs: 960, vector_length: 256] Running ./a.out
+10:12:46 DEBUG	[num_gangs: 960, vector_length: 256] Time: 0.000625
+10:12:46 DEBUG	[num_gangs: 960, vector_length: 256] Running ./a.out
+10:12:47 DEBUG	[num_gangs: 960, vector_length: 256] Time: 0.000539
+10:12:47 DEBUG	[num_gangs: 960, vector_length: 256] Running ./a.out
+10:12:47 DEBUG	[num_gangs: 960, vector_length: 256] Time: 0.000564
+10:12:47 INFO	[num_gangs: 960, vector_length: 256] Average: 0.000576, Standard Deviation: 0.000044
+10:12:47 DEBUG	[num_gangs: 960, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:12:49 DEBUG	[num_gangs: 960, vector_length: 320] Running ./a.out
+10:12:50 DEBUG	[num_gangs: 960, vector_length: 320] Time: 0.000627
+10:12:50 DEBUG	[num_gangs: 960, vector_length: 320] Running ./a.out
+10:12:50 DEBUG	[num_gangs: 960, vector_length: 320] Time: 0.000569
+10:12:50 DEBUG	[num_gangs: 960, vector_length: 320] Running ./a.out
+10:12:50 DEBUG	[num_gangs: 960, vector_length: 320] Time: 0.000548
+10:12:50 INFO	[num_gangs: 960, vector_length: 320] Average: 0.000581, Standard Deviation: 0.000041
+10:12:50 DEBUG	[num_gangs: 960, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:12:53 DEBUG	[num_gangs: 960, vector_length: 384] Running ./a.out
+10:12:53 DEBUG	[num_gangs: 960, vector_length: 384] Time: 0.000578
+10:12:53 DEBUG	[num_gangs: 960, vector_length: 384] Running ./a.out
+10:12:54 DEBUG	[num_gangs: 960, vector_length: 384] Time: 0.000569
+10:12:54 DEBUG	[num_gangs: 960, vector_length: 384] Running ./a.out
+10:12:54 DEBUG	[num_gangs: 960, vector_length: 384] Time: 0.000550
+10:12:54 INFO	[num_gangs: 960, vector_length: 384] Average: 0.000566, Standard Deviation: 0.000014
+10:12:54 DEBUG	[num_gangs: 960, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:12:56 DEBUG	[num_gangs: 960, vector_length: 448] Running ./a.out
+10:12:57 DEBUG	[num_gangs: 960, vector_length: 448] Time: 0.000624
+10:12:57 DEBUG	[num_gangs: 960, vector_length: 448] Running ./a.out
+10:12:57 DEBUG	[num_gangs: 960, vector_length: 448] Time: 0.000429
+10:12:57 DEBUG	[num_gangs: 960, vector_length: 448] Running ./a.out
+10:12:57 DEBUG	[num_gangs: 960, vector_length: 448] Time: 0.000620
+10:12:57 INFO	[num_gangs: 960, vector_length: 448] Average: 0.000558, Standard Deviation: 0.000111
+10:12:57 DEBUG	[num_gangs: 960, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:13:00 DEBUG	[num_gangs: 960, vector_length: 512] Running ./a.out
+10:13:00 DEBUG	[num_gangs: 960, vector_length: 512] Time: 0.000645
+10:13:00 DEBUG	[num_gangs: 960, vector_length: 512] Running ./a.out
+10:13:00 DEBUG	[num_gangs: 960, vector_length: 512] Time: 0.000590
+10:13:00 DEBUG	[num_gangs: 960, vector_length: 512] Running ./a.out
+10:13:01 DEBUG	[num_gangs: 960, vector_length: 512] Time: 0.000597
+10:13:01 INFO	[num_gangs: 960, vector_length: 512] Average: 0.000611, Standard Deviation: 0.000030
+10:13:01 DEBUG	[num_gangs: 960, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:13:03 DEBUG	[num_gangs: 960, vector_length: 576] Running ./a.out
+10:13:04 DEBUG	[num_gangs: 960, vector_length: 576] Time: 0.000652
+10:13:04 DEBUG	[num_gangs: 960, vector_length: 576] Running ./a.out
+10:13:04 DEBUG	[num_gangs: 960, vector_length: 576] Time: 0.000593
+10:13:04 DEBUG	[num_gangs: 960, vector_length: 576] Running ./a.out
+10:13:04 DEBUG	[num_gangs: 960, vector_length: 576] Time: 0.000620
+10:13:04 INFO	[num_gangs: 960, vector_length: 576] Average: 0.000622, Standard Deviation: 0.000030
+10:13:04 DEBUG	[num_gangs: 960, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:13:07 DEBUG	[num_gangs: 960, vector_length: 640] Running ./a.out
+10:13:07 DEBUG	[num_gangs: 960, vector_length: 640] Time: 0.000672
+10:13:07 DEBUG	[num_gangs: 960, vector_length: 640] Running ./a.out
+10:13:07 DEBUG	[num_gangs: 960, vector_length: 640] Time: 0.000639
+10:13:07 DEBUG	[num_gangs: 960, vector_length: 640] Running ./a.out
+10:13:08 DEBUG	[num_gangs: 960, vector_length: 640] Time: 0.000638
+10:13:08 INFO	[num_gangs: 960, vector_length: 640] Average: 0.000650, Standard Deviation: 0.000019
+10:13:08 DEBUG	[num_gangs: 960, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:13:10 DEBUG	[num_gangs: 960, vector_length: 704] Running ./a.out
+10:13:10 DEBUG	[num_gangs: 960, vector_length: 704] Time: 0.000735
+10:13:10 DEBUG	[num_gangs: 960, vector_length: 704] Running ./a.out
+10:13:11 DEBUG	[num_gangs: 960, vector_length: 704] Time: 0.000722
+10:13:11 DEBUG	[num_gangs: 960, vector_length: 704] Running ./a.out
+10:13:11 DEBUG	[num_gangs: 960, vector_length: 704] Time: 0.000666
+10:13:11 INFO	[num_gangs: 960, vector_length: 704] Average: 0.000708, Standard Deviation: 0.000037
+10:13:11 DEBUG	[num_gangs: 960, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:13:14 DEBUG	[num_gangs: 960, vector_length: 768] Running ./a.out
+10:13:14 DEBUG	[num_gangs: 960, vector_length: 768] Time: 0.000741
+10:13:14 DEBUG	[num_gangs: 960, vector_length: 768] Running ./a.out
+10:13:14 DEBUG	[num_gangs: 960, vector_length: 768] Time: 0.000672
+10:13:14 DEBUG	[num_gangs: 960, vector_length: 768] Running ./a.out
+10:13:15 DEBUG	[num_gangs: 960, vector_length: 768] Time: 0.000704
+10:13:15 INFO	[num_gangs: 960, vector_length: 768] Average: 0.000706, Standard Deviation: 0.000034
+10:13:15 DEBUG	[num_gangs: 960, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:13:17 DEBUG	[num_gangs: 960, vector_length: 832] Running ./a.out
+10:13:17 DEBUG	[num_gangs: 960, vector_length: 832] Time: 0.000717
+10:13:17 DEBUG	[num_gangs: 960, vector_length: 832] Running ./a.out
+10:13:18 DEBUG	[num_gangs: 960, vector_length: 832] Time: 0.000713
+10:13:18 DEBUG	[num_gangs: 960, vector_length: 832] Running ./a.out
+10:13:18 DEBUG	[num_gangs: 960, vector_length: 832] Time: 0.000705
+10:13:18 INFO	[num_gangs: 960, vector_length: 832] Average: 0.000712, Standard Deviation: 0.000006
+10:13:18 DEBUG	[num_gangs: 960, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:13:20 DEBUG	[num_gangs: 960, vector_length: 896] Running ./a.out
+10:13:21 DEBUG	[num_gangs: 960, vector_length: 896] Time: 0.000723
+10:13:21 DEBUG	[num_gangs: 960, vector_length: 896] Running ./a.out
+10:13:21 DEBUG	[num_gangs: 960, vector_length: 896] Time: 0.000659
+10:13:21 DEBUG	[num_gangs: 960, vector_length: 896] Running ./a.out
+10:13:21 DEBUG	[num_gangs: 960, vector_length: 896] Time: 0.000641
+10:13:21 INFO	[num_gangs: 960, vector_length: 896] Average: 0.000674, Standard Deviation: 0.000043
+10:13:21 DEBUG	[num_gangs: 960, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:13:24 DEBUG	[num_gangs: 960, vector_length: 960] Running ./a.out
+10:13:24 DEBUG	[num_gangs: 960, vector_length: 960] Time: 0.000717
+10:13:24 DEBUG	[num_gangs: 960, vector_length: 960] Running ./a.out
+10:13:25 DEBUG	[num_gangs: 960, vector_length: 960] Time: 0.000664
+10:13:25 DEBUG	[num_gangs: 960, vector_length: 960] Running ./a.out
+10:13:25 DEBUG	[num_gangs: 960, vector_length: 960] Time: 0.000647
+10:13:25 INFO	[num_gangs: 960, vector_length: 960] Average: 0.000676, Standard Deviation: 0.000037
+10:13:25 DEBUG	[num_gangs: 960, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=960 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:13:27 DEBUG	[num_gangs: 960, vector_length:1024] Running ./a.out
+10:13:28 DEBUG	[num_gangs: 960, vector_length:1024] Time: 0.000706
+10:13:28 DEBUG	[num_gangs: 960, vector_length:1024] Running ./a.out
+10:13:28 DEBUG	[num_gangs: 960, vector_length:1024] Time: 0.000506
+10:13:28 DEBUG	[num_gangs: 960, vector_length:1024] Running ./a.out
+10:13:28 DEBUG	[num_gangs: 960, vector_length:1024] Time: 0.000701
+10:13:28 INFO	[num_gangs: 960, vector_length:1024] Average: 0.000638, Standard Deviation: 0.000114
+10:13:28 DEBUG	[num_gangs:1024, vector_length:  64] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=64 MG_ALLREDUCE.F 
+10:13:31 DEBUG	[num_gangs:1024, vector_length:  64] Running ./a.out
+10:13:31 DEBUG	[num_gangs:1024, vector_length:  64] Time: 0.000605
+10:13:31 DEBUG	[num_gangs:1024, vector_length:  64] Running ./a.out
+10:13:31 DEBUG	[num_gangs:1024, vector_length:  64] Time: 0.000536
+10:13:31 DEBUG	[num_gangs:1024, vector_length:  64] Running ./a.out
+10:13:32 DEBUG	[num_gangs:1024, vector_length:  64] Time: 0.000594
+10:13:32 INFO	[num_gangs:1024, vector_length:  64] Average: 0.000578, Standard Deviation: 0.000037
+10:13:32 DEBUG	[num_gangs:1024, vector_length: 128] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=128 MG_ALLREDUCE.F 
+10:13:34 DEBUG	[num_gangs:1024, vector_length: 128] Running ./a.out
+10:13:35 DEBUG	[num_gangs:1024, vector_length: 128] Time: 0.000587
+10:13:35 DEBUG	[num_gangs:1024, vector_length: 128] Running ./a.out
+10:13:35 DEBUG	[num_gangs:1024, vector_length: 128] Time: 0.000569
+10:13:35 DEBUG	[num_gangs:1024, vector_length: 128] Running ./a.out
+10:13:35 DEBUG	[num_gangs:1024, vector_length: 128] Time: 0.000577
+10:13:35 INFO	[num_gangs:1024, vector_length: 128] Average: 0.000578, Standard Deviation: 0.000009
+10:13:35 DEBUG	[num_gangs:1024, vector_length: 192] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=192 MG_ALLREDUCE.F 
+10:13:38 DEBUG	[num_gangs:1024, vector_length: 192] Running ./a.out
+10:13:38 DEBUG	[num_gangs:1024, vector_length: 192] Time: 0.000616
+10:13:38 DEBUG	[num_gangs:1024, vector_length: 192] Running ./a.out
+10:13:38 DEBUG	[num_gangs:1024, vector_length: 192] Time: 0.000592
+10:13:38 DEBUG	[num_gangs:1024, vector_length: 192] Running ./a.out
+10:13:39 DEBUG	[num_gangs:1024, vector_length: 192] Time: 0.000586
+10:13:39 INFO	[num_gangs:1024, vector_length: 192] Average: 0.000598, Standard Deviation: 0.000016
+10:13:39 DEBUG	[num_gangs:1024, vector_length: 256] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=256 MG_ALLREDUCE.F 
+10:13:41 DEBUG	[num_gangs:1024, vector_length: 256] Running ./a.out
+10:13:41 DEBUG	[num_gangs:1024, vector_length: 256] Time: 0.000622
+10:13:41 DEBUG	[num_gangs:1024, vector_length: 256] Running ./a.out
+10:13:42 DEBUG	[num_gangs:1024, vector_length: 256] Time: 0.000590
+10:13:42 DEBUG	[num_gangs:1024, vector_length: 256] Running ./a.out
+10:13:42 DEBUG	[num_gangs:1024, vector_length: 256] Time: 0.000570
+10:13:42 INFO	[num_gangs:1024, vector_length: 256] Average: 0.000594, Standard Deviation: 0.000026
+10:13:42 DEBUG	[num_gangs:1024, vector_length: 320] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=320 MG_ALLREDUCE.F 
+10:13:45 DEBUG	[num_gangs:1024, vector_length: 320] Running ./a.out
+10:13:45 DEBUG	[num_gangs:1024, vector_length: 320] Time: 0.000603
+10:13:45 DEBUG	[num_gangs:1024, vector_length: 320] Running ./a.out
+10:13:45 DEBUG	[num_gangs:1024, vector_length: 320] Time: 0.000547
+10:13:45 DEBUG	[num_gangs:1024, vector_length: 320] Running ./a.out
+10:13:45 DEBUG	[num_gangs:1024, vector_length: 320] Time: 0.000572
+10:13:45 INFO	[num_gangs:1024, vector_length: 320] Average: 0.000574, Standard Deviation: 0.000028
+10:13:45 DEBUG	[num_gangs:1024, vector_length: 384] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=384 MG_ALLREDUCE.F 
+10:13:48 DEBUG	[num_gangs:1024, vector_length: 384] Running ./a.out
+10:13:48 DEBUG	[num_gangs:1024, vector_length: 384] Time: 0.000605
+10:13:48 DEBUG	[num_gangs:1024, vector_length: 384] Running ./a.out
+10:13:49 DEBUG	[num_gangs:1024, vector_length: 384] Time: 0.000576
+10:13:49 DEBUG	[num_gangs:1024, vector_length: 384] Running ./a.out
+10:13:49 DEBUG	[num_gangs:1024, vector_length: 384] Time: 0.000554
+10:13:49 INFO	[num_gangs:1024, vector_length: 384] Average: 0.000578, Standard Deviation: 0.000025
+10:13:49 DEBUG	[num_gangs:1024, vector_length: 448] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=448 MG_ALLREDUCE.F 
+10:13:51 DEBUG	[num_gangs:1024, vector_length: 448] Running ./a.out
+10:13:52 DEBUG	[num_gangs:1024, vector_length: 448] Time: 0.000642
+10:13:52 DEBUG	[num_gangs:1024, vector_length: 448] Running ./a.out
+10:13:52 DEBUG	[num_gangs:1024, vector_length: 448] Time: 0.000596
+10:13:52 DEBUG	[num_gangs:1024, vector_length: 448] Running ./a.out
+10:13:52 DEBUG	[num_gangs:1024, vector_length: 448] Time: 0.000597
+10:13:52 INFO	[num_gangs:1024, vector_length: 448] Average: 0.000612, Standard Deviation: 0.000026
+10:13:52 DEBUG	[num_gangs:1024, vector_length: 512] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=512 MG_ALLREDUCE.F 
+10:13:55 DEBUG	[num_gangs:1024, vector_length: 512] Running ./a.out
+10:13:55 DEBUG	[num_gangs:1024, vector_length: 512] Time: 0.000627
+10:13:55 DEBUG	[num_gangs:1024, vector_length: 512] Running ./a.out
+10:13:55 DEBUG	[num_gangs:1024, vector_length: 512] Time: 0.000590
+10:13:55 DEBUG	[num_gangs:1024, vector_length: 512] Running ./a.out
+10:13:56 DEBUG	[num_gangs:1024, vector_length: 512] Time: 0.000580
+10:13:56 INFO	[num_gangs:1024, vector_length: 512] Average: 0.000599, Standard Deviation: 0.000025
+10:13:56 DEBUG	[num_gangs:1024, vector_length: 576] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=576 MG_ALLREDUCE.F 
+10:13:58 DEBUG	[num_gangs:1024, vector_length: 576] Running ./a.out
+10:13:59 DEBUG	[num_gangs:1024, vector_length: 576] Time: 0.000671
+10:13:59 DEBUG	[num_gangs:1024, vector_length: 576] Running ./a.out
+10:13:59 DEBUG	[num_gangs:1024, vector_length: 576] Time: 0.000649
+10:13:59 DEBUG	[num_gangs:1024, vector_length: 576] Running ./a.out
+10:13:59 DEBUG	[num_gangs:1024, vector_length: 576] Time: 0.000649
+10:13:59 INFO	[num_gangs:1024, vector_length: 576] Average: 0.000656, Standard Deviation: 0.000013
+10:13:59 DEBUG	[num_gangs:1024, vector_length: 640] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=640 MG_ALLREDUCE.F 
+10:14:02 DEBUG	[num_gangs:1024, vector_length: 640] Running ./a.out
+10:14:02 DEBUG	[num_gangs:1024, vector_length: 640] Time: 0.000696
+10:14:02 DEBUG	[num_gangs:1024, vector_length: 640] Running ./a.out
+10:14:02 DEBUG	[num_gangs:1024, vector_length: 640] Time: 0.000662
+10:14:02 DEBUG	[num_gangs:1024, vector_length: 640] Running ./a.out
+10:14:03 DEBUG	[num_gangs:1024, vector_length: 640] Time: 0.000670
+10:14:03 INFO	[num_gangs:1024, vector_length: 640] Average: 0.000676, Standard Deviation: 0.000018
+10:14:03 DEBUG	[num_gangs:1024, vector_length: 704] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=704 MG_ALLREDUCE.F 
+10:14:05 DEBUG	[num_gangs:1024, vector_length: 704] Running ./a.out
+10:14:05 DEBUG	[num_gangs:1024, vector_length: 704] Time: 0.000721
+10:14:05 DEBUG	[num_gangs:1024, vector_length: 704] Running ./a.out
+10:14:06 DEBUG	[num_gangs:1024, vector_length: 704] Time: 0.000673
+10:14:06 DEBUG	[num_gangs:1024, vector_length: 704] Running ./a.out
+10:14:06 DEBUG	[num_gangs:1024, vector_length: 704] Time: 0.000703
+10:14:06 INFO	[num_gangs:1024, vector_length: 704] Average: 0.000699, Standard Deviation: 0.000024
+10:14:06 DEBUG	[num_gangs:1024, vector_length: 768] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=768 MG_ALLREDUCE.F 
+10:14:08 DEBUG	[num_gangs:1024, vector_length: 768] Running ./a.out
+10:14:09 DEBUG	[num_gangs:1024, vector_length: 768] Time: 0.000748
+10:14:09 DEBUG	[num_gangs:1024, vector_length: 768] Running ./a.out
+10:14:09 DEBUG	[num_gangs:1024, vector_length: 768] Time: 0.000660
+10:14:09 DEBUG	[num_gangs:1024, vector_length: 768] Running ./a.out
+10:14:09 DEBUG	[num_gangs:1024, vector_length: 768] Time: 0.000666
+10:14:09 INFO	[num_gangs:1024, vector_length: 768] Average: 0.000691, Standard Deviation: 0.000049
+10:14:09 DEBUG	[num_gangs:1024, vector_length: 832] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=832 MG_ALLREDUCE.F 
+10:14:12 DEBUG	[num_gangs:1024, vector_length: 832] Running ./a.out
+10:14:12 DEBUG	[num_gangs:1024, vector_length: 832] Time: 0.000708
+10:14:12 DEBUG	[num_gangs:1024, vector_length: 832] Running ./a.out
+10:14:12 DEBUG	[num_gangs:1024, vector_length: 832] Time: 0.000661
+10:14:12 DEBUG	[num_gangs:1024, vector_length: 832] Running ./a.out
+10:14:13 DEBUG	[num_gangs:1024, vector_length: 832] Time: 0.000687
+10:14:13 INFO	[num_gangs:1024, vector_length: 832] Average: 0.000685, Standard Deviation: 0.000024
+10:14:13 DEBUG	[num_gangs:1024, vector_length: 896] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=896 MG_ALLREDUCE.F 
+10:14:15 DEBUG	[num_gangs:1024, vector_length: 896] Running ./a.out
+10:14:16 DEBUG	[num_gangs:1024, vector_length: 896] Time: 0.000712
+10:14:16 DEBUG	[num_gangs:1024, vector_length: 896] Running ./a.out
+10:14:16 DEBUG	[num_gangs:1024, vector_length: 896] Time: 0.000671
+10:14:16 DEBUG	[num_gangs:1024, vector_length: 896] Running ./a.out
+10:14:16 DEBUG	[num_gangs:1024, vector_length: 896] Time: 0.000696
+10:14:16 INFO	[num_gangs:1024, vector_length: 896] Average: 0.000693, Standard Deviation: 0.000021
+10:14:16 DEBUG	[num_gangs:1024, vector_length: 960] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=960 MG_ALLREDUCE.F 
+10:14:19 DEBUG	[num_gangs:1024, vector_length: 960] Running ./a.out
+10:14:19 DEBUG	[num_gangs:1024, vector_length: 960] Time: 0.000714
+10:14:19 DEBUG	[num_gangs:1024, vector_length: 960] Running ./a.out
+10:14:19 DEBUG	[num_gangs:1024, vector_length: 960] Time: 0.000663
+10:14:19 DEBUG	[num_gangs:1024, vector_length: 960] Running ./a.out
+10:14:20 DEBUG	[num_gangs:1024, vector_length: 960] Time: 0.000655
+10:14:20 INFO	[num_gangs:1024, vector_length: 960] Average: 0.000677, Standard Deviation: 0.000032
+10:14:20 DEBUG	[num_gangs:1024, vector_length:1024] Compiling: pgf90 -acc -Mfree -mp -ta=nvidia -D_MG_OACC  -DNUM_GANGS=1024 -DVECTOR_LENGTH=1024 MG_ALLREDUCE.F 
+10:14:22 DEBUG	[num_gangs:1024, vector_length:1024] Running ./a.out
+10:14:22 DEBUG	[num_gangs:1024, vector_length:1024] Time: 0.000739
+10:14:22 DEBUG	[num_gangs:1024, vector_length:1024] Running ./a.out
+10:14:23 DEBUG	[num_gangs:1024, vector_length:1024] Time: 0.000715
+10:14:23 DEBUG	[num_gangs:1024, vector_length:1024] Running ./a.out
+10:14:23 DEBUG	[num_gangs:1024, vector_length:1024] Time: 0.000709
+10:14:23 INFO	[num_gangs:1024, vector_length:1024] Average: 0.000721, Standard Deviation: 0.000016
+10:14:23 INFO	-- RESULTS --
+10:14:23 INFO	num_gangs=256  vector_length=832  => time=0.000789243333333 (stdev=3.47906270903e-05)
+10:14:23 INFO	num_gangs=384  vector_length=768  => time=0.000780266666667 (stdev=3.86913689772e-05)
+10:14:23 INFO	num_gangs=384  vector_length=704  => time=0.0007716 (stdev=4.61369580705e-05)
+10:14:23 INFO	num_gangs=320  vector_length=768  => time=0.00076127 (stdev=2.67245074791e-05)
+10:14:23 INFO	num_gangs=192  vector_length=960  => time=0.000760713333333 (stdev=1.55612992174e-05)
+10:14:23 INFO	num_gangs=384  vector_length=960  => time=0.0007596 (stdev=3.49819682122e-05)
+10:14:23 INFO	num_gangs=256  vector_length=1024 => time=0.000758646666667 (stdev=4.44046758048e-05)
+10:14:23 INFO	num_gangs=320  vector_length=960  => time=0.000756266666667 (stdev=3.45141801776e-05)
+10:14:23 INFO	num_gangs=192  vector_length=832  => time=0.00075237 (stdev=2.13388659492e-05)
+10:14:23 INFO	num_gangs=384  vector_length=896  => time=0.00075205 (stdev=1.827176784e-05)
+10:14:23 INFO	num_gangs=128  vector_length=896  => time=0.000751333333333 (stdev=1.88718953297e-05)
+10:14:23 INFO	num_gangs=384  vector_length=1024 => time=0.000750303333333 (stdev=4.42059750863e-05)
+10:14:23 INFO	num_gangs=320  vector_length=576  => time=0.00074911 (stdev=3.99296168276e-05)
+10:14:23 INFO	num_gangs=256  vector_length=768  => time=0.000748793333333 (stdev=4.88013333151e-05)
+10:14:23 INFO	num_gangs=192  vector_length=768  => time=0.000748313333333 (stdev=4.1860541484e-05)
+10:14:23 INFO	num_gangs=192  vector_length=256  => time=0.000748236666667 (stdev=2.7622724944e-05)
+10:14:23 INFO	num_gangs=256  vector_length=384  => time=0.00074665 (stdev=2.66799194152e-05)
+10:14:23 INFO	num_gangs=128  vector_length=512  => time=0.000745776666667 (stdev=5.36145505748e-05)
+10:14:23 INFO	num_gangs=320  vector_length=640  => time=0.00074331 (stdev=4.47394937388e-05)
+10:14:23 INFO	num_gangs=128  vector_length=832  => time=0.000742673333333 (stdev=4.49435827826e-05)
+10:14:23 INFO	num_gangs=64   vector_length=832  => time=0.000742753333333 (stdev=3.18416179447e-05)
+10:14:23 INFO	num_gangs=192  vector_length=896  => time=0.000742356666667 (stdev=4.50997453799e-05)
+10:14:23 INFO	num_gangs=128  vector_length=960  => time=0.000742353333333 (stdev=4.29388569169e-05)
+10:14:23 INFO	num_gangs=384  vector_length=512  => time=0.000741956666667 (stdev=1.59795004094e-05)
+10:14:23 INFO	num_gangs=384  vector_length=640  => time=0.0007414 (stdev=4.09193218419e-05)
+10:14:23 INFO	num_gangs=384  vector_length=832  => time=0.000740926666667 (stdev=3.06266294805e-05)
+10:14:23 INFO	num_gangs=256  vector_length=704  => time=0.000740606666667 (stdev=3.75257049678e-05)
+10:14:23 INFO	num_gangs=192  vector_length=1024 => time=0.000739336666667 (stdev=5.66377085812e-05)
+10:14:23 INFO	num_gangs=384  vector_length=576  => time=0.000738463333333 (stdev=3.35151388679e-05)
+10:14:23 INFO	num_gangs=320  vector_length=1024 => time=0.000737986666667 (stdev=4.68126418111e-05)
+10:14:23 INFO	num_gangs=384  vector_length=192  => time=0.000737986666667 (stdev=4.11541083409e-05)
+10:14:23 INFO	num_gangs=256  vector_length=896  => time=0.000736396666667 (stdev=1.85876554017e-05)
+10:14:23 INFO	num_gangs=128  vector_length=448  => time=0.000735363333333 (stdev=3.60702652241e-05)
+10:14:23 INFO	num_gangs=256  vector_length=576  => time=0.000734966666667 (stdev=1.04506283703e-05)
+10:14:23 INFO	num_gangs=320  vector_length=512  => time=0.000733616666667 (stdev=3.70801946237e-05)
+10:14:23 INFO	num_gangs=128  vector_length=768  => time=0.00073306 (stdev=3.00403195722e-05)
+10:14:23 INFO	num_gangs=192  vector_length=192  => time=0.00073266 (stdev=4.37455186276e-05)
+10:14:23 INFO	num_gangs=320  vector_length=896  => time=0.00073266 (stdev=3.05919662657e-05)
+10:14:23 INFO	num_gangs=256  vector_length=960  => time=0.00073139 (stdev=4.03280807875e-05)
+10:14:23 INFO	num_gangs=320  vector_length=832  => time=0.00073107 (stdev=4.50453982111e-05)
+10:14:23 INFO	num_gangs=192  vector_length=704  => time=0.000730993333333 (stdev=2.17760334619e-05)
+10:14:23 INFO	num_gangs=64   vector_length=896  => time=0.000730753333333 (stdev=2.63526266875e-05)
+10:14:23 INFO	num_gangs=64   vector_length=128  => time=0.00073004 (stdev=2.10657352115e-05)
+10:14:23 INFO	num_gangs=192  vector_length=128  => time=0.00072972 (stdev=1.81602946011e-05)
+10:14:23 INFO	num_gangs=256  vector_length=192  => time=0.000729006666667 (stdev=4.85067112195e-05)
+10:14:23 INFO	num_gangs=128  vector_length=1024 => time=0.000728606666667 (stdev=5.32095943729e-05)
+10:14:23 INFO	num_gangs=64   vector_length=640  => time=0.000728606666667 (stdev=3.80082811152e-05)
+10:14:23 INFO	num_gangs=128  vector_length=384  => time=0.000728686666667 (stdev=3.5651802666e-05)
+10:14:23 INFO	num_gangs=64   vector_length=192  => time=0.000727653333333 (stdev=3.95724870754e-05)
+10:14:23 INFO	num_gangs=256  vector_length=320  => time=0.00072702 (stdev=5.11400322644e-05)
+10:14:23 INFO	num_gangs=128  vector_length=704  => time=0.000725906666667 (stdev=2.44563781728e-05)
+10:14:23 INFO	num_gangs=320  vector_length=704  => time=0.000725746666667 (stdev=4.62878605396e-05)
+10:14:23 INFO	num_gangs=64   vector_length=576  => time=0.00072527 (stdev=4.34256295291e-05)
+10:14:23 INFO	num_gangs=320  vector_length=256  => time=0.000725266666667 (stdev=2.3304841414e-05)
+10:14:23 INFO	num_gangs=192  vector_length=512  => time=0.000724713333333 (stdev=3.21856013356e-05)
+10:14:23 INFO	num_gangs=64   vector_length=704  => time=0.00072368 (stdev=4.54851591181e-05)
+10:14:23 INFO	num_gangs=128  vector_length=320  => time=0.0007236 (stdev=3.7756372972e-05)
+10:14:23 INFO	num_gangs=192  vector_length=640  => time=0.000721693333333 (stdev=1.69349618639e-05)
+10:14:23 INFO	num_gangs=64   vector_length=960  => time=0.000721376666667 (stdev=3.26841556925e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=1024 => time=0.00072106 (stdev=1.59047665811e-05)
+10:14:23 INFO	num_gangs=256  vector_length=256  => time=0.00072034 (stdev=4.8311262662e-05)
+10:14:23 INFO	num_gangs=320  vector_length=384  => time=0.000720263333333 (stdev=1.50712054373e-05)
+10:14:23 INFO	num_gangs=128  vector_length=640  => time=0.000718673333333 (stdev=4.2220440942e-05)
+10:14:23 INFO	num_gangs=384  vector_length=256  => time=0.000718276666667 (stdev=5.45774755126e-05)
+10:14:23 INFO	num_gangs=384  vector_length=128  => time=0.000718353333333 (stdev=3.07456490147e-05)
+10:14:23 INFO	num_gangs=256  vector_length=448  => time=0.00071772 (stdev=5.79831173705e-05)
+10:14:23 INFO	num_gangs=320  vector_length=128  => time=0.000716053333333 (stdev=5.03246722129e-05)
+10:14:23 INFO	num_gangs=64   vector_length=1024 => time=0.000715893333333 (stdev=5.12323182506e-05)
+10:14:23 INFO	num_gangs=256  vector_length=640  => time=0.000715733333333 (stdev=2.38297258342e-05)
+10:14:23 INFO	num_gangs=384  vector_length=64   => time=0.000715333333333 (stdev=2.33652248723e-05)
+10:14:23 INFO	num_gangs=192  vector_length=576  => time=0.000715413333333 (stdev=1.19217546248e-05)
+10:14:23 INFO	num_gangs=320  vector_length=64   => time=0.00071502 (stdev=2.85280984294e-05)
+10:14:23 INFO	num_gangs=256  vector_length=512  => time=0.000713586666667 (stdev=4.27646844176e-05)
+10:14:23 INFO	num_gangs=256  vector_length=128  => time=0.000712633333333 (stdev=5.15414603337e-05)
+10:14:23 INFO	num_gangs=320  vector_length=320  => time=0.000712233333333 (stdev=2.8390634606e-05)
+10:14:23 INFO	num_gangs=832  vector_length=768  => time=0.000711596666667 (stdev=9.64429034887e-05)
+10:14:23 INFO	num_gangs=960  vector_length=832  => time=0.000711676666667 (stdev=6.0878923556e-06)
+10:14:23 INFO	num_gangs=64   vector_length=512  => time=0.000710966666667 (stdev=3.7631180334e-05)
+10:14:23 INFO	num_gangs=704  vector_length=1024 => time=0.000710646666667 (stdev=1.97956922923e-05)
+10:14:23 INFO	num_gangs=320  vector_length=448  => time=0.00071025 (stdev=3.01789380198e-05)
+10:14:23 INFO	num_gangs=384  vector_length=448  => time=0.00071033 (stdev=2.92662792305e-05)
+10:14:23 INFO	num_gangs=256  vector_length=64   => time=0.000708103333333 (stdev=3.71946156498e-05)
+10:14:23 INFO	num_gangs=960  vector_length=704  => time=0.000707783333333 (stdev=3.66337908676e-05)
+10:14:23 INFO	num_gangs=64   vector_length=448  => time=0.000707066666667 (stdev=3.47566933602e-05)
+10:14:23 INFO	num_gangs=384  vector_length=320  => time=0.00070691 (stdev=3.15352707298e-05)
+10:14:23 INFO	num_gangs=960  vector_length=768  => time=0.000705716666667 (stdev=3.44802238005e-05)
+10:14:23 INFO	num_gangs=192  vector_length=384  => time=0.000705 (stdev=4.12824853903e-05)
+10:14:23 INFO	num_gangs=128  vector_length=256  => time=0.000705083333333 (stdev=2.95378356237e-05)
+10:14:23 INFO	num_gangs=128  vector_length=64   => time=0.00070278 (stdev=3.20547484782e-05)
+10:14:23 INFO	num_gangs=320  vector_length=192  => time=0.00070262 (stdev=3.2135643762e-05)
+10:14:23 INFO	num_gangs=192  vector_length=320  => time=0.000702303333333 (stdev=2.30097073717e-05)
+10:14:23 INFO	num_gangs=64   vector_length=320  => time=0.000699916666667 (stdev=4.7188607029e-05)
+10:14:23 INFO	num_gangs=128  vector_length=576  => time=0.00069968 (stdev=4.96647601424e-05)
+10:14:23 INFO	num_gangs=64   vector_length=768  => time=0.00069936 (stdev=3.20369848769e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=704  => time=0.000699046666667 (stdev=2.42157744731e-05)
+10:14:23 INFO	num_gangs=64   vector_length=256  => time=0.000695946666667 (stdev=5.45125951807e-05)
+10:14:23 INFO	num_gangs=64   vector_length=64   => time=0.000693323333333 (stdev=2.86126096911e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=896  => time=0.000693003333333 (stdev=2.05430336935e-05)
+10:14:23 INFO	num_gangs=128  vector_length=192  => time=0.000692606666667 (stdev=3.43452243162e-05)
+10:14:23 INFO	num_gangs=192  vector_length=64   => time=0.000692683333333 (stdev=2.87844095533e-05)
+10:14:23 INFO	num_gangs=832  vector_length=896  => time=0.00069197 (stdev=4.11606936288e-05)
+10:14:23 INFO	num_gangs=832  vector_length=960  => time=0.000691413333333 (stdev=3.89384248954e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=768  => time=0.000691253333333 (stdev=4.91651678868e-05)
+10:14:23 INFO	num_gangs=64   vector_length=384  => time=0.0006907 (stdev=0.000155136356796)
+10:14:23 INFO	num_gangs=832  vector_length=1024 => time=0.000689746666667 (stdev=2.0127519304e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=832  => time=0.000685293333333 (stdev=2.36399689791e-05)
+10:14:23 INFO	num_gangs=704  vector_length=960  => time=0.000679333333333 (stdev=1.25255512187e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=960  => time=0.000677343333333 (stdev=3.20256059011e-05)
+10:14:23 INFO	num_gangs=768  vector_length=832  => time=0.000675993333333 (stdev=5.20106530754e-05)
+10:14:23 INFO	num_gangs=960  vector_length=960  => time=0.000676076666667 (stdev=3.65723451987e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=640  => time=0.000676076666667 (stdev=1.78491521741e-05)
+10:14:23 INFO	num_gangs=960  vector_length=896  => time=0.00067433 (stdev=4.29939391077e-05)
+10:14:23 INFO	num_gangs=896  vector_length=896  => time=0.00067401 (stdev=2.01871914837e-05)
+10:14:23 INFO	num_gangs=896  vector_length=960  => time=0.000670353333333 (stdev=4.25000098039e-05)
+10:14:23 INFO	num_gangs=896  vector_length=1024 => time=0.00066908 (stdev=2.89700828442e-05)
+10:14:23 INFO	num_gangs=384  vector_length=384  => time=0.000666776666667 (stdev=0.000114594419294)
+10:14:23 INFO	num_gangs=896  vector_length=704  => time=0.00066662 (stdev=3.40759211174e-05)
+10:14:23 INFO	num_gangs=576  vector_length=960  => time=0.000664316666667 (stdev=4.18910662711e-05)
+10:14:23 INFO	num_gangs=768  vector_length=1024 => time=0.000661293333333 (stdev=3.94216898843e-05)
+10:14:23 INFO	num_gangs=576  vector_length=1024 => time=0.000660973333333 (stdev=4.15016389235e-05)
+10:14:23 INFO	num_gangs=896  vector_length=448  => time=0.000659946666667 (stdev=6.37218489479e-05)
+10:14:23 INFO	num_gangs=768  vector_length=896  => time=0.000659943333333 (stdev=1.98155149651e-05)
+10:14:23 INFO	num_gangs=896  vector_length=832  => time=0.000658673333333 (stdev=4.2133965317e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=576  => time=0.000656366666667 (stdev=1.25954211257e-05)
+10:14:23 INFO	num_gangs=832  vector_length=640  => time=0.00065541 (stdev=1.68575561693e-05)
+10:14:23 INFO	num_gangs=640  vector_length=704  => time=0.00065438 (stdev=3.98316344129e-05)
+10:14:23 INFO	num_gangs=832  vector_length=704  => time=0.000653343333333 (stdev=4.21214865993e-05)
+10:14:23 INFO	num_gangs=768  vector_length=704  => time=0.000653106666667 (stdev=3.44250407891e-05)
+10:14:23 INFO	num_gangs=512  vector_length=1024 => time=0.00065295 (stdev=1.64830549353e-05)
+10:14:23 INFO	num_gangs=640  vector_length=768  => time=0.00065104 (stdev=4.15692193817e-05)
+10:14:23 INFO	num_gangs=128  vector_length=128  => time=0.000649693333333 (stdev=0.000107243989264)
+10:14:23 INFO	num_gangs=960  vector_length=640  => time=0.00064977 (stdev=1.93474985463e-05)
+10:14:23 INFO	num_gangs=512  vector_length=832  => time=0.000649293333333 (stdev=3.79520306879e-05)
+10:14:23 INFO	num_gangs=896  vector_length=576  => time=0.000648893333333 (stdev=5.21329160256e-05)
+10:14:23 INFO	num_gangs=704  vector_length=640  => time=0.0006481 (stdev=2.91453890007e-05)
+10:14:23 INFO	num_gangs=512  vector_length=896  => time=0.000645 (stdev=6.66250275797e-05)
+10:14:23 INFO	num_gangs=640  vector_length=960  => time=0.000645003333333 (stdev=3.91409419066e-05)
+10:14:23 INFO	num_gangs=704  vector_length=768  => time=0.000645 (stdev=3.29141626052e-05)
+10:14:23 INFO	num_gangs=768  vector_length=576  => time=0.000642143333333 (stdev=3.73237649941e-05)
+10:14:23 INFO	num_gangs=640  vector_length=896  => time=0.000641743333333 (stdev=2.92403083659e-05)
+10:14:23 INFO	num_gangs=768  vector_length=768  => time=0.000639993333333 (stdev=4.33029448575e-05)
+10:14:23 INFO	num_gangs=640  vector_length=832  => time=0.000638726666667 (stdev=4.17201442152e-05)
+10:14:23 INFO	num_gangs=512  vector_length=768  => time=0.000638723333333 (stdev=2.99680001557e-05)
+10:14:23 INFO	num_gangs=704  vector_length=704  => time=0.000638006666667 (stdev=6.31812633091e-05)
+10:14:23 INFO	num_gangs=448  vector_length=832  => time=0.000638003333333 (stdev=2.59941711415e-05)
+10:14:23 INFO	num_gangs=960  vector_length=1024 => time=0.00063761 (stdev=0.000114074392832)
+10:14:23 INFO	num_gangs=448  vector_length=960  => time=0.000637453333333 (stdev=3.62386207427e-05)
+10:14:23 INFO	num_gangs=576  vector_length=832  => time=0.00063634 (stdev=3.32659931462e-05)
+10:14:23 INFO	num_gangs=448  vector_length=896  => time=0.00063539 (stdev=3.171e-05)
+10:14:23 INFO	num_gangs=768  vector_length=640  => time=0.000634986666667 (stdev=2.13815348685e-05)
+10:14:23 INFO	num_gangs=192  vector_length=448  => time=0.00063475 (stdev=0.000183002378127)
+10:14:23 INFO	num_gangs=576  vector_length=768  => time=0.000634673333333 (stdev=1.31952883005e-05)
+10:14:23 INFO	num_gangs=512  vector_length=960  => time=0.000634113333333 (stdev=2.8394487728e-05)
+10:14:23 INFO	num_gangs=704  vector_length=896  => time=0.00062998 (stdev=3.39689843828e-05)
+10:14:23 INFO	num_gangs=640  vector_length=1024 => time=0.000629743333333 (stdev=4.78484339695e-05)
+10:14:23 INFO	num_gangs=896  vector_length=512  => time=0.000629663333333 (stdev=1.4731450483e-05)
+10:14:23 INFO	num_gangs=448  vector_length=768  => time=0.000628393333333 (stdev=2.80191476197e-05)
+10:14:23 INFO	num_gangs=896  vector_length=768  => time=0.000621636666667 (stdev=0.00011844783254)
+10:14:23 INFO	num_gangs=832  vector_length=576  => time=0.000621713333333 (stdev=4.00076796794e-05)
+10:14:23 INFO	num_gangs=960  vector_length=576  => time=0.000621716666667 (stdev=2.95919200684e-05)
+10:14:23 INFO	num_gangs=576  vector_length=512  => time=0.000620683333333 (stdev=3.35595073464e-05)
+10:14:23 INFO	num_gangs=576  vector_length=896  => time=0.000620603333333 (stdev=2.15593073482e-05)
+10:14:23 INFO	num_gangs=576  vector_length=704  => time=0.00061997 (stdev=2.3520416663e-05)
+10:14:23 INFO	num_gangs=704  vector_length=576  => time=0.000617663333333 (stdev=3.0773060188e-05)
+10:14:23 INFO	num_gangs=768  vector_length=960  => time=0.000615993333333 (stdev=0.000115165633039)
+10:14:23 INFO	num_gangs=448  vector_length=640  => time=0.00061504 (stdev=1.78328320802e-05)
+10:14:23 INFO	num_gangs=512  vector_length=576  => time=0.000614006666667 (stdev=3.44100760437e-06)
+10:14:23 INFO	num_gangs=832  vector_length=832  => time=0.000611943333333 (stdev=0.000100087922515)
+10:14:23 INFO	num_gangs=512  vector_length=704  => time=0.000611623333333 (stdev=2.63472395771e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=448  => time=0.000611623333333 (stdev=2.61553939625e-05)
+10:14:23 INFO	num_gangs=960  vector_length=512  => time=0.00061075 (stdev=2.99995516633e-05)
+10:14:23 INFO	num_gangs=640  vector_length=576  => time=0.000609713333333 (stdev=1.61456382139e-05)
+10:14:23 INFO	num_gangs=576  vector_length=576  => time=0.000607013333333 (stdev=3.28283556294e-05)
+10:14:23 INFO	num_gangs=640  vector_length=640  => time=0.00060558 (stdev=3.89495943496e-05)
+10:14:23 INFO	num_gangs=896  vector_length=640  => time=0.00060566 (stdev=3.1847149009e-05)
+10:14:23 INFO	num_gangs=448  vector_length=1024 => time=0.000605343333333 (stdev=4.1322615277e-05)
+10:14:23 INFO	num_gangs=448  vector_length=704  => time=0.00060503 (stdev=4.59762993291e-05)
+10:14:23 INFO	num_gangs=768  vector_length=128  => time=0.000603996666667 (stdev=2.83440669865e-05)
+10:14:23 INFO	num_gangs=768  vector_length=512  => time=0.000603993333333 (stdev=1.2995200396e-05)
+10:14:23 INFO	num_gangs=704  vector_length=512  => time=0.000603756666667 (stdev=3.22873447861e-05)
+10:14:23 INFO	num_gangs=832  vector_length=128  => time=0.00060042 (stdev=2.79361396761e-05)
+10:14:23 INFO	num_gangs=896  vector_length=384  => time=0.00060026 (stdev=2.79677242549e-05)
+10:14:23 INFO	num_gangs=576  vector_length=256  => time=0.0006001 (stdev=3.54492256615e-05)
+10:14:23 INFO	num_gangs=576  vector_length=640  => time=0.000599863333333 (stdev=4.0467782659e-05)
+10:14:23 INFO	num_gangs=832  vector_length=320  => time=0.000599383333333 (stdev=6.40393889207e-06)
+10:14:23 INFO	num_gangs=832  vector_length=384  => time=0.000598986666667 (stdev=4.58295781492e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=512  => time=0.000598906666667 (stdev=2.46950487615e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=192  => time=0.00059803 (stdev=1.59047665811e-05)
+10:14:23 INFO	num_gangs=448  vector_length=576  => time=0.000597636666667 (stdev=3.2646870192e-05)
+10:14:23 INFO	num_gangs=640  vector_length=320  => time=0.000596603333333 (stdev=1.77001845565e-05)
+10:14:23 INFO	num_gangs=704  vector_length=384  => time=0.000595966666667 (stdev=2.62399625254e-05)
+10:14:23 INFO	num_gangs=832  vector_length=192  => time=0.000595013333333 (stdev=4.29882685547e-05)
+10:14:23 INFO	num_gangs=960  vector_length=64   => time=0.000595013333333 (stdev=1.47787832156e-05)
+10:14:23 INFO	num_gangs=448  vector_length=128  => time=0.000594696666667 (stdev=2.82224278426e-05)
+10:14:23 INFO	num_gangs=512  vector_length=384  => time=0.000594456666667 (stdev=3.7202781258e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=256  => time=0.00059406 (stdev=2.62114650487e-05)
+10:14:23 INFO	num_gangs=768  vector_length=384  => time=0.000593663333333 (stdev=2.89677481578e-05)
+10:14:23 INFO	num_gangs=576  vector_length=384  => time=0.000592943333333 (stdev=1.38338329227e-05)
+10:14:23 INFO	num_gangs=640  vector_length=512  => time=0.00059231 (stdev=3.99931106567e-05)
+10:14:23 INFO	num_gangs=512  vector_length=448  => time=0.00059231 (stdev=2.77938644308e-05)
+10:14:23 INFO	num_gangs=832  vector_length=512  => time=0.000592073333333 (stdev=2.91655521692e-05)
+10:14:23 INFO	num_gangs=448  vector_length=192  => time=0.000591753333333 (stdev=4.11979372461e-05)
+10:14:23 INFO	num_gangs=832  vector_length=448  => time=0.000591596666667 (stdev=4.27676938042e-05)
+10:14:23 INFO	num_gangs=576  vector_length=448  => time=0.000590723333333 (stdev=2.65316044244e-05)
+10:14:23 INFO	num_gangs=896  vector_length=320  => time=0.000590563333333 (stdev=1.79963894527e-05)
+10:14:23 INFO	num_gangs=640  vector_length=384  => time=0.000590086666667 (stdev=5.17605393455e-05)
+10:14:23 INFO	num_gangs=704  vector_length=192  => time=0.000590003333333 (stdev=2.51424985499e-05)
+10:14:23 INFO	num_gangs=512  vector_length=128  => time=0.00058961 (stdev=4.4152509555e-05)
+10:14:23 INFO	num_gangs=512  vector_length=192  => time=0.00058969 (stdev=1.85465144973e-05)
+10:14:23 INFO	num_gangs=704  vector_length=832  => time=0.000589366666667 (stdev=0.000113315759863)
+10:14:23 INFO	num_gangs=704  vector_length=128  => time=0.00058905 (stdev=3.74892624627e-05)
+10:14:23 INFO	num_gangs=640  vector_length=448  => time=0.000588973333333 (stdev=2.03189820939e-05)
+10:14:23 INFO	num_gangs=640  vector_length=256  => time=0.000588973333333 (stdev=1.82695931354e-05)
+10:14:23 INFO	num_gangs=576  vector_length=128  => time=0.000587383333333 (stdev=1.8487028786e-05)
+10:14:23 INFO	num_gangs=448  vector_length=448  => time=0.000587226666667 (stdev=2.23195258313e-05)
+10:14:23 INFO	num_gangs=512  vector_length=640  => time=0.00058699 (stdev=3.06412679242e-05)
+10:14:23 INFO	num_gangs=960  vector_length=128  => time=0.000587066666667 (stdev=2.66001547615e-05)
+10:14:23 INFO	num_gangs=768  vector_length=192  => time=0.00058611 (stdev=2.51417242845e-05)
+10:14:23 INFO	num_gangs=512  vector_length=320  => time=0.000585316666667 (stdev=6.08671778e-06)
+10:14:23 INFO	num_gangs=576  vector_length=192  => time=0.00058341 (stdev=2.67245074791e-05)
+10:14:23 INFO	num_gangs=576  vector_length=320  => time=0.0005823 (stdev=5.31433410692e-05)
+10:14:23 INFO	num_gangs=768  vector_length=256  => time=0.000582296666667 (stdev=3.53775427826e-05)
+10:14:23 INFO	num_gangs=704  vector_length=448  => time=0.00058206 (stdev=4.16522472383e-05)
+10:14:23 INFO	num_gangs=768  vector_length=64   => time=0.0005819 (stdev=2.45738092285e-05)
+10:14:23 INFO	num_gangs=768  vector_length=448  => time=0.00058166 (stdev=3.34933232152e-05)
+10:14:23 INFO	num_gangs=960  vector_length=320  => time=0.000581266666667 (stdev=4.10053488381e-05)
+10:14:23 INFO	num_gangs=704  vector_length=256  => time=0.00057936 (stdev=4.72970918768e-05)
+10:14:23 INFO	num_gangs=448  vector_length=512  => time=0.00057912 (stdev=4.01439796234e-05)
+10:14:23 INFO	num_gangs=448  vector_length=384  => time=0.00057864 (stdev=5.12879352285e-05)
+10:14:23 INFO	num_gangs=448  vector_length=320  => time=0.000578323333333 (stdev=5.96147249707e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=64   => time=0.000578323333333 (stdev=3.711340773e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=384  => time=0.000578323333333 (stdev=2.54732218876e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=128  => time=0.00057769 (stdev=8.96171858518e-06)
+10:14:23 INFO	num_gangs=640  vector_length=192  => time=0.000576333333333 (stdev=2.99396632134e-05)
+10:14:23 INFO	num_gangs=960  vector_length=256  => time=0.00057602 (stdev=4.41439826024e-05)
+10:14:23 INFO	num_gangs=704  vector_length=320  => time=0.00057443 (stdev=3.63447121326e-05)
+10:14:23 INFO	num_gangs=512  vector_length=512  => time=0.000574033333333 (stdev=3.04554302766e-05)
+10:14:23 INFO	num_gangs=1024 vector_length=320  => time=0.000574033333333 (stdev=2.81916873091e-05)
+10:14:23 INFO	num_gangs=832  vector_length=256  => time=0.000572366666667 (stdev=4.29505673226e-05)
+10:14:23 INFO	num_gangs=512  vector_length=256  => time=0.00057141 (stdev=3.44374316696e-05)
+10:14:23 INFO	num_gangs=896  vector_length=256  => time=0.000570616666667 (stdev=4.71375352912e-05)
+10:14:23 INFO	num_gangs=576  vector_length=64   => time=0.000569343333333 (stdev=2.80239992387e-05)
+10:14:23 INFO	num_gangs=960  vector_length=192  => time=0.000567036666667 (stdev=3.78296396141e-05)
+10:14:23 INFO	num_gangs=960  vector_length=384  => time=0.00056577 (stdev=1.43642472828e-05)
+10:14:23 INFO	num_gangs=704  vector_length=64   => time=0.000565606666667 (stdev=2.75651779122e-05)
+10:14:23 INFO	num_gangs=640  vector_length=128  => time=0.000565053333333 (stdev=2.72205975932e-05)
+10:14:23 INFO	num_gangs=512  vector_length=64   => time=0.000564973333333 (stdev=1.57566504478e-05)
+10:14:23 INFO	num_gangs=768  vector_length=320  => time=0.000564653333333 (stdev=3.41378592377e-05)
+10:14:23 INFO	num_gangs=896  vector_length=128  => time=0.00056394 (stdev=1.72987947557e-05)
+10:14:23 INFO	num_gangs=448  vector_length=256  => time=0.000563383333333 (stdev=5.76407046568e-05)
+10:14:23 INFO	num_gangs=640  vector_length=64   => time=0.00056203 (stdev=4.22847821326e-05)
+10:14:23 INFO	num_gangs=448  vector_length=64   => time=0.000561636666667 (stdev=1.50698385304e-05)
+10:14:23 INFO	num_gangs=832  vector_length=64   => time=0.000558693333333 (stdev=2.44374146205e-05)
+10:14:23 INFO	num_gangs=960  vector_length=448  => time=0.00055782 (stdev=0.000111449886945)
+10:14:23 INFO	num_gangs=896  vector_length=64   => time=0.00055496 (stdev=4.6142400241e-05)
+10:14:23 INFO	num_gangs=896  vector_length=192  => time=0.000542956666667 (stdev=0.000116938062808)
+10:14:23 INFO	-------------
+10:14:23 INFO	Tested 256 points
+10:14:23 INFO	Search took 256 iterations
+10:14:23 INFO	Best result found: num_gangs=896  vector_length=192  => time=0.000542956666667 (stdev=0.000116938062808)
