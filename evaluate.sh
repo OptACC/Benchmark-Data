@@ -1,9 +1,8 @@
 #!/bin/bash
-# Use exhaustive run test data from the data directory to count the number
-# of benchmark kernels for which a search method (default: Nelder-Mead)
-# produces a result that is (1) statistically significantly different from the
-# optimal point in the test data (exhaustive32 or exhaustive64) and (2) not in
-# the top 5% of test points.
+# Use exhaustive run test data from the data directory to evaluate a search
+# method (default: Nelder-Mead), returning the runtime of the tuned kernel
+# as well as the number of points tested and the percentile of the point found
+# relative to the exhaustive test data.
 
 # Usage: ./evaluate.sh [search-method]
 
@@ -15,43 +14,35 @@ fi
 
 echo "Evaluating $method..."
 echo
-pass=0
-fail=0
 total_points=0
+total_tests=0
 max_points_per_kernel=0
+echo "Kernel,Time,Stdev,Percentile,Points"
 for file in `find data -iname '*.csv'`; do
+	dirname=`dirname "$file"`
+	dirname=`basename "$dirname"`
 	basename=`basename "$file"`
 	result=`../OptACC/tuner.py -s "$method" "$file" 2>&1`
 	if [ $? -ne 0 ]; then
 		echo "$result"
 		exit 1
 	fi
+	# Best result found: num_gangs=256  vector_length=128  => time=0.004645 (stdev=2.60576284416e-05)
+	best=`echo "$result" | grep "Best result found:"`
+	best_time=`echo "$best" | sed -e 's/^.*time=\([^ ]*\).*$/\1/'`
+	best_stdev=`echo "$best" | sed -e 's/^.*stdev=\([^ )]*\).*$/\1/'`
 	points=`echo "$result" | grep Tested | cut -c 22-`
-	differs=`echo "$result" | egrep 'DIFFERS|Unable' | cut -c 18-`
 	percentile=`echo "$result" | grep ercentile | cut -c 42- | cut -f 1 -d '%'`
-	if [ "$differs" ]; then
-		if [ "$percentile" -gt 5 ]; then
-			echo "$basename: DIFFERS - Result in top $percentile%"
-			let fail+=1
-		else
-			#echo "$basename: OK - $percentile% - $points"
-			let pass+=1
-		fi
-	else
-		#echo "$basename: OK - $percentile% - $points"
-		let pass+=1
-	fi
+	echo "$dirname/$basename,$best_time,$best_stdev,$percentile%,$points"
 
 	let add=`echo "$points" | sed -e 's/ points//'`
 	if [ "$add" -gt "$max_points_per_kernel" ]; then
 		let max_points_per_kernel=add
 	fi
 	let total_points+=$add
+	let total_tests+=1
 done
 echo
-let total_tests=pass+fail
 let avg=total_points/total_tests
 echo "$total_points points tested in total; average: $avg per kernel (max: $max_points_per_kernel)"
-echo "No Significant Difference or Top 5%...$pass of $total_tests"
-echo "Significant Difference or Failure.....$fail of $total_tests"
 exit 0
